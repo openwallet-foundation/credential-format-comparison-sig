@@ -1,0 +1,10 @@
+{
+  "Key Management": "did:web",
+  "Implementation Support (e.g. Libraries) / Active Community": "https://github.com/w3c-ccg/did-method-web",
+  "IPR Policy": "tbd",
+  "Specification": "tbd",
+  "Infrastructure for Key Resolution": "web server",
+  "Key Rotation": "yes",
+  "Key History": "no",
+  "Party": "holder, issuer"
+}

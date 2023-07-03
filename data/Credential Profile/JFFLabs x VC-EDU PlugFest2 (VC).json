@@ -1,0 +1,13 @@
+{
+  "Credential Profile is commonly called": "JFFLabs x VC-EDU PlugFest2 (VC)",
+  "Credential Profile Description": "Interoperability profile used in the PlugFest2",
+  "Credential Format": "LDP-VC",
+  "Signing Algorithm": "EdDSA",
+  "Revocation Algorithm": "did:web",
+  "Key Management (Issuer)": "did:key",
+  "Key Management (Holder)": "tbd",
+  "Trust Management": "tbd",
+  "Formal Specification": "tbd",
+  "IPR Policy": "https://github.com/digitalbazaar/jsonld.js",
+  "Implementations": "https://www.w3.org/Consortium/Patent-Policy-20200915/#sec-Requirements"
+}

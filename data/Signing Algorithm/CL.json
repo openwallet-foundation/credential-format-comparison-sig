@@ -1,0 +1,14 @@
+{
+  "Signing Algorithm": "CL",
+  "Implementation Support (e.g. Libraries) / Active Community": "Hyperledger Ursa, https://github.com/privacybydesign/gabi ",
+  "IPR Policy": "tbd",
+  "Specification": "CL-Signatures of there own do not have a formal specification, that is included in Anoncreds",
+  "Standardization (Body, Process)": "none",
+  "Technology Readiness Level": "some",
+  "Recognition by government authorities (NIST, BSI, ...)": "not acknowledged (indendent crypto analysis published)",
+  "Performance": "Ursa: up to 7 seconds for a validation and approximately 30 seconds for credential definition generation; IRMA (Yivi): both in less than a second",
+  "Hardware support": "no",
+  "Unlinkability/Uncorrelatability/Blind signatures possible": "yes",
+  "Security strength": "equivalent to RSA2048",
+  "Post-quantum security": "no"
+}

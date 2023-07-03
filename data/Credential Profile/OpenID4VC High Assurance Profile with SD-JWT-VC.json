@@ -1,0 +1,13 @@
+{
+  "Credential Profile is commonly called": "OpenID4VC High Assurance Profile with SD-JWT-VC",
+  "Credential Profile Description": "SD-JWT-VC",
+  "Credential Format": "ECDSA",
+  "Signing Algorithm": "JWT status list",
+  "Revocation Algorithm": ".well-known/jwt-issuer",
+  "Key Management (Issuer)": "raw public keys (jwk)",
+  "Key Management (Holder)": "tbd",
+  "Trust Management": "tbd",
+  "Formal Specification": "tbd",
+  "IPR Policy": "tbd",
+  "Implementations": "https://trustee.ietf.org/documents/trust-legal-provisions/"
+}

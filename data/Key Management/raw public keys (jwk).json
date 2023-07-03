@@ -1,0 +1,10 @@
+{
+  "Key Management": "raw public keys (jwk)",
+  "Implementation Support (e.g. Libraries) / Active Community": "https://www.rfc-editor.org/rfc/rfc7517",
+  "IPR Policy": "https://trustee.ietf.org/documents/trust-legal-provisions/",
+  "Specification": "https://www.rfc-editor.org/rfc/rfc7517",
+  "Infrastructure for Key Resolution": "none",
+  "Key Rotation": "no",
+  "Key History": "conditional (with OpenID Connect Federation Key History)",
+  "Party": "holder, issuer"
+}

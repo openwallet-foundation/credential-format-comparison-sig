@@ -1,0 +1,8 @@
+{
+  "Trust Management": "TRAIN",
+  "Implementation Support (e.g. Libraries) / Active Community": "tbd",
+  "IPR Policy": "tbd",
+  "Standardization (Body, Process)": "EU Train Project (https://eu-train-project.eu/)",
+  "Specification": "tbd",
+  "Description": "Uses DNS records and ETSi Trusted Lists for trust management"
+}

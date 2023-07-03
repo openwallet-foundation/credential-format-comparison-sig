@@ -1,0 +1,13 @@
+{
+  "Credential Profile is commonly called": "ESSIF (natural person)",
+  "Credential Profile Description": "[Profile description goes here]",
+  "Credential Format": "JWT-VC",
+  "Signing Algorithm": "ECDSA",
+  "Revocation Algorithm": "did:ebsi",
+  "Key Management (Issuer)": "did:ebsinp",
+  "Key Management (Holder)": "EBSI Trust Registries",
+  "Trust Management": "walt.id",
+  "Formal Specification": "#N/A",
+  "IPR Policy": "#N/A",
+  "Implementations": "#N/A"
+}

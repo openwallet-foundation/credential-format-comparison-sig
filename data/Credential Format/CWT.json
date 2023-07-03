@@ -1,0 +1,15 @@
+{
+  "Credential Format": "CWT",
+  "Implementation Support (e.g. Libraries)": "tbd",
+  "IPR Policy": "tbd",
+  "Specification": "https://www.rfc-editor.org/rfc/rfc8392.html",
+  "Standardization (Body, Process)": "IETF",
+  "Technology Readiness Level": "TRL 8",
+  "Encoding Scheme": "CBOR",
+  "Rich Schemas/Semantic ": "tbd",
+  "Crypto Agility": "yes",
+  "Selective Disclosure": "no",
+  "Predicates": "no",
+  "Compatibility with Signing Algorithms": "tbd",
+  "Compatibility with Key Management Methods (Issuer)": "tbd"
+}

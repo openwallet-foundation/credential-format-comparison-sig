@@ -1,0 +1,13 @@
+{
+  "Signing Algorithm": "BoundBBS+",
+  "Implementation Support (e.g. Libraries) / Active Community": "tbd",
+  "IPR Policy": "barely",
+  "Standardization (Body, Process)": "DIF (intention to transfer to IRTF CFRG)",
+  "Technology Readiness Level": "tbd",
+  "Recognition by government authorities (NIST, BSI, ...)": "not acknowledged",
+  "Performance": "tbd",
+  "Hardware support": "no",
+  "Unlinkability/Uncorrelatability/Blind signatures possible": "yes",
+  "Security strength": "tbd",
+  "Post-quantum security": "no"
+}
