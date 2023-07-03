@@ -1,0 +1,10 @@
+{
+  "Key Management": "Glossary",
+  "Implementation Support (e.g. Libraries) / Active Community": "How complex is the implementation? Which/How many useful software libraries available?",
+  "IPR Policy": "What is the policy regarding intellectual properties associated with this technology? ",
+  "Specification": "Where is the key management specified?",
+  "Infrastructure for Key Resolution": "Is there any infrastructure required to resolve keys and/or validate identifier to key binding",
+  "Key Rotation": "Can the key refered to in a credential be replaced by another key?",
+  "Key History": "Is it possible to retain and obtain the history of keys related to a certain identifier?",
+  "Party": "What party may uses this technique?"
+}

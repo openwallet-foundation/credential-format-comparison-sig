@@ -1,0 +1,15 @@
+{
+  "Revocation Algorithm": "VB20 - cryptographic accumulator based on pairings",
+  "Implementation Support (e.g. Libraries) / Active Community": "tbd",
+  "IPR Policy": "tbd",
+  "Specification": "tbd",
+  "Standardization (Body, Process)": "tbd",
+  "Technology Readiness Level": "tbd",
+  "Recognition by government authorities (NIST, BSI, ...)": "no",
+  "Category": "Accumulator",
+  "Performance": "tbd",
+  "Observability": "no",
+  "Traceability": "tbd",
+  "Scalability": "tbd",
+  "Offline Friendliness": "tbd"
+}

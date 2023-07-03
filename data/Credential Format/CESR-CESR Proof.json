@@ -1,0 +1,15 @@
+{
+  "Credential Format": "CESR/CESR Proof",
+  "Implementation Support (e.g. Libraries)": "tbd",
+  "IPR Policy": "tbd",
+  "Specification": "https://www.ietf.org/archive/id/draft-pfeairheller-cesr-proof-00.html",
+  "Standardization (Body, Process)": "IETF (intention to go to Blockchain WG)",
+  "Technology Readiness Level": "tbd",
+  "Encoding Scheme": "tbd",
+  "Rich Schemas/Semantic ": "tbd",
+  "Crypto Agility": "yes",
+  "Selective Disclosure": "yes",
+  "Predicates": "tbd",
+  "Compatibility with Signing Algorithms": "tbd",
+  "Compatibility with Key Management Methods (Issuer)": "tbd"
+}

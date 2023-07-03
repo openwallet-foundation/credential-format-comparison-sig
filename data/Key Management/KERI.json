@@ -1,0 +1,10 @@
+{
+  "Key Management": "KERI",
+  "Implementation Support (e.g. Libraries) / Active Community": "https://weboftrust.github.io/did-keri/",
+  "IPR Policy": "tbd",
+  "Specification": "tbd",
+  "Infrastructure for Key Resolution": "witness network",
+  "Key Rotation": "yes",
+  "Key History": "yes",
+  "Party": "holder, issuer"
+}

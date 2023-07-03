@@ -1,0 +1,8 @@
+{
+  "Trust Management": "Glossary",
+  "Implementation Support (e.g. Libraries) / Active Community": "How complex is the implementation? Which/How many useful software libraries available?",
+  "IPR Policy": "What is the policy regarding intellectual properties associated with this technology? ",
+  "Standardization (Body, Process)": "Under which Standardization Body and which standards track/status is the credential format standardized?",
+  "Specification": "Where is the trust management specified?",
+  "Description": "Explantion how this trust management approach works"
+}

@@ -1,0 +1,17 @@
+.full {
+    width: calc(100%);
+}
+
+.container {
+    max-width: 100%;
+    max-height: calc(100vh - 142px);
+    overflow: auto;
+}
+
+.mat-mdc-table-sticky-border-elem-left {
+    border-right: 1px solid #e0e0e0;
+}
+
+.highlight {
+  background-color: #ECECEC;
+}

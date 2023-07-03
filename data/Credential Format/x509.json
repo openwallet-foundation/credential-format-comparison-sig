@@ -1,0 +1,15 @@
+{
+  "Credential Format": "x509",
+  "Implementation Support (e.g. Libraries)": "tbd",
+  "IPR Policy": "tbd",
+  "Specification": "tbd",
+  "Standardization (Body, Process)": "ITUT",
+  "Technology Readiness Level": "TRL 9",
+  "Encoding Scheme": "ASN.1",
+  "Rich Schemas/Semantic ": "no",
+  "Crypto Agility": "yes",
+  "Selective Disclosure": "no",
+  "Predicates": "no",
+  "Compatibility with Signing Algorithms": "tbd",
+  "Compatibility with Key Management Methods (Issuer)": "tbd"
+}

@@ -1,0 +1,20 @@
+<mat-toolbar color="primary">
+  <span>Credential Format Comparison</span>
+  <a mat-button [routerLink]="['/']" routerLinkActive="router-link-active"
+    >Credential Profiles</a
+  >
+  <a
+    mat-button
+    [routerLink]="['/resources']"
+    routerLinkActive="router-link-active"
+    >Resources</a
+  >
+  <div class="spacer"></div>
+  <div class="github">
+    <a
+      mat-button
+      href="hhttps://github.com/openwallet-foundation/credential-format-comparison-sig"
+      ><img src="assets/github.svg" alt="Github" /> <span>Github</span></a
+    >
+  </div> </mat-toolbar
+><router-outlet></router-outlet>

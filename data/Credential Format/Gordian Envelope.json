@@ -1,0 +1,15 @@
+{
+  "Credential Format": "Gordian Envelope",
+  "Implementation Support (e.g. Libraries)": "command-line MVP https://github.com/BlockchainCommons/envelope-cli-swift, rust libraries on the way.",
+  "IPR Policy": "SPDI:BSD-2-Clause-Patent https://spdx.org/licenses/BSD-2-Clause-Patent.html",
+  "Specification": "https://github.com/BlockchainCommons/BCSwiftSecureComponents (this will be moved elsewhere soon).",
+  "Standardization (Body, Process)": "IETF (for CBOR registration) W3C (for did method and alternative DID document and credentials data format)",
+  "Technology Readiness Level": "TRL 3 (did:keri - style event receipts)",
+  "Encoding Scheme": "CBOR",
+  "Rich Schemas/Semantic ": "optional yes",
+  "Crypto Agility": "3 suites",
+  "Selective Disclosure": "yes (hash-inclusion proof, optional salts)",
+  "Predicates": "no",
+  "Compatibility with Signing Algorithms": "tbd",
+  "Compatibility with Key Management Methods (Issuer)": "tbd"
+}

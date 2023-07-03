@@ -1,0 +1,15 @@
+{
+  "Credential Format": "MDOC",
+  "Implementation Support (e.g. Libraries)": "Apple, Idemia, Thales, HID global, GET Group, Google, Panasonic",
+  "IPR Policy": "tbd",
+  "Specification": "ISO 18013-5",
+  "Standardization (Body, Process)": "ISO",
+  "Technology Readiness Level": "TRL 7",
+  "Encoding Scheme": "CBOR",
+  "Rich Schemas/Semantic ": "no",
+  "Crypto Agility": "yes",
+  "Selective Disclosure": "yes (salted hashes)",
+  "Predicates": "no",
+  "Compatibility with Signing Algorithms": "tbd",
+  "Compatibility with Key Management Methods (Issuer)": "tbd"
+}

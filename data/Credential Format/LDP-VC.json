@@ -1,0 +1,15 @@
+{
+  "Credential Format": "LDP-VC",
+  "Implementation Support (e.g. Libraries)": "https://github.com/digitalbazaar/jsonld.js",
+  "IPR Policy": "https://www.w3.org/Consortium/Patent-Policy-20200915/#sec-Requirements",
+  "Specification": "https://www.w3.org/TR/vc-data-model/",
+  "Standardization (Body, Process)": "W3C",
+  "Technology Readiness Level": "TBD",
+  "Encoding Scheme": "JSON-LD",
+  "Rich Schemas/Semantic ": "yes",
+  "Crypto Agility": "yes",
+  "Selective Disclosure": "yes, with one of the following algs:\nBBS\nCL-Signatures (CL)\nShort Randomizable Signatures (ps-sig)",
+  "Predicates": "depending on signature algorithm",
+  "Compatibility with Signing Algorithms": "ECDSA, EdDSA, RSA",
+  "Compatibility with Key Management Methods (Issuer)": "did:key, did:web. did:ebsi, did:iota, did:jwk, did:cheqd, did:velocity"
+}

@@ -1,0 +1,13 @@
+{
+  "Credential Profile is commonly called": "DDIP",
+  "Credential Profile Description": "JWT-VC",
+  "Credential Format": "ECDSA",
+  "Signing Algorithm": "Status List 2021",
+  "Revocation Algorithm": "did:web",
+  "Key Management (Issuer)": "did:jwk",
+  "Key Management (Holder)": "tbd",
+  "Trust Management": "tbd",
+  "Formal Specification": "tbd",
+  "IPR Policy": "#N/A",
+  "Implementations": "#N/A"
+}

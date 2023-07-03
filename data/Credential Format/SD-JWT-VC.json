@@ -1,0 +1,15 @@
+{
+  "Credential Format": "SD-JWT-VC",
+  "Implementation Support (e.g. Libraries)": "tbd",
+  "IPR Policy": "https://trustee.ietf.org/documents/trust-legal-provisions/",
+  "Specification": "https://datatracker.ietf.org/doc/draft-ietf-oauth-selective-disclosure-jwt/",
+  "Standardization (Body, Process)": "IETF (OAuth WG)",
+  "Technology Readiness Level": "TRL 4",
+  "Encoding Scheme": "JSON",
+  "Rich Schemas/Semantic ": "no",
+  "Crypto Agility": "yes",
+  "Selective Disclosure": "yes (salted hashes)",
+  "Predicates": "no",
+  "Compatibility with Signing Algorithms": "tbd",
+  "Compatibility with Key Management Methods (Issuer)": "tbd"
+}
