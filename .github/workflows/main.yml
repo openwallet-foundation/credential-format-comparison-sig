@@ -38,6 +38,7 @@ jobs:
         run: cd viewer && npm run validate:profiles
 
   publish:
+    needs: validate
     runs-on: ubuntu-latest
     environment:
       name: github-pages
