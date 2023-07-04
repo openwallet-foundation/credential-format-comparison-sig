@@ -39,11 +39,11 @@ export class CredentialProfileComponent implements OnInit, AfterViewInit {
       (value) => value !== 'Credential Profile'
     );
     this.dataSource.data = Object.values(this.data.values).map((value: any) => {
-      Object.keys(value)
-        .filter((value) => keys.includes(value))
-        .forEach((key) => {
-          console.log(this.getSubResources(key, value[key]));
-        });
+      // Object.keys(value)
+      //   .filter((value) => keys.includes(value))
+      //   .forEach((key) => {
+      //     console.log(this.getSubResources(key, value[key]));
+      //   });
       return value;
     });
   }
