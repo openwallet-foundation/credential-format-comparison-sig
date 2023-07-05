@@ -57,6 +57,13 @@ export class CredentialProfileComponent implements OnInit, AfterViewInit {
   }
 
   hasLink(value: string, header: string) {
+    if (header.startsWith('Key Management')) header = 'Key Management';
     return (window as any)['structure'][header]?.values[value];
+  }
+
+  getLink(values: string[]) {
+    return values.map((value) =>
+      value.startsWith('Key Management') ? 'Key Management' : value
+    );
   }
 }
