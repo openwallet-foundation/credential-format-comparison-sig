@@ -56,7 +56,18 @@ export class TableComponent implements OnInit, AfterViewInit {
   jumpTo() {
     const id = this.route.snapshot.paramMap.get('id');
     if (id) {
-      document.getElementById('jumpto')?.scrollIntoView();
+      const rectRow = document
+        .getElementById('jumpto')
+        ?.getBoundingClientRect();
+      const table = document.getElementById('table');
+      const rectTable = table?.getBoundingClientRect();
+      if (rectRow && table && rectTable) {
+        table.scrollTo({
+          left: 0,
+          top: rectRow?.y - rectTable?.y,
+          behavior: 'smooth',
+        });
+      }
     }
   }
 
