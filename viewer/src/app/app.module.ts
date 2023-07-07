@@ -18,6 +18,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { ResourcesComponent } from './resources/resources.component';
 import { FormatPipe } from './format.pipe';
 import { MatListModule } from '@angular/material/list';
+import { FlexLayoutModule } from '@ngbracket/ngx-layout';
+import { CredentialProfileAddDialogComponent } from './credential-profile-add-dialog/credential-profile-add-dialog.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { AutoSelectComponent } from './auto-select/auto-select.component';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { MatInputModule } from '@angular/material/input';
+import { ClipboardModule } from '@angular/cdk/clipboard';
+import {
+  MAT_FORM_FIELD_DEFAULT_OPTIONS,
+  MatFormFieldDefaultOptions,
+} from '@angular/material/form-field';
+
+const appearance: MatFormFieldDefaultOptions = {
+  appearance: 'outline',
+};
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,10 +40,15 @@ import { MatListModule } from '@angular/material/list';
     CredentialProfileComponent,
     ResourcesComponent,
     FormatPipe,
+    CredentialProfileAddDialogComponent,
+    AutoSelectComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    FlexLayoutModule,
     AppRoutingModule,
     MatToolbarModule,
     MatTableModule,
@@ -41,8 +61,16 @@ import { MatListModule } from '@angular/material/list';
     MatTabsModule,
     MatSortModule,
     MatListModule,
+    MatAutocompleteModule,
+    ClipboardModule,
   ],
-  providers: [FormatPipe],
+  providers: [
+    FormatPipe,
+    {
+      provide: MAT_FORM_FIELD_DEFAULT_OPTIONS,
+      useValue: appearance,
+    },
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

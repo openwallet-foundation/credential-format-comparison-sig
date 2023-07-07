@@ -17,4 +17,8 @@ export class AppService {
   getElements() {
     return (window as any)['structure'];
   }
+
+  getValues(key: string): string[] {
+    return Object.keys(this.getElements()[key]['values']);
+  }
 }

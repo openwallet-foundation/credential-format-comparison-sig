@@ -1,7 +1,9 @@
 import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { Router } from '@angular/router';
+import { CredentialProfileAddDialogComponent } from '../credential-profile-add-dialog/credential-profile-add-dialog.component';
 
 @Component({
   selector: 'app-credential-profile',
@@ -15,6 +17,8 @@ export class CredentialProfileComponent implements OnInit, AfterViewInit {
   columns: any[] = [];
   dataSource: any;
   @ViewChild(MatSort) sort!: MatSort;
+
+  constructor(private dialog: MatDialog) {}
 
   ngOnInit(): void {
     this.dataSource = new MatTableDataSource<any>();
@@ -65,5 +69,12 @@ export class CredentialProfileComponent implements OnInit, AfterViewInit {
     return values.map((value) =>
       value.startsWith('Key Management') ? 'Key Management' : value
     );
+  }
+
+  addProfile() {
+    this.dialog.open(CredentialProfileAddDialogComponent, {
+      disableClose: true,
+      minWidth: '500px',
+    });
   }
 }
