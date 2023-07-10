@@ -30,7 +30,9 @@ export class CredentialProfileAddDialogComponent {
     this.form = new FormGroup({
       name: new FormControl('', [
         Validators.required,
-        this.uniqueNameValidator(this.appService.getProfileNames()),
+        this.uniqueNameValidator(
+          this.appService.getNames('Credential Profile')
+        ),
       ]),
       description: new FormControl('', Validators.required),
       specification: new FormControl('', Validators.required),

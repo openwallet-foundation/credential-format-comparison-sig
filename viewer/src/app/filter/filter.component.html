@@ -1,0 +1,17 @@
+<h1 mat-dialog-title>Filter profiles</h1>
+<div mat-dialog-content>
+  <div *ngFor="let group of selectionColumns">
+    <h3>{{ group.key }}</h3>
+    <div *ngFor="let element of group.elements">
+      <mat-checkbox>
+        {{ element.show }}
+      </mat-checkbox>
+    </div>
+  </div>
+  <div mat-dialog-actions fxLayout="row" fxLayoutAlign="space-between center">
+    <button mat-button mat-dialog-close>Cancel</button>
+    <button mat-button color="accent" [mat-dialog-close]="true" cdkFocusInitial>
+      Ok
+    </button>
+  </div>
+</div>
