@@ -33,8 +33,11 @@ jobs:
         with:
           node-version: 18
 
+      - name: Install dependencies
+        run: cd viewer && npm ci
+
       - name: Validate
-        run: cd viewer && npm ci && npm run validate
+        run: cd viewer && npm run validate
 
   build:
     runs-on: ubuntu-latest
