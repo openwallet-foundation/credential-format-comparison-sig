@@ -71,9 +71,6 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
       - name: Download artifact from build job
         uses: actions/download-artifact@v2
         with:
@@ -86,7 +83,7 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           # Upload entire repository
-          path: './viewer/dist'
+          path: '.'
 
       - name: Deploy to GitHub Pages
         id: deployment
