@@ -1,4 +1,5 @@
 {
+  "$schema": "./schema.json",
   "Trust Management": "Verified issuer certificate authority list (VICAL)",
   "Specification": "ISO 18013-5, Annex C"
 }

@@ -1,12 +1,17 @@
-<mat-toolbar color="primary">
+<mat-toolbar color="primary" fxLayout="row" fxLayoutAlign="start center">
   <span>Credential Format Comparison</span>
-  <a mat-button [routerLink]="['/']" routerLinkActive="router-link-active"
+  <a
+    mat-button
+    [routerLink]="['/']"
+    routerLinkActive="router-link-active"
+    [routerLinkActiveOptions]="{ exact: true }"
     >Credential Profiles</a
   >
   <a
     mat-button
     [routerLink]="['/resources']"
     routerLinkActive="router-link-active"
+    [routerLinkActiveOptions]="{ exact: true }"
     >Resources</a
   >
   <div class="spacer"></div>

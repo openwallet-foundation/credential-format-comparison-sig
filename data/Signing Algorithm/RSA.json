@@ -1,4 +1,5 @@
 {
+  "$schema": "./schema.json",
   "Signing Algorithm": "RSA",
   "Implementation Support (e.g. Libraries) / Active Community": "many mature implementations",
   "IPR Policy": "tbd",
@@ -7,8 +8,8 @@
   "Technology Readiness Level": "TRL 9",
   "Recognition by government authorities (NIST, BSI, ...)": "yes, but support is fading",
   "Performance": "tbd",
-  "Hardware support": "yes",
-  "Unlinkability/Uncorrelatability/Blind signatures possible": "no",
+  "Hardware support": true,
+  "Unlinkability/Uncorrelatability/Blind signatures possible": false,
   "Security strength": "2048 / 3072 / 4096 (scales bad)",
-  "Post-quantum security": "no"
+  "Post-quantum security": false
 }

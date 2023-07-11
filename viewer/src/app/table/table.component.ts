@@ -8,11 +8,15 @@ import {
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { ActivatedRoute } from '@angular/router';
+import { AppService } from '../app.service';
+import { Format, Property, Resources } from '../resources';
 
 export interface ColumnHeader {
   header: string;
   tooltip: string;
 }
+
+type Res = keyof Resources;
 
 @Component({
   selector: 'app-table',
@@ -20,15 +24,15 @@ export interface ColumnHeader {
   styleUrls: ['./table.component.scss'],
 })
 export class TableComponent implements OnInit, AfterViewInit {
-  @Input() data: any;
+  @Input() data!: Format;
 
   @ViewChild(MatSort) sort!: MatSort;
   selectedRowIndex = 2;
 
-  constructor(private route: ActivatedRoute) {
-    const resource = this.route.snapshot.paramMap.get('resource');
+  constructor(private route: ActivatedRoute, private appService: AppService) {
+    const resource: Res = this.route.snapshot.paramMap.get('resource') as Res;
     if (resource) {
-      this.data = (window as any)['structure'][resource];
+      this.data = this.appService.getFormat(resource);
     }
   }
 
@@ -38,11 +42,11 @@ export class TableComponent implements OnInit, AfterViewInit {
   columns: ColumnHeader[] = [];
 
   async ngOnInit(): Promise<void> {
-    this.displayedColumns = Object.keys(this.data['structure']) as string[];
-    this.allColumns = Object.keys(this.data['structure']) as string[];
-    this.columns = Object.keys(this.data['structure']).map((key) => ({
+    this.displayedColumns = this.getNames();
+    this.allColumns = this.getNames();
+    this.columns = this.getNames().map((key) => ({
       header: key,
-      tooltip: this.data['structure'][key],
+      tooltip: (this.data.structure.properties[key] as Property).description,
     }));
     this.dataSource.data = Object.keys(this.data.values)
       .filter((key) => key !== 'structure')
@@ -51,6 +55,12 @@ export class TableComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit(): void {
     this.dataSource.sort = this.sort;
+  }
+
+  private getNames(): string[] {
+    return Object.keys(this.data.structure.properties).filter(
+      (key) => key !== '$schema'
+    );
   }
 
   jumpTo() {

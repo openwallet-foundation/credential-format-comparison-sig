@@ -1,4 +1,5 @@
 {
+  "$schema": "./schema.json",
   "Signing Algorithm": "CL",
   "Implementation Support (e.g. Libraries) / Active Community": "Hyperledger Ursa, https://github.com/privacybydesign/gabi ",
   "IPR Policy": "tbd",
@@ -7,8 +8,8 @@
   "Technology Readiness Level": "some",
   "Recognition by government authorities (NIST, BSI, ...)": "not acknowledged (indendent crypto analysis published)",
   "Performance": "Ursa: up to 7 seconds for a validation and approximately 30 seconds for credential definition generation; IRMA (Yivi): both in less than a second",
-  "Hardware support": "no",
-  "Unlinkability/Uncorrelatability/Blind signatures possible": "yes",
+  "Hardware support": false,
+  "Unlinkability/Uncorrelatability/Blind signatures possible": true,
   "Security strength": "equivalent to RSA2048",
-  "Post-quantum security": "no"
+  "Post-quantum security": false
 }

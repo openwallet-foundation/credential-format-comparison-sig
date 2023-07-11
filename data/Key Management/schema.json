@@ -1,0 +1,44 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "JSON Schema URI"
+    },
+    "Key Management": {
+      "type": "string",
+      "description": "Glossary"
+    },
+    "Implementation Support (e.g. Libraries) / Active Community": {
+      "type": "string",
+      "description": "How complex is the implementation? Which/How many useful software libraries available?"
+    },
+    "IPR Policy": {
+      "type": "string",
+      "description": "What is the policy regarding intellectual properties associated with this technology?"
+    },
+    "Specification": {
+      "type": "string",
+      "description": "Where is the key management specified?"
+    },
+    "Infrastructure for Key Resolution": {
+      "type": ["boolean", "string"],
+      "description": "Is there any infrastructure required to resolve keys and/or validate identifier to key binding"
+    },
+    "Key Rotation": {
+      "type": ["boolean", "string"],
+      "description": "Can the key referred to in a credential be replaced by another key?"
+    },
+    "Key History": {
+      "type": ["string", "boolean"],
+      "description": "Is it possible to retain and obtain the history of keys related to a certain identifier?"
+    },
+    "Party": {
+      "type": "string",
+      "description": "What party may uses this technique?"
+    }
+  },
+  "required": ["$schema", "Key Management"],
+  "title": "KeyManagement"
+}

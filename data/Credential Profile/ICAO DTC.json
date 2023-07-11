@@ -1,4 +1,5 @@
 {
+  "$schema": "./schema.json",
   "Credential Profile is commonly called": "ICAO DTC",
   "Credential Profile Description": "[Profile description goes here]",
   "Credential Format": "ICAO DTC",

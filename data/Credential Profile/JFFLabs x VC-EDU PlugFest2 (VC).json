@@ -1,4 +1,5 @@
 {
+  "$schema": "./schema.json",
   "Credential Profile is commonly called": "JFFLabs x VC-EDU PlugFest2 (VC)",
   "Credential Profile Description": "Interoperability profile used in the PlugFest2",
   "Credential Format": "LDP-VC",

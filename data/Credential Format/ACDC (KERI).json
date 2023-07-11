@@ -1,4 +1,5 @@
 {
+  "$schema": "./schema.json",
   "Credential Format": "ACDC (KERI)",
   "Implementation Support (e.g. Libraries)": "tbd",
   "IPR Policy": "tbd",
@@ -7,7 +8,7 @@
   "Technology Readiness Level": "tbd",
   "Encoding Scheme": "CESR",
   "Rich Schemas/Semantic ": "tbd",
-  "Crypto Agility": "yes",
+  "Crypto Agility": true,
   "Selective Disclosure": "yes*",
   "Predicates": "possible",
   "Compatibility with Signing Algorithms": "tbd",

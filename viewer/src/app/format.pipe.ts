@@ -4,8 +4,8 @@ import { Pipe, PipeTransform } from '@angular/core';
   name: 'format',
 })
 export class FormatPipe implements PipeTransform {
-  transform(text: string, ...args: unknown[]): unknown {
-    if (!text) return text;
+  transform(text: string): unknown {
+    if (!text || typeof text !== 'string') return text;
     // Regular expression pattern to match URLs
     const urlPattern = /(https?:\/\/\S+)/g;
 

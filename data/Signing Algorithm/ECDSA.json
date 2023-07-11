@@ -1,14 +1,15 @@
 {
+  "$schema": "./schema.json",
   "Signing Algorithm": "ECDSA",
   "Implementation Support (e.g. Libraries) / Active Community": "many mature implementations",
   "IPR Policy": "tbd",
   "Specification": "X9.62-2005",
   "Standardization (Body, Process)": "ANSI",
   "Technology Readiness Level": "TRL 9",
-  "Recognition by government authorities (NIST, BSI, ...)": "yes",
+  "Recognition by government authorities (NIST, BSI, ...)": true,
   "Performance": "tbd",
-  "Hardware support": "yes",
-  "Unlinkability/Uncorrelatability/Blind signatures possible": "no",
+  "Hardware support": true,
+  "Unlinkability/Uncorrelatability/Blind signatures possible": false,
   "Security strength": "256 / 384 / 512 bit",
-  "Post-quantum security": "no"
+  "Post-quantum security": false
 }

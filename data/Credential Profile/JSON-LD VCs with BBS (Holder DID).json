@@ -1,4 +1,5 @@
 {
+  "$schema": "./schema.json",
   "Credential Profile is commonly called": "JSON-LD VCs with BBS (Holder DID)",
   "Credential Profile Description": "[Profile description goes here]",
   "Credential Format": "LDP-VC",

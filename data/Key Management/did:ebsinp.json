@@ -1,3 +1,4 @@
 {
+  "$schema": "./schema.json",
   "Key Management": "did:ebsinp"
 }

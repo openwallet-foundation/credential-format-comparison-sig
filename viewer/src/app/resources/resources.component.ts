@@ -1,19 +1,20 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { AppService } from '../app.service';
+import { Resources } from '../resources';
 
 @Component({
   selector: 'app-resources',
   templateUrl: './resources.component.html',
   styleUrls: ['./resources.component.scss'],
 })
-export class ResourcesComponent {
-  tabs?: string[];
-  data: any;
+export class ResourcesComponent implements OnInit {
+  tabs!: string[];
+  data!: Resources;
 
-  constructor(private router: Router) {}
+  constructor(private appService: AppService) {}
 
   async ngOnInit(): Promise<void> {
-    this.data = (window as any)['structure'];
+    this.data = this.appService.getElements();
     this.tabs = Object.keys(this.data).filter(
       (key) => key !== 'Credential Profile'
     );

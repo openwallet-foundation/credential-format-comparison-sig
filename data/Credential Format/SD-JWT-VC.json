@@ -1,4 +1,5 @@
 {
+  "$schema": "./schema.json",
   "Credential Format": "SD-JWT-VC",
   "Implementation Support (e.g. Libraries)": "tbd",
   "IPR Policy": "https://trustee.ietf.org/documents/trust-legal-provisions/",
@@ -6,10 +7,10 @@
   "Standardization (Body, Process)": "IETF (OAuth WG)",
   "Technology Readiness Level": "TRL 4",
   "Encoding Scheme": "JSON",
-  "Rich Schemas/Semantic ": "no",
-  "Crypto Agility": "yes",
+  "Rich Schemas/Semantic ": false,
+  "Crypto Agility": true,
   "Selective Disclosure": "yes (salted hashes)",
-  "Predicates": "no",
+  "Predicates": false,
   "Compatibility with Signing Algorithms": "tbd",
   "Compatibility with Key Management Methods (Issuer)": "tbd"
 }

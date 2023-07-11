@@ -1,4 +1,5 @@
 {
+  "$schema": "./schema.json",
   "Credential Format": "AnonCred",
   "Implementation Support (e.g. Libraries)": "https://github.com/hyperledger/indy-shared-rs\n\nCommunity plans to pull anon creds implementation out of Indy and facilitate multi independent implementations through the specification (see respective cell)",
   "IPR Policy": "tbd",
@@ -6,10 +7,10 @@
   "Standardization (Body, Process)": "Community Spec (draft)",
   "Technology Readiness Level": "TRL 6 or 7",
   "Encoding Scheme": "JSON",
-  "Rich Schemas/Semantic ": "no",
-  "Crypto Agility": "none",
-  "Selective Disclosure": "yes (ZKP)",
-  "Predicates": "yes",
+  "Rich Schemas/Semantic ": false,
+  "Crypto Agility": false,
+  "Selective Disclosure": true,
+  "Predicates": true,
   "Compatibility with Signing Algorithms": "CL",
   "Compatibility with Key Management Methods (Issuer)": "did:indy\nCosmos (https://cheqd.io/blog/anoncreds-indy-pendence)\nHyperledger Fabric (https://github.com/crubn/fabric-aries)\nmemory ledger, file, immudb (https://github.com/findy-network)"
 }
