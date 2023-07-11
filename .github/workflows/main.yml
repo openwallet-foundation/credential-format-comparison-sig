@@ -36,14 +36,8 @@ jobs:
       - name: Validate
         run: cd viewer && npm ci && npm run validate
 
-  publish:
-    # only run on the main branch
-    if: github.ref == 'refs/heads/main'
-    needs: validate
+  build:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -58,6 +52,29 @@ jobs:
 
       - name: Build Angular app
         run: cd viewer && npm run build -- --configuration production
+
+      - name: upload artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: viewer
+          path: viewer/dist
+
+  publish:
+    # only run on the main branch
+    if: github.ref == 'refs/heads/main'
+    needs: [validate, build]
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Download artifact from build job
+        uses: actions/download-artifact@v2
+        with:
+          name: viewer
 
       - name: Setup Pages
         uses: actions/configure-pages@v3
