@@ -17,8 +17,8 @@ fs.readdirSync(folder).forEach((subFolder) => {
     fs.readdirSync(`${folder}/${subFolder}`).filter(file => file !== structureFile).forEach((file) => {        
         const content = JSON.parse(fs.readFileSync(`${folder}/${subFolder}/${file}`));
         if(!validate(content)) {
-            console.log(`File ${file} is invalid`);
-            console.log(validate.errors);
+            console.log(`File "../data/${subFolder}/${file}" is invalid`);
+            console.log(JSON.stringify(validate.errors, null ,2));
             error = true;
         }
     });

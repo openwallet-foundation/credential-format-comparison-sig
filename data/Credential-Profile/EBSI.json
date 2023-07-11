@@ -4,10 +4,10 @@
   "Credential Profile Description": "[Profile description goes here]",
   "Credential Format": "JWT-VC",
   "Signing Algorithm": "ECDSA",
-  "Revocation Algorithm": "StatusList2021",
+  "Revocation Algorithm": "Status List 2021",
   "Key Management (Issuer)": "did:ebsi",
   "Key Management (Holder)": "did:key",
-  "Trust Management": "walt.id",
+  "Trust Management": "EBSI Trust Registries",
   "Formal Specification": "#N/A",
   "IPR Policy": "#N/A",
   "Implementations": "#N/A"

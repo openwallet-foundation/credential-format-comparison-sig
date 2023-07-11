@@ -1,13 +1,13 @@
 {
   "$schema": "./schema.json",
-  "Credential Profile is commonly called": "JWT VC Presentation Profile 2",
+  "Credential Profile is commonly called": "JWT VC Presentation Profile",
   "Credential Profile Description": "https://identity.foundation/jwt-vc-presentation-profile/",
   "Credential Format": "JWT-VC",
   "Signing Algorithm": "ECDSA",
   "Revocation Algorithm": "Status List 2021",
-  "Key Management (Issuer)": "did:web",
+  "Key Management (Issuer)": "did:ion (long form)",
   "Key Management (Holder)": "did:ion (long form)",
-  "Trust Management": "https://identity.foundation/jwt-vc-presentation-profile/",
+  "Trust Management": "tbd",
   "Formal Specification": "tbd",
   "IPR Policy": "MS Authenticator, Ping Wallet, Workday Wallet",
   "Implementations": "#N/A"

@@ -1,10 +1,9 @@
 {
   "$schema": "./schema.json",
-  "Credential Profile is commonly called": "DDIP",
-  "Credential Profile Description": "tbd",
+  "Credential Profile is commonly called": "JFFLabs x VC-EDU PlugFest2 (LDP)",
+  "Credential Profile Description": "Interoperability profile used in the PlugFest2",
   "Credential Format": "JWT-VC",
-  "Signing Algorithm": "ECDSA",
-  "Revocation Algorithm": "StatusList2021",
+  "Signing Algorithm": "EdDSA",
   "Key Management (Issuer)": "did:web",
   "Key Management (Holder)": "did:jwk",
   "Trust Management": "tbd",
