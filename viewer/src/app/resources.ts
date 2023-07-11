@@ -20,7 +20,7 @@ export interface Structure {
   title: string;
 }
 
-class Properties {
+export class Properties {
   [key: string]: any;
 }
 export interface Property {

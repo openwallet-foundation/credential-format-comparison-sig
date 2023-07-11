@@ -14,8 +14,10 @@ export class AppService {
     return this.getElements()[key];
   }
 
-  getStructure(key: keyof Resources): string[] {
-    return Object.keys(this.getElements()[key].structure);
+  getStructure(key: keyof Resources) {
+    const values = this.getElements()[key].structure.properties;
+    delete values['$schema'];
+    return values;
   }
 
   getNames(key: keyof Resources): string[] {

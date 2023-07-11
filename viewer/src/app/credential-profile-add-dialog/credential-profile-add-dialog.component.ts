@@ -8,6 +8,7 @@ import {
   Validators,
 } from '@angular/forms';
 import { AppService } from '../app.service';
+import { Properties } from '../resources';
 
 @Component({
   selector: 'app-credential-profile-add-dialog',
@@ -25,8 +26,10 @@ export class CredentialProfileAddDialogComponent {
   fileName?: string;
   fileContent?: string;
   link?: string;
+  structure: Properties;
 
   constructor(public appService: AppService) {
+    this.structure = this.appService.getStructure('Credential Profile');
     this.form = new FormGroup({
       name: new FormControl('', [
         Validators.required,
@@ -47,8 +50,12 @@ export class CredentialProfileAddDialogComponent {
   }
 
   create() {
-    this.fileName = `${this.form.value.name}.json`;
-    this.fileContent = JSON.stringify(this.form.value, null, 2);
+    this.fileName = `data/Credential Profile/${this.form.value.name}.json`;
+    this.fileContent = JSON.stringify(
+      { $schema: './schema.json', ...this.form.value },
+      null,
+      2
+    );
   }
 
   uniqueNameValidator(names: string[]): ValidatorFn {

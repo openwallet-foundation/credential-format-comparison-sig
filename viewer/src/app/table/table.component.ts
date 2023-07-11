@@ -42,9 +42,9 @@ export class TableComponent implements OnInit, AfterViewInit {
   columns: ColumnHeader[] = [];
 
   async ngOnInit(): Promise<void> {
-    this.displayedColumns = Object.keys(this.data.structure) as string[];
-    this.allColumns = Object.keys(this.data.structure) as string[];
-    this.columns = Object.keys(this.data.structure).map((key) => ({
+    this.displayedColumns = this.getNames();
+    this.allColumns = this.getNames();
+    this.columns = this.getNames().map((key) => ({
       header: key,
       tooltip: (this.data.structure.properties[key] as Property).description,
     }));
@@ -55,6 +55,12 @@ export class TableComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit(): void {
     this.dataSource.sort = this.sort;
+  }
+
+  private getNames(): string[] {
+    return Object.keys(this.data.structure.properties).filter(
+      (key) => key !== '$schema'
+    );
   }
 
   jumpTo() {

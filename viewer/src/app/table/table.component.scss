@@ -11,3 +11,12 @@
 .highlight {
   background-color: #ECECEC;
 }
+
+:host {
+  padding: 20px;
+}
+
+.content {
+  max-width: calc(100% - 40px);
+  margin: auto;
+}

@@ -26,9 +26,11 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatInputModule } from '@angular/material/input';
 import { ClipboardModule } from '@angular/cdk/clipboard';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatChipsModule } from '@angular/material/chips';
 import {
   MAT_FORM_FIELD_DEFAULT_OPTIONS,
   MatFormFieldDefaultOptions,
+  MatFormFieldModule,
 } from '@angular/material/form-field';
 import { FilterComponent } from './filter/filter.component';
 
@@ -65,6 +67,8 @@ const appearance: MatFormFieldDefaultOptions = {
     MatSortModule,
     MatListModule,
     MatCheckboxModule,
+    MatChipsModule,
+    MatFormFieldModule,
     MatAutocompleteModule,
     ClipboardModule,
   ],

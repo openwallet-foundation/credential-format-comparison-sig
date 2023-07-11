@@ -16,6 +16,8 @@ export class AutoSelectComponent implements OnInit {
 
   filteredOptions!: Observable<string[]>;
 
+  @Input() description!: string;
+
   ngOnInit() {
     this.filteredOptions = this.control.valueChanges.pipe(
       startWith(''),
