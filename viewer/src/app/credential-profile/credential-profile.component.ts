@@ -46,12 +46,10 @@ export class CredentialProfileComponent implements OnInit, AfterViewInit {
           .description,
       });
     });
-    // get the keys of the first object in the data array
-    // also add the columns from the objects
-    for (const key in this.appService.getElements()) {
-      if (key === 'Credential Profile') continue;
+    for (const key of this.appService.extraValues) {
       const elements: { value: string; show: string }[] = [];
-      const subValues = this.appService.getFormat(key as keyof Resources)
+
+      const subValues = this.appService.getFormat(this.appService.getKey(key))
         .structure.properties;
       Object.keys(subValues)
         .filter((value) => value !== '$schema')
@@ -78,17 +76,14 @@ export class CredentialProfileComponent implements OnInit, AfterViewInit {
   }
 
   private addData() {
-    const keys = Object.keys(this.appService.getElements()).filter(
-      (value) => value !== 'Credential Profile'
-    );
     this.dataSource.data = Object.values(this.data.values)
       .map((value: any) => {
         Object.keys(value)
-          .filter((value) => keys.includes(value))
+          .filter((value) => this.appService.extraValues.includes(value))
           .forEach((key) => {
-            const subValues = this.appService.getValues(key as keyof Resources)[
-              value[key]
-            ];
+            const subValues = this.appService.getValues(
+              this.appService.getKey(key)
+            )[value[key]];
             if (subValues) {
               Object.keys(subValues)
                 .filter((subKey) => subKey !== '$schema')
@@ -140,9 +135,7 @@ export class CredentialProfileComponent implements OnInit, AfterViewInit {
   }
 
   getLink(values: string[]) {
-    return values.map((value) =>
-      value.startsWith('Key Management') ? 'Key Management' : value
-    );
+    return values.map((value) => this.appService.getKey(value));
   }
 
   addProfile() {
