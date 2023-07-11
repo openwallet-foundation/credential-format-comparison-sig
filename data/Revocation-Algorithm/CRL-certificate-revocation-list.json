@@ -1,6 +1,6 @@
 {
   "$schema": "./schema.json",
-  "Revocation Algorithm": "CRL - cerfticate revocation list",
+  "Revocation Algorithm": "CRL - certificate revocation list",
   "Implementation Support (e.g. Libraries) / Active Community": "tbd",
   "IPR Policy": "tbd",
   "Standardization (Body, Process)": "tbd",
