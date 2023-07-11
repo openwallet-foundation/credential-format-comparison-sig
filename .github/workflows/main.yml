@@ -34,7 +34,7 @@ jobs:
           node-version: 18
 
       - name: Validate
-        run: cd viewer && npm run validate
+        run: cd viewer && npm ci && npm run validate
 
   publish:
     # only run on the main branch
