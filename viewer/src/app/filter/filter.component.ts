@@ -34,11 +34,11 @@ export class FilterComponent implements OnInit {
 
   ngOnInit(): void {
     this.form = new FormGroup({});
-    for (const key in this.appService.getElements()) {
+    for (const key of this.appService.extraValues) {
       const group = new FormGroup({});
       if (key === 'Credential Profile') continue;
       const elements: FilterElement[] = [];
-      const subValues = this.appService.getFormat(key as keyof Resources)
+      const subValues = this.appService.getFormat(this.appService.getKey(key))
         .structure.properties;
       Object.keys(subValues).forEach((value: string) => {
         if (value === '$schema') return;
