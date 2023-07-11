@@ -33,11 +33,8 @@ jobs:
         with:
           node-version: 18
 
-      - name: Validate algorithms
-        run: cd viewer && npm run validate:algorithms
-
-      - name: Validate profiles
-        run: cd viewer && npm run validate:profiles
+      - name: Validate
+        run: cd viewer && npm run validate
 
   publish:
     # only run on the main branch
