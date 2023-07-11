@@ -1,4 +1,5 @@
 {
+  "$schema": "./schema.json",
   "Credential Format": "ICAO DTC",
   "Implementation Support (e.g. Libraries)": "tbd",
   "IPR Policy": "tbd",
@@ -8,7 +9,7 @@
   "Encoding Scheme": "tbd",
   "Rich Schemas/Semantic ": "tbd",
   "Crypto Agility": "tbd",
-  "Selective Disclosure": "yes",
+  "Selective Disclosure": true,
   "Predicates": "tbd",
   "Compatibility with Signing Algorithms": "tbd",
   "Compatibility with Key Management Methods (Issuer)": "tbd"

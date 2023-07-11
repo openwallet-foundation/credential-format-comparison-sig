@@ -1,4 +1,5 @@
 {
+  "$schema": "./schema.json",
   "Credential Format": "JWP",
   "Implementation Support (e.g. Libraries)": "tbd",
   "IPR Policy": "tbd",
@@ -7,9 +8,9 @@
   "Technology Readiness Level": "TRL 3",
   "Encoding Scheme": "JSON ?",
   "Rich Schemas/Semantic ": "tbd",
-  "Crypto Agility": "yes",
+  "Crypto Agility": true,
   "Selective Disclosure": "yes (ZKP, Hash&Salt)",
-  "Predicates": "yes",
+  "Predicates": true,
   "Compatibility with Signing Algorithms": "tbd",
   "Compatibility with Key Management Methods (Issuer)": "tbd"
 }

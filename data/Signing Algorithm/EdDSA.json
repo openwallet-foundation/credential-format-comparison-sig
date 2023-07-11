@@ -1,4 +1,5 @@
 {
+  "$schema": "./schema.json",
   "Signing Algorithm": "EdDSA",
   "Implementation Support (e.g. Libraries) / Active Community": "many mature implementations",
   "IPR Policy": "tbd",
@@ -7,8 +8,8 @@
   "Technology Readiness Level": "tbd",
   "Recognition by government authorities (NIST, BSI, ...)": "widely accepted, though still behind ECDSA",
   "Performance": "high",
-  "Hardware support": "very little",
-  "Unlinkability/Uncorrelatability/Blind signatures possible": "no",
+  "Hardware support": false,
+  "Unlinkability/Uncorrelatability/Blind signatures possible": false,
   "Security strength": "257 / 384 / 512 bit",
-  "Post-quantum security": "no"
+  "Post-quantum security": false
 }

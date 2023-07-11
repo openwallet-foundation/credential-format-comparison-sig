@@ -1,10 +1,11 @@
 {
+  "$schema": "./schema.json",
   "Key Management": "did:ebsi",
   "Implementation Support (e.g. Libraries) / Active Community": "https://ec.europa.eu/digital-building-blocks/wikis/display/EBSIDOC/EBSI+DID+Method",
   "IPR Policy": "tbd",
   "Specification": "tbd",
   "Infrastructure for Key Resolution": "dlt",
-  "Key Rotation": "yes",
+  "Key Rotation": true,
   "Key History": "yes(?)",
   "Party": "issuer"
 }

@@ -19,10 +19,10 @@ export class FilterComponent implements OnInit {
     for (const key in this.appService.getElements()) {
       if (key === 'Credential Profile') continue;
       const elements: { value: string; show: string }[] = [];
-      const subValues = this.appService.getFormat(
-        key as keyof Resources
-      ).structure;
+      const subValues = this.appService.getFormat(key as keyof Resources)
+        .structure.properties;
       Object.keys(subValues).forEach((value: string) => {
+        if (value === '$schema') return;
         elements.push({
           value: `${key} - ${value}`,
           show: value,

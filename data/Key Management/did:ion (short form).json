@@ -1,10 +1,11 @@
 {
+  "$schema": "./schema.json",
   "Key Management": "did:ion (short form)",
   "Implementation Support (e.g. Libraries) / Active Community": "tbd",
   "IPR Policy": "tbd",
   "Specification": "tbd",
-  "Infrastructure for Key Resolution": "yes",
-  "Key Rotation": "yes",
-  "Key History": "yes",
+  "Infrastructure for Key Resolution": true,
+  "Key Rotation": true,
+  "Key History": true,
   "Party": "issuer"
 }

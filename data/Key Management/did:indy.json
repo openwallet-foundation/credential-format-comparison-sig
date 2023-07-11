@@ -1,10 +1,11 @@
 {
+  "$schema": "./schema.json",
   "Key Management": "did:indy",
   "Implementation Support (e.g. Libraries) / Active Community": "https://hyperledger.github.io/indy-did-method/",
   "IPR Policy": "tbd",
   "Specification": "tbd",
   "Infrastructure for Key Resolution": "dlt",
-  "Key Rotation": "yes",
-  "Key History": "yes",
+  "Key Rotation": true,
+  "Key History": true,
   "Party": "issuer"
 }

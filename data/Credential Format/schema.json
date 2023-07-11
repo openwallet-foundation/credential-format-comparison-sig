@@ -1,0 +1,64 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "JSON Schema URI"
+    },
+    "Credential Format": {
+      "type": "string",
+      "description": "Glossary"
+    },
+    "Implementation Support (e.g. Libraries)": {
+      "type": "string",
+      "description": "Which/How many useful software libraries available?"
+    },
+    "IPR Policy": {
+      "type": "string",
+      "description": "What is the policy regarding intellectual properties associated with this technology?"
+    },
+    "Specification": {
+      "type": "string",
+      "description": "Where is the credential format specified?"
+    },
+    "Standardization (Body, Process)": {
+      "type": "string",
+      "description": "Under which Standardization Body and which standards track/status is the credential format standardized?"
+    },
+    "Technology Readiness Level": {
+      "type": "string",
+      "description": "According to NASA-Scheme (http://www.artemisinnovation.com/images/TRL_White_Paper_2004-Edited.pdf)"
+    },
+    "Encoding Scheme": {
+      "type": "string",
+      "description": "Data encoding on the storage layer which applies to this credential format"
+    },
+    "Rich Schemas/Semantic ": {
+      "type": ["boolean", "string"],
+      "description": "Is the credential format able to communicate data or annotations that supports the semantic understanding of the credential data?"
+    },
+    "Crypto Agility": {
+      "type": ["boolean", "string"],
+      "description": "Is the credential format capable to cover different cryptographic algorithms and achieve cryptographic agility, as demanded by regulations?"
+    },
+    "Selective Disclosure": {
+      "type": ["boolean", "string"],
+      "description": "Is the credential format capable of selective disclosure - presenting or revealing a subset of claims/attributes - without relying on architecture and protocol solutions like Just-in-Time issuance or a presentation transformation by a trusted third party?"
+    },
+    "Predicates": {
+      "type": ["boolean", "string"],
+      "description": "Is the credential Format able to produce general-purpose predicates, that means attestations without revealing the data, e.g. age over 18?"
+    },
+    "Compatibility with Signing Algorithms": {
+      "type": "string",
+      "description": "What signing algorithms can the format be combined with?"
+    },
+    "Compatibility with Key Management Methods (Issuer)": {
+      "type": "string",
+      "description": "What key management methods can the credential format be combined with?"
+    }
+  },
+  "required": ["$schema", "Credential Format"],
+  "title": "CredentialFormat"
+}

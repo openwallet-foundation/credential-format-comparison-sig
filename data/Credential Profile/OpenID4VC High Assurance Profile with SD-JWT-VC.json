@@ -1,4 +1,5 @@
 {
+  "$schema": "./schema.json",
   "Credential Profile is commonly called": "OpenID4VC High Assurance Profile with SD-JWT-VC",
   "Credential Profile Description": "SD-JWT-VC",
   "Credential Format": "ECDSA",

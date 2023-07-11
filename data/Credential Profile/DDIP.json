@@ -1,4 +1,5 @@
 {
+  "$schema": "./schema.json",
   "Credential Profile is commonly called": "DDIP",
   "Credential Profile Description": "JWT-VC",
   "Credential Format": "ECDSA",

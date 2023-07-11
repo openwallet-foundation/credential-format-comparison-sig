@@ -4,7 +4,7 @@ import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { CredentialProfileAddDialogComponent } from '../credential-profile-add-dialog/credential-profile-add-dialog.component';
 import { AppService } from '../app.service';
-import { Format, Resources } from '../resources';
+import { Format, Property, Resources } from '../resources';
 import { FilterComponent } from '../filter/filter.component';
 
 class ColumnHeader {
@@ -34,22 +34,27 @@ export class CredentialProfileComponent implements OnInit, AfterViewInit {
   ngOnInit(): void {
     this.dataSource = new MatTableDataSource<any>();
     this.data = this.appService.getFormat('Credential Profile');
-    this.allColumns = this.data.structure.map((value: string) => ({
-      key: value,
-      tooltip: value,
-    }));
+    this.allColumns = [];
+
+    Object.keys(this.data.structure.properties).forEach((value: string) => {
+      if (value === '$schema') return;
+      this.allColumns.push({
+        key: value,
+        tooltip: (this.data.structure.properties[value] as Property)
+          .description,
+      });
+    });
     // get the keys of the first object in the data array
     // also add the columns from the objects
     for (const key in this.appService.getElements()) {
       if (key === 'Credential Profile') continue;
       const elements: { value: string; show: string }[] = [];
-      const subValues = this.appService.getFormat(
-        key as keyof Resources
-      ).structure;
+      const subValues = this.appService.getFormat(key as keyof Resources)
+        .structure.properties;
       Object.keys(subValues).forEach((value: string) => {
         this.allColumns.push({
           key: `${key} - ${value}`,
-          tooltip: subValues[value],
+          tooltip: (subValues[value] as Property).description,
         });
         elements.push({
           value: `${key} - ${value}`,

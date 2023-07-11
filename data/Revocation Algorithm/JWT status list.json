@@ -1,3 +1,4 @@
 {
+  "$schema": "./schema.json",
   "Revocation Algorithm": "JWT status list"
 }

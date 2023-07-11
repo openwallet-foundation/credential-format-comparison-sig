@@ -9,10 +9,10 @@ fs.readdirSync(folder).forEach((subFolder) => {
     if(info.isDirectory()) {
         // create a new json object for each subfolder
         input[subFolder] = {
-          structure: JSON.parse(fs.readFileSync(`${folder}/${subFolder}/${structureFile}.json`, 'utf8')),
+          structure: JSON.parse(fs.readFileSync(`${folder}/${subFolder}/${structureFile}`, 'utf8')),
           values: {}
-        };
-        fs.readdirSync(`${folder}/${subFolder}`).filter(file => file !== `${structureFile}.json`).forEach((file) => {
+        };        
+        fs.readdirSync(`${folder}/${subFolder}`).filter(file => file !== structureFile).forEach((file) => {
             // write the content of the file to the json object
             const content = JSON.parse(fs.readFileSync(`${folder}/${subFolder}/${file}`, 'utf8'));
             input[subFolder].values[file.slice(0, -5)] = content;

@@ -9,7 +9,7 @@ import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { ActivatedRoute } from '@angular/router';
 import { AppService } from '../app.service';
-import { Format, Resources } from '../resources';
+import { Format, Property, Resources } from '../resources';
 
 export interface ColumnHeader {
   header: string;
@@ -46,7 +46,7 @@ export class TableComponent implements OnInit, AfterViewInit {
     this.allColumns = Object.keys(this.data.structure) as string[];
     this.columns = Object.keys(this.data.structure).map((key) => ({
       header: key,
-      tooltip: this.data.structure[key],
+      tooltip: (this.data.structure.properties[key] as Property).description,
     }));
     this.dataSource.data = Object.keys(this.data.values)
       .filter((key) => key !== 'structure')

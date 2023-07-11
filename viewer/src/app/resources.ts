@@ -8,6 +8,22 @@ export interface Resources {
 }
 
 export interface Format {
-  structure: any;
+  structure: Structure;
   values: { [key: string]: Partial<any> };
+}
+
+export interface Structure {
+  type: string;
+  additionalProperties: boolean;
+  properties: Properties;
+  required: string[];
+  title: string;
+}
+
+class Properties {
+  [key: string]: any;
+}
+export interface Property {
+  type: string | string[];
+  description: string;
 }

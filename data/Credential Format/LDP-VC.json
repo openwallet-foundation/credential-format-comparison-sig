@@ -1,4 +1,5 @@
 {
+  "$schema": "./schema.json",
   "Credential Format": "LDP-VC",
   "Implementation Support (e.g. Libraries)": "https://github.com/digitalbazaar/jsonld.js",
   "IPR Policy": "https://www.w3.org/Consortium/Patent-Policy-20200915/#sec-Requirements",
@@ -6,8 +7,8 @@
   "Standardization (Body, Process)": "W3C",
   "Technology Readiness Level": "TBD",
   "Encoding Scheme": "JSON-LD",
-  "Rich Schemas/Semantic ": "yes",
-  "Crypto Agility": "yes",
+  "Rich Schemas/Semantic ": true,
+  "Crypto Agility": true,
   "Selective Disclosure": "yes, with one of the following algs:\nBBS\nCL-Signatures (CL)\nShort Randomizable Signatures (ps-sig)",
   "Predicates": "depending on signature algorithm",
   "Compatibility with Signing Algorithms": "ECDSA, EdDSA, RSA",

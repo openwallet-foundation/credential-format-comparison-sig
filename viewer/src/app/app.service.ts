@@ -6,8 +6,6 @@ import values from '../structure.json';
   providedIn: 'root',
 })
 export class AppService {
-  constructor() {}
-
   getElements(): Resources {
     return values;
   }

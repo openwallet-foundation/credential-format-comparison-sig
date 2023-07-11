@@ -11,9 +11,7 @@
     "test": "ng test",
     "merge": "node tools/merge.mjs",
     "merge:watch": "nodemon --watch ../data --exec \"npm run merge\"",
-    "extract": "node tools/extract.mjs",
-    "validate:algorithms": "node tools/validate-algorithms.mjs",
-    "validate:profiles": "node tools/validate-profiles.mjs",
+    "validate": "node tools/validate.mjs",
     "lint": "ng lint"
   },
   "private": true,
