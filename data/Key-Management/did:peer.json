@@ -7,5 +7,5 @@
   "Infrastructure for Key Resolution": "tbd",
   "Key Rotation": "tbd",
   "Key History": "tbd",
-  "Party": "holder"
+  "Party": ["holder"]
 }

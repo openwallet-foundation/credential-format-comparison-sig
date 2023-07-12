@@ -35,7 +35,10 @@
       "description": "Is it possible to retain and obtain the history of keys related to a certain identifier?"
     },
     "Party": {
-      "type": "string",
+      "type": "array",
+      "items": {
+        "enum": ["issuer", "holder"]
+      },
       "description": "What party may uses this technique?"
     }
   },
