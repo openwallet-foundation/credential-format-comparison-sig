@@ -11,6 +11,7 @@
     "test": "ng test",
     "merge": "node tools/merge.mjs",
     "validate": "node tools/validate.mjs",
+    "validate:watch": "nodemon --watch ../data tools/validate.mjs",
     "schema": "node tools/schema.mjs",
     "lint": "ng lint"
   },
@@ -53,6 +54,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "nodemon": "^3.0.1",
     "postcss": "^8.4.24",
     "typescript": "~5.1.3"
   }
