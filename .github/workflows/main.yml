@@ -57,7 +57,7 @@ jobs:
         run: cd viewer && npm run build -- --configuration production
 
       - name: upload artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: viewer
           path: viewer/dist
@@ -72,7 +72,7 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Download artifact from build job
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: viewer
 
