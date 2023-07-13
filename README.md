@@ -23,4 +23,4 @@ If you are interested in participating, please join the [OpenWallet Foundation D
 
 Open this repository in Gitpod without the requirement to install anything
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/https://github.com/openwallet-foundation/credential-format-comparison-sig)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/openwallet-foundation/credential-format-comparison-sig)
