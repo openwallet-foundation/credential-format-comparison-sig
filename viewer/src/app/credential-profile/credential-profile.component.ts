@@ -130,6 +130,7 @@ export class CredentialProfileComponent implements OnInit, AfterViewInit {
   }
 
   hasLink(value: string, header: string) {
+    if (!value || typeof value !== 'string') return;
     if (header.startsWith('Key Management')) header = 'Key Management';
     return this.appService.getFormat(header as keyof Resources)?.values[value];
   }

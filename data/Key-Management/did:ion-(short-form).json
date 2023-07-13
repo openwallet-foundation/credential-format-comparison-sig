@@ -7,5 +7,5 @@
   "Infrastructure for Key Resolution": true,
   "Key Rotation": true,
   "Key History": true,
-  "Party": "issuer"
+  "Party": ["issuer"]
 }

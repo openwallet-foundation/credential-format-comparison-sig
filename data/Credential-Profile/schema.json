@@ -55,7 +55,7 @@
       "type": "string",
       "description": "The format of the revocation algorithm. If possible this should be a link to a specification of the format.",
       "enum": [
-        "BBF18- cryptographic accumulator based on RSA",
+        "BBF18-cryptographic accumulator based on RSA",
         "CRL - certificate revocation list",
         "CWT status list",
         "Indy Revocation",
