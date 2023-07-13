@@ -7,5 +7,5 @@
   "Infrastructure for Key Resolution": "none",
   "Key Rotation": false,
   "Key History": "conditional (with OpenID Connect Federation Key History)",
-  "Party": "holder, issuer"
+  "Party": ["holder", "issuer"]
 }
