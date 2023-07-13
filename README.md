@@ -18,3 +18,9 @@ The pre defined [Google sheet](./viewer/tools/Credential%20Comparison%20Matrix.x
 This SIG is an open group. Anyone in the OpenWallet Foundation community can join and participate. There is no formal sign up process. Just show up and participate.
 
 If you are interested in participating, please join the [OpenWallet Foundation Discord](https://discord.com/invite/yjvGPd5FCU) and participate in the discussion in the [#credential-format-comparison-sig](https://discord.com/channels/1022962884864643214/1113500130419671080) channel.
+
+# Gitpod
+
+Open this repository in Gitpod without the requirement to install anything
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/openwallet-foundation/credential-format-comparison-sig)

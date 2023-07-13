@@ -1,0 +1,10 @@
+additionalRepositories:
+  - url: https://github.com/openwallet-foundation/credential-format-comparison-sig
+
+tasks:
+  - name: viewer
+    init: |
+      cd viewer
+      echo npm ci
+    command: |
+      echo npm start
