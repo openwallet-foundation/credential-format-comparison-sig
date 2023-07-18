@@ -1,7 +1,7 @@
 {
   "$schema": "./schema.json",
   "Credential Format": "MDOC",
-  "Implementation Support (e.g. Libraries)": "Apple, Idemia, Thales, HID global, GET Group, Google, Panasonic",
+  "Implementation Support (e.g. Libraries)": "Apple, Idemia, Thales, HID global, GET Group, Google, Panasonic, Spruce",
   "IPR Policy": "tbd",
   "Specification": "ISO 18013-5",
   "Standardization (Body, Process)": "ISO",
@@ -9,8 +9,8 @@
   "Encoding Scheme": "CBOR",
   "Rich Schemas/Semantic ": false,
   "Crypto Agility": true,
-  "Selective Disclosure": "yes (salted hashes)",
+  "Selective Disclosure": true,
   "Predicates": false,
-  "Compatibility with Signing Algorithms": "tbd",
-  "Compatibility with Key Management Methods (Issuer)": "tbd"
+  "Compatibility with Signing Algorithms": "ECDSA, EdDSA, RSA",
+  "Compatibility with Key Management Methods (Issuer)": "pub key in X.509 cert"
 }
