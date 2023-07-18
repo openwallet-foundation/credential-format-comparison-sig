@@ -1,14 +1,14 @@
 {
   "$schema": "./schema.json",
   "Credential Profile is commonly called": "OpenID4VC High Assurance Profile with SD-JWT-VC",
-  "Credential Profile Description": "SD-JWT-VC",
-  "Credential Format": "tbd",
+  "Credential Profile Description": "Combination of OpenID4VC with SD-JWT VCs",
+  "Credential Format": "SD-JWT-VC",
   "Signing Algorithm": "ECDSA",
   "Revocation Algorithm": "JWT status list",
   "Key Management (Issuer)": ".well-known/jwt-issuer",
   "Key Management (Holder)": "raw public keys (jwk)",
-  "Trust Management": "tbd",
-  "Formal Specification": "tbd",
+  "Trust Management": "open",
+  "Formal Specification": "https://vcstuff.github.io/oid4vc-haip-sd-jwt-vc/draft-oid4vc-haip-sd-jwt-vc.html",
   "IPR Policy": "tbd",
   "Implementations": "https://trustee.ietf.org/documents/trust-legal-provisions/"
 }
