@@ -1,8 +1,8 @@
 {
   "$schema": "./schema.json",
-  "Credential Profile is commonly called": "OpenID4VC High Assurance Profile with SD-JWT-VC",
-  "Credential Profile Description": "SD-JWT-VC",
-  "Credential Format": "tbd",
+  "Credential Profile is commonly called": "OpenID4VC High Assurance Interoperability Profile with SD-JWT-VC",
+  "Credential Profile Description": "Combination of OpenID4VC with SD-JWT VCs",
+  "Credential Format": "SD-JWT-VC",
   "Signing Algorithm": "ECDSA",
   "Revocation Algorithm": "JWT status list",
   "Key Management (Issuer)": ".well-known/jwt-issuer",
