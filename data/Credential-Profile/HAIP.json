@@ -1,7 +1,7 @@
 {
   "$schema": "./schema.json",
-  "Credential Profile is commonly called": "OpenID4VC High Assurance Interoperability Profile with SD-JWT-VC",
-  "Credential Profile Description": "Combination of OpenID4VC with SD-JWT VCs",
+  "Credential Profile is commonly called": "HAIP",
+  "Credential Profile Description": "OpenID4VC High Assurance Interoperability Profile with SD-JWT-VC",
   "Credential Format": "SD-JWT-VC",
   "Signing Algorithm": "ECDSA",
   "Revocation Algorithm": "JWT status list",
