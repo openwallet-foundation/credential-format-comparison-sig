@@ -1,9 +1,9 @@
 {
   "$schema": "./schema.json",
   "Trust Management": "TRAIN",
-  "Implementation Support (e.g. Libraries) / Active Community": "tbd",
-  "IPR Policy": "tbd",
-  "Standardization (Body, Process)": "EU Train Project (https://eu-train-project.eu/)",
-  "Specification": "tbd",
-  "Description": "Uses DNS records and ETSi Trusted Lists for trust management"
+  "Implementation Support (e.g. Libraries) / Active Community": "https://gitlab.cc-asp.fraunhofer.de/train",
+  "IPR Policy": "Apache 2.0",
+  "Standardization (Body, Process)": "none",
+  "Specification": "none",
+  "Description": "Uses DNS records and ETSI Trusted Lists for trust management, developed in the EU Project NGI ESSIF-Lab, https://train.trust-scheme.de/info/"
 }
