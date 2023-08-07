@@ -1,8 +1,8 @@
 {
   "$schema": "./schema.json",
-  "Credential Profile is commonly called": "Dutch Decentralised Identity Profile",
+  "Credential Profile is commonly called": "Dutch Decentralized Identity Profile",
   "Formal Specification": "https://www.dutchblockchaincoalition.org/bouwstenen/self-sovereign-identity-ssi/ddip",
-  "Credential Profile Description": "Dutch decentralized ",
+  "Credential Profile Description": "Dutch Decentralized Identity Profile",
   "Credential Format": "JWT-VC",
   "Signing Algorithm": "ECDSA",
   "Revocation Algorithm": "Status List 2021",
