@@ -1,7 +1,6 @@
 {
   "$schema": "./schema.json",
   "Credential Format": "SD-JWT-VC",
-  "Implementation Support (e.g. Libraries)": "tbd",
   "IPR Policy": "https://trustee.ietf.org/documents/trust-legal-provisions/",
   "Specification": "https://datatracker.ietf.org/doc/html/draft-terbu-oauth-sd-jwt-vc",
   "Standardization (Body, Process)": "IETF (OAuth WG)",

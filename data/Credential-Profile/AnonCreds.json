@@ -8,7 +8,5 @@
   "Key Management (Issuer)": "did:indy",
   "Key Management (Holder)": "link secrets",
   "Trust Management": "Verifier knows Issuers",
-  "Formal Specification": "tbd",
-  "IPR Policy": "tbd",
   "Implementations": "Hyperledger Indy + Aries, Esatus, iGrant Data Wallet"
 }

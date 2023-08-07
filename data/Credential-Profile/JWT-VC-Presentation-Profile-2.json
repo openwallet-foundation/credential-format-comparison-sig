@@ -7,8 +7,6 @@
   "Revocation Algorithm": "Status List 2021",
   "Key Management (Issuer)": "did:web",
   "Key Management (Holder)": "did:ion (long form)",
-  "Trust Management": "tbd",
-  "Formal Specification": "tbd",
   "IPR Policy": "MS Authenticator, Ping Wallet, Workday Wallet",
   "Implementations": "#N/A"
 }

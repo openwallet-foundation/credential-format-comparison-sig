@@ -7,8 +7,5 @@
   "Revocation Algorithm": "JWT status list",
   "Key Management (Issuer)": ".well-known/jwt-issuer",
   "Key Management (Holder)": "raw public keys (jwk)",
-  "Trust Management": "tbd",
-  "Formal Specification": "tbd",
-  "IPR Policy": "tbd",
   "Implementations": "https://trustee.ietf.org/documents/trust-legal-provisions/"
 }

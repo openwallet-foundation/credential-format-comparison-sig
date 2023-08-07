@@ -2,15 +2,10 @@
   "$schema": "./schema.json",
   "Revocation Algorithm": "Status List 2021",
   "Implementation Support (e.g. Libraries) / Active Community": "https://github.com/transmute-industries/verifiable-data/tree/main/packages/vc-status-rl-2020",
-  "IPR Policy": "tbd",
   "Specification": "https://w3c-ccg.github.io/vc-status-list-2021/",
   "Standardization (Body, Process)": "W3C",
-  "Technology Readiness Level": "tbd",
   "Recognition by government authorities (NIST, BSI, ...)": false,
   "Category": "Bitstring",
-  "Performance": "tbd",
   "Observability": true,
-  "Traceability": "potentially possible with malicious ",
-  "Scalability": "tbd",
-  "Offline Friendliness": "tbd"
+  "Traceability": "potentially possible with malicious "
 }

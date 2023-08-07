@@ -6,8 +6,6 @@
   "Signing Algorithm": "EdDSA",
   "Key Management (Issuer)": "did:web",
   "Key Management (Holder)": "did:jwk",
-  "Trust Management": "tbd",
-  "Formal Specification": "tbd",
   "IPR Policy": "#N/A",
   "Implementations": "#N/A"
 }

@@ -7,8 +7,5 @@
   "Revocation Algorithm": "CRL - certificate revocation list",
   "Key Management (Issuer)": "raw public keys (none jwk)",
   "Key Management (Holder)": "raw public keys (none jwk)",
-  "Trust Management": "X.509 certificates",
-  "Formal Specification": "tbd",
-  "IPR Policy": "tbd",
-  "Implementations": "tbd"
+  "Trust Management": "X.509 certificates"
 }

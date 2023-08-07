@@ -2,15 +2,9 @@
   "$schema": "./schema.json",
   "Revocation Algorithm": "Indy Revocation",
   "Implementation Support (e.g. Libraries) / Active Community": "Indy SDK",
-  "IPR Policy": "tbd",
-  "Specification": "tbd",
   "Standardization (Body, Process)": "AnonCreds",
-  "Technology Readiness Level": "tbd",
   "Recognition by government authorities (NIST, BSI, ...)": false,
   "Category": "Accumulator",
-  "Performance": "tbd",
   "Observability": false,
-  "Traceability": "tbd",
-  "Scalability": "limitations by accumulator size",
-  "Offline Friendliness": "tbd"
+  "Scalability": "limitations by accumulator size"
 }

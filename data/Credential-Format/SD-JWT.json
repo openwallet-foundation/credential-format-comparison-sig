@@ -10,7 +10,5 @@
   "Rich Schemas/Semantic ": false,
   "Crypto Agility": true,
   "Selective Disclosure": "yes (salted hashes)",
-  "Predicates": false,
-  "Compatibility with Signing Algorithms": "tbd",
-  "Compatibility with Key Management Methods (Issuer)": "tbd"
+  "Predicates": false
 }

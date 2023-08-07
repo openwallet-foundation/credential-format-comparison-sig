@@ -10,6 +10,5 @@
   "Performance": "high",
   "Hardware support": false,
   "Unlinkability/Uncorrelatability/Blind signatures possible": false,
-  "Security strength": "tbd",
   "Post-quantum security": false
 }

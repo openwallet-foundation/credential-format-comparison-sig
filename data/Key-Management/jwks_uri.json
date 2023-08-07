@@ -1,9 +1,6 @@
 {
   "$schema": "./schema.json",
   "Key Management": "jwks_uri",
-  "Implementation Support (e.g. Libraries) / Active Community": "tbd",
-  "IPR Policy": "tbd",
-  "Specification": "tbd",
   "Infrastructure for Key Resolution": "web server",
   "Key Rotation": true,
   "Key History": "conditional (with OpenID Connect Federation Key History)",
