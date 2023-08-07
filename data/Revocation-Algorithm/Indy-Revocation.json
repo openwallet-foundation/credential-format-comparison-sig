@@ -6,5 +6,8 @@
   "Recognition by government authorities (NIST, BSI, ...)": false,
   "Category": "Accumulator",
   "Observability": false,
-  "Scalability": "limitations by accumulator size"
+  "Scalability": {
+    "Value": false,
+    "Description": "limitations by accumulator size"
+  }
 }

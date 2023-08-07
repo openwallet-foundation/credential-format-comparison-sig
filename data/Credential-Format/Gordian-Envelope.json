@@ -5,10 +5,13 @@
   "IPR Policy": "SPDI:BSD-2-Clause-Patent https://spdx.org/licenses/BSD-2-Clause-Patent.html",
   "Specification": "https://github.com/BlockchainCommons/BCSwiftSecureComponents (this will be moved elsewhere soon).",
   "Standardization (Body, Process)": "IETF (for CBOR registration) W3C (for did method and alternative DID document and credentials data format)",
-  "Technology Readiness Level": "TRL 3 (did:keri - style event receipts)",
+  "Technology Readiness Level": 3,
   "Encoding Scheme": "CBOR",
-  "Rich Schemas/Semantic ": "optional yes",
+  "Rich Schemas/Semantic ": false,
   "Crypto Agility": true,
-  "Selective Disclosure": "yes (hash-inclusion proof, optional salts)",
+  "Selective Disclosure": {
+    "Value": true,
+    "Description": "hash-inclusion proof, optional salts"
+  },
   "Predicates": false
 }

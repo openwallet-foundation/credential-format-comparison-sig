@@ -5,7 +5,5 @@
   "Credential Format": "JWT-VC",
   "Signing Algorithm": "EdDSA",
   "Key Management (Issuer)": "did:web",
-  "Key Management (Holder)": "did:jwk",
-  "IPR Policy": "#N/A",
-  "Implementations": "#N/A"
+  "Key Management (Holder)": "did:jwk"
 }

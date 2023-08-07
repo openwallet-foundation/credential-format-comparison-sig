@@ -7,8 +7,5 @@
   "Revocation Algorithm": "Status List 2021",
   "Key Management (Issuer)": "did:ebsi",
   "Key Management (Holder)": "did:key",
-  "Trust Management": "EBSI Trust Registries",
-  "Formal Specification": "#N/A",
-  "IPR Policy": "#N/A",
-  "Implementations": "#N/A"
+  "Trust Management": "EBSI Trust Registries"
 }

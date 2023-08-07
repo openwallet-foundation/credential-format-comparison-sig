@@ -1,11 +1,11 @@
 {
   "$schema": "./schema.json",
-  "Credential Profile is commonly called": "DDIP",
+  "Credential Profile is commonly called": "Dutch Decentralised Identity Profile",
+  "Formal Specification": "https://www.dutchblockchaincoalition.org/bouwstenen/self-sovereign-identity-ssi/ddip",
+  "Credential Profile Description": "Dutch decentralized ",
   "Credential Format": "JWT-VC",
   "Signing Algorithm": "ECDSA",
   "Revocation Algorithm": "Status List 2021",
   "Key Management (Issuer)": "did:web",
-  "Key Management (Holder)": "did:jwk",
-  "IPR Policy": "#N/A",
-  "Implementations": "#N/A"
+  "Key Management (Holder)": "did:jwk"
 }

@@ -5,8 +5,11 @@
   "IPR Policy": "patents expired",
   "Specification": "different curves-different specs",
   "Standardization (Body, Process)": "different curves-different standards",
-  "Technology Readiness Level": "TRL 9",
-  "Recognition by government authorities (NIST, BSI, ...)": "NIST with Curve25519",
+  "Technology Readiness Level": 9,
+  "Recognition by government authorities (NIST, BSI, ...)": {
+    "Value": true,
+    "Description": "NIST with Curve25519"
+  },
   "Performance": "high",
   "Hardware support": false,
   "Unlinkability/Uncorrelatability/Blind signatures possible": false,

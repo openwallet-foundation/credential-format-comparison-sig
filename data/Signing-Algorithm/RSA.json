@@ -2,8 +2,11 @@
   "$schema": "./schema.json",
   "Signing Algorithm": "RSA",
   "Implementation Support (e.g. Libraries) / Active Community": "many mature implementations",
-  "Technology Readiness Level": "TRL 9",
-  "Recognition by government authorities (NIST, BSI, ...)": "yes, but support is fading",
+  "Technology Readiness Level": 9,
+  "Recognition by government authorities (NIST, BSI, ...)": {
+    "Value": true,
+    "Description": "but support is fading"
+  },
   "Hardware support": true,
   "Unlinkability/Uncorrelatability/Blind signatures possible": false,
   "Security strength": "2048 / 3072 / 4096 (scales bad)",

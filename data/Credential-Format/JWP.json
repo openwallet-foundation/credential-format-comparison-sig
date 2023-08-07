@@ -3,9 +3,12 @@
   "Credential Format": "JWP",
   "Specification": "https://github.com/json-web-proofs/json-web-proofs",
   "Standardization (Body, Process)": "DIF",
-  "Technology Readiness Level": "TRL 3",
+  "Technology Readiness Level": 3,
   "Encoding Scheme": "JSON ?",
   "Crypto Agility": true,
-  "Selective Disclosure": "yes (ZKP, Hash&Salt)",
+  "Selective Disclosure": {
+    "Value": true,
+    "Description": "ZKP, Hash&Salt"
+  },
   "Predicates": true
 }

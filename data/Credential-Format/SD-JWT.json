@@ -5,10 +5,13 @@
   "IPR Policy": "https://trustee.ietf.org/documents/trust-legal-provisions/",
   "Specification": "https://datatracker.ietf.org/doc/draft-ietf-oauth-selective-disclosure-jwt/",
   "Standardization (Body, Process)": "IETF (OAuth WG)",
-  "Technology Readiness Level": "TRL 6",
+  "Technology Readiness Level": 6,
   "Encoding Scheme": "JSON, JSON-LD",
   "Rich Schemas/Semantic ": false,
   "Crypto Agility": true,
-  "Selective Disclosure": "yes (salted hashes)",
+  "Selective Disclosure": {
+    "Value": true,
+    "Description": "salted hashes"
+  },
   "Predicates": false
 }

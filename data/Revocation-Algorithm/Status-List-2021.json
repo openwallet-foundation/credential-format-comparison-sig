@@ -7,5 +7,8 @@
   "Recognition by government authorities (NIST, BSI, ...)": false,
   "Category": "Bitstring",
   "Observability": true,
-  "Traceability": "potentially possible with malicious "
+  "Traceability": {
+    "Value": true,
+    "Description": "potentially possible with malicious issuer by providing a revocation list with a single entry"
+  }
 }

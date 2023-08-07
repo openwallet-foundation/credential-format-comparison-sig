@@ -149,13 +149,9 @@
     "Credential Format",
     "Credential Profile Description",
     "Credential Profile is commonly called",
-    "Formal Specification",
-    "IPR Policy",
-    "Implementations",
     "Key Management (Holder)",
     "Key Management (Issuer)",
-    "Signing Algorithm",
-    "Trust Management"
+    "Signing Algorithm"
   ],
   "title": "CredentialProfile"
 }

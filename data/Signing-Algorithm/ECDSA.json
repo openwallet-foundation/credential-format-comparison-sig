@@ -4,7 +4,7 @@
   "Implementation Support (e.g. Libraries) / Active Community": "many mature implementations",
   "Specification": "X9.62-2005",
   "Standardization (Body, Process)": "ANSI",
-  "Technology Readiness Level": "TRL 9",
+  "Technology Readiness Level": 9,
   "Recognition by government authorities (NIST, BSI, ...)": true,
   "Hardware support": true,
   "Unlinkability/Uncorrelatability/Blind signatures possible": false,

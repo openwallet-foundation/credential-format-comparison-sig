@@ -5,6 +5,6 @@
   "Standardization (Body, Process)": "IETF (intention to go to Blockchain WG)",
   "Encoding Scheme": "CESR",
   "Crypto Agility": true,
-  "Selective Disclosure": "yes*",
-  "Predicates": "possible"
+  "Selective Disclosure": true,
+  "Predicates": false
 }
