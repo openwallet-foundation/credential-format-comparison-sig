@@ -7,7 +7,7 @@ const file = JSON.parse(fs.readFileSync(schemaPath, 'utf8'));
 Object.keys(file.properties).forEach((key) => {    
     const enums = getEnum(key.startsWith('Key Management') ? 'Key Management' : key);
     if(enums) {
-        file.properties[key].enum = [...enums, 'tbd'];        
+        file.properties[key].enum = [...enums];        
     }
 });
 fs.writeFileSync(schemaPath, JSON.stringify(file, null, 2));
