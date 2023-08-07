@@ -26,13 +26,12 @@
         "ICAO DTC",
         "Idemix attribute-based credential",
         "JWP",
-        "JWT",
+        "JWT-VC",
         "LDP-VC",
         "MDOC",
         "SD-JWT-VC",
         "SD-JWT",
         "VC (1.1)",
-        "JWT",
         "x509"
       ]
     },

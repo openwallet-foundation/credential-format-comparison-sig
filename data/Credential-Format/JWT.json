@@ -1,6 +1,6 @@
 {
   "$schema": "./schema.json",
-  "Credential Format": "JWT",
+  "Credential Format": "JWT-VC",
   "Implementation Support (e.g. Libraries)": "https://jwt.io/libraries",
   "IPR Policy": "https://trustee.ietf.org/documents/trust-legal-provisions/",
   "Specification": "https://datatracker.ietf.org/doc/rfc7519/",
