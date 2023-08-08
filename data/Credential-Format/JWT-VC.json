@@ -1,0 +1,8 @@
+{
+  "$schema": "./schema.json",
+  "Credential Format": "JWT-VC",
+  "Rich Schemas/Semantic ": false,
+  "Crypto Agility": true,
+  "Selective Disclosure": false,
+  "Predicates": false
+}
