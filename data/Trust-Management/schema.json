@@ -1,6 +1,24 @@
 {
   "type": "object",
   "additionalProperties": false,
+  "definitions": {
+    "Filter": {
+      "type": ["object", "boolean"],
+      "additionalProperties": false,
+      "properties": {
+        "Value": {
+          "type": "boolean",
+          "description": "Allows to filter this property"
+        },
+        "Description": {
+          "type": "string",
+          "description": "Give more information about this property"
+        }
+      },
+      "required": ["Value"],
+      "title": "Filter"
+    }
+  },
   "properties": {
     "$schema": {
       "type": "string",

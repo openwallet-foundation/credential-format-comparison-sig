@@ -2,12 +2,12 @@
   "$schema": "./schema.json",
   "Signing Algorithm": "BBS+ with public key binding",
   "Implementation Support (e.g. Libraries) / Active Community": "https://github.com/mattrglobal/bbs-signatures",
-  "IPR Policy": "tbd",
   "Specification": "https://datatracker.ietf.org/doc/draft-looker-cfrg-bbs-signatures/",
   "Standardization (Body, Process)": "DIF (intention to transfer to IRTF CFRG)",
-  "Technology Readiness Level": "tbd",
-  "Recognition by government authorities (NIST, BSI, ...)": "not acknowledged",
-  "Performance": "tbd",
+  "Recognition by government authorities (NIST, BSI, ...)": {
+    "Value": false,
+    "Description": "not acknowledged"
+  },
   "Hardware support": false,
   "Unlinkability/Uncorrelatability/Blind signatures possible": false,
   "Security strength": "381 bit curve",

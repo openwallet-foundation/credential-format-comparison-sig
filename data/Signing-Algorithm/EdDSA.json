@@ -2,11 +2,10 @@
   "$schema": "./schema.json",
   "Signing Algorithm": "EdDSA",
   "Implementation Support (e.g. Libraries) / Active Community": "many mature implementations",
-  "IPR Policy": "tbd",
-  "Specification": "tbd",
-  "Standardization (Body, Process)": "tbd",
-  "Technology Readiness Level": "tbd",
-  "Recognition by government authorities (NIST, BSI, ...)": "widely accepted, though still behind ECDSA",
+  "Recognition by government authorities (NIST, BSI, ...)": {
+    "Value": true,
+    "Description": "widely accepted, though still behind ECDSA"
+  },
   "Performance": "high",
   "Hardware support": false,
   "Unlinkability/Uncorrelatability/Blind signatures possible": false,

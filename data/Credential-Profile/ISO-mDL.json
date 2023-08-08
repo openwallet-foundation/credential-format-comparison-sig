@@ -9,6 +9,5 @@
   "Key Management (Holder)": "cose key",
   "Trust Management": "Verified issuer certificate authority list (VICAL)",
   "Formal Specification": "ISO 18013-5",
-  "IPR Policy": "tbd",
   "Implementations": "Apple Wallet, UL, IDEMA"
 }

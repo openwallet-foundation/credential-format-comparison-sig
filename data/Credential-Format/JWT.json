@@ -5,7 +5,7 @@
   "IPR Policy": "https://trustee.ietf.org/documents/trust-legal-provisions/",
   "Specification": "https://datatracker.ietf.org/doc/rfc7519/",
   "Standardization (Body, Process)": "IETF",
-  "Technology Readiness Level": "TRL 9",
+  "Technology Readiness Level": 9,
   "Encoding Scheme": "compact and JSON serialization",
   "Rich Schemas/Semantic ": false,
   "Crypto Agility": true,

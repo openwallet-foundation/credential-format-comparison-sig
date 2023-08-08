@@ -1,15 +1,7 @@
 {
   "$schema": "./schema.json",
   "Revocation Algorithm": "CRL - certificate revocation list",
-  "Implementation Support (e.g. Libraries) / Active Community": "tbd",
-  "IPR Policy": "tbd",
-  "Standardization (Body, Process)": "tbd",
-  "Technology Readiness Level": "tbd",
   "Recognition by government authorities (NIST, BSI, ...)": true,
   "Category": "Deny-List",
-  "Performance": "tbd",
-  "Observability": true,
-  "Traceability": "tbd",
-  "Scalability": "tbd",
-  "Offline Friendliness": "tbd"
+  "Observability": true
 }

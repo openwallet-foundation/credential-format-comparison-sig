@@ -1,6 +1,24 @@
 {
   "type": "object",
   "additionalProperties": false,
+  "definitions": {
+    "Filter": {
+      "type": ["object", "boolean"],
+      "additionalProperties": false,
+      "properties": {
+        "Value": {
+          "type": "boolean",
+          "description": "Allows to filter this property"
+        },
+        "Description": {
+          "type": "string",
+          "description": "Give more information about this property"
+        }
+      },
+      "required": ["Value"],
+      "title": "Filter"
+    }
+  },
   "properties": {
     "$schema": {
       "type": "string",
@@ -27,12 +45,18 @@
       "description": "Under which Standardization Body and which standards track/status is the revocation algorithm standardized"
     },
     "Technology Readiness Level": {
-      "type": "string",
+      "type": "number",
       "description": "According to NASA-Scheme (http://www.artemisinnovation.com/images/TRL_White_Paper_2004-Edited.pdf)"
     },
     "Recognition by government authorities (NIST, BSI, ...)": {
-      "type": ["boolean", "string"],
-      "description": "Is the revocation algorithm recognized in regulatory frameworks of leading government bodies?"
+      "allOf": [
+        {
+          "$ref": "#/definitions/Filter"
+        },
+        {
+          "description": "Is the revocation algorithm recognized in regulatory frameworks of leading government bodies?"
+        }
+      ]
     },
     "Category": {
       "type": "string",
@@ -43,20 +67,44 @@
       "description": "How performant is the revocation mechanism (for issuer, holder and verifier)?"
     },
     "Observability": {
-      "type": ["string", "boolean"],
-      "description": "Does the Verifier have the possibility to observe the revocation status beyond the presentation?"
+      "allOf": [
+        {
+          "$ref": "#/definitions/Filter"
+        },
+        {
+          "description": "Does the Verifier have the possibility to observe the revocation status beyond the presentation?"
+        }
+      ]
     },
     "Traceability": {
-      "type": ["string", "boolean"],
-      "description": "Does the issuer have possibilities to trace the usage of his issued credentials through the revocation mechanism?"
+      "allOf": [
+        {
+          "$ref": "#/definitions/Filter"
+        },
+        {
+          "description": "Does the issuer have possibilities to trace the usage of his issued credentials through the revocation mechanism?"
+        }
+      ]
     },
     "Scalability": {
-      "type": ["string", "boolean"],
-      "description": "At what scale has the algorithm/technology been demonstrated to work? Are there any known issues?"
+      "allOf": [
+        {
+          "$ref": "#/definitions/Filter"
+        },
+        {
+          "description": "At what scale has the algorithm/technology been demonstrated to work? Are there any known issues?"
+        }
+      ]
     },
     "Offline Friendliness": {
-      "type": ["string", "boolean"],
-      "description": "Does the revocation mechanism support an authentication if the holder is offline?"
+      "allOf": [
+        {
+          "$ref": "#/definitions/Filter"
+        },
+        {
+          "description": "Does the revocation mechanism support an authentication if the holder is offline?"
+        }
+      ]
     }
   },
   "required": ["$schema", "Revocation Algorithm"],

@@ -1,16 +1,14 @@
 {
   "$schema": "./schema.json",
   "Credential Format": "JWP",
-  "Implementation Support (e.g. Libraries)": "tbd",
-  "IPR Policy": "tbd",
   "Specification": "https://github.com/json-web-proofs/json-web-proofs",
   "Standardization (Body, Process)": "DIF",
-  "Technology Readiness Level": "TRL 3",
+  "Technology Readiness Level": 3,
   "Encoding Scheme": "JSON ?",
-  "Rich Schemas/Semantic ": "tbd",
   "Crypto Agility": true,
-  "Selective Disclosure": "yes (ZKP, Hash&Salt)",
-  "Predicates": true,
-  "Compatibility with Signing Algorithms": "tbd",
-  "Compatibility with Key Management Methods (Issuer)": "tbd"
+  "Selective Disclosure": {
+    "Value": true,
+    "Description": "ZKP, Hash&Salt"
+  },
+  "Predicates": true
 }

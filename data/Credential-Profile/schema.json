@@ -26,15 +26,14 @@
         "ICAO DTC",
         "Idemix attribute-based credential",
         "JWP",
+        "JWT-VC",
         "JWT",
         "LDP-VC",
         "MDOC",
         "SD-JWT-VC",
         "SD-JWT",
         "VC (1.1)",
-        "x509",
-        "tbd",
-        "JWT-VC"
+        "x509"
       ]
     },
     "Signing Algorithm": {
@@ -47,8 +46,7 @@
         "ECDSA",
         "EdDSA",
         "RSA",
-        "Schnorr",
-        "tbd"
+        "Schnorr"
       ]
     },
     "Revocation Algorithm": {
@@ -67,8 +65,7 @@
         "VB20 - cryptographic accumulator based on pairings",
         "Validity Credential",
         "medium-term expiration",
-        "short-term expiration",
-        "tbd"
+        "short-term expiration"
       ]
     },
     "Key Management (Issuer)": {
@@ -80,7 +77,6 @@
         "cose key",
         "credential as secret",
         "did:ebsi",
-        "did:ebsinp",
         "did:indy",
         "did:ion (long form)",
         "did:ion (short form)",
@@ -93,8 +89,7 @@
         "link secrets",
         "pub key in X.509 cert",
         "raw public keys (jwk)",
-        "raw public keys (none jwk)",
-        "tbd"
+        "raw public keys (none jwk)"
       ]
     },
     "Key Management (Holder)": {
@@ -106,7 +101,6 @@
         "cose key",
         "credential as secret",
         "did:ebsi",
-        "did:ebsinp",
         "did:indy",
         "did:ion (long form)",
         "did:ion (short form)",
@@ -119,8 +113,7 @@
         "link secrets",
         "pub key in X.509 cert",
         "raw public keys (jwk)",
-        "raw public keys (none jwk)",
-        "tbd"
+        "raw public keys (none jwk)"
       ]
     },
     "Trust Management": {
@@ -134,8 +127,7 @@
         "Trusted Lists",
         "Verified issuer certificate authority list (VICAL)",
         "Verifier knows Issuers",
-        "X.509 certificates",
-        "tbd"
+        "X.509 certificates"
       ]
     },
     "Formal Specification": {
@@ -155,13 +147,9 @@
     "Credential Format",
     "Credential Profile Description",
     "Credential Profile is commonly called",
-    "Formal Specification",
-    "IPR Policy",
-    "Implementations",
     "Key Management (Holder)",
     "Key Management (Issuer)",
-    "Signing Algorithm",
-    "Trust Management"
+    "Signing Algorithm"
   ],
   "title": "CredentialProfile"
 }

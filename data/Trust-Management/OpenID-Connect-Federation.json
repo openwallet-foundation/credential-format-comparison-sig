@@ -1,8 +1,6 @@
 {
   "$schema": "./schema.json",
   "Trust Management": "OpenID Connect Federation",
-  "Implementation Support (e.g. Libraries) / Active Community": "tbd",
-  "IPR Policy": "tbd",
   "Standardization (Body, Process)": "OpenID Foundation",
   "Specification": "https://openid.net/specs/openid-connect-federation-1_0.html",
   "Description": "Uses JWTs and REST APIs to represent trust chains and trust marks"

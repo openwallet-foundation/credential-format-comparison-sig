@@ -1,6 +1,24 @@
 {
   "type": "object",
   "additionalProperties": false,
+  "definitions": {
+    "Filter": {
+      "type": ["object", "boolean"],
+      "additionalProperties": false,
+      "properties": {
+        "Value": {
+          "type": "boolean",
+          "description": "Allows to filter this property"
+        },
+        "Description": {
+          "type": "string",
+          "description": "Give more information about this property"
+        }
+      },
+      "required": ["Value"],
+      "title": "Filter"
+    }
+  },
   "properties": {
     "$schema": {
       "type": "string",
@@ -27,32 +45,56 @@
       "description": "Under which Standardization Body and which standards track/status is the signing algorithm standardized?"
     },
     "Technology Readiness Level": {
-      "type": "string",
+      "type": "number",
       "description": "According to NASA-Scheme (http://www.artemisinnovation.com/images/TRL_White_Paper_2004-Edited.pdf)"
     },
     "Recognition by government authorities (NIST, BSI, ...)": {
-      "type": ["boolean", "string"],
-      "description": "Is the signing algorithm recognized in regulatory frameworks of leading government bodies?"
+      "allOf": [
+        {
+          "$ref": "#/definitions/Filter"
+        },
+        {
+          "description": "Is the signing algorithm recognized in regulatory frameworks of leading government bodies?"
+        }
+      ]
     },
     "Performance": {
       "type": "string",
       "description": "How performant is the signing algorithm?"
     },
     "Hardware support": {
-      "type": ["string", "boolean"],
-      "description": "Is the Signing Algorithm supported by common hardware-backed cryptographic implementations, such as Secure Elements, SecureEnclave, HSM, Strongbox, TEE, TPM"
+      "allOf": [
+        {
+          "$ref": "#/definitions/Filter"
+        },
+        {
+          "description": "Is the Signing Algorithm supported by common hardware-backed cryptographic implementations, such as Secure Elements, SecureEnclave, HSM, Strongbox, TEE, TPM"
+        }
+      ]
     },
     "Unlinkability/Uncorrelatability/Blind signatures possible": {
-      "type": ["string", "boolean"],
-      "description": "Is the Signing Algorithm capable of creating a credential scheme, such that two verification processes can not be linked/correlated by colluding Verifiers/Relying Parties"
+      "allOf": [
+        {
+          "$ref": "#/definitions/Filter"
+        },
+        {
+          "description": "Is the Signing Algorithm capable of creating a credential scheme, such that two verification processes can not be linked/correlated by colluding Verifiers/Relying Parties"
+        }
+      ]
     },
     "Security strength": {
       "type": "string",
       "description": "What level of security strength is common and standardized for this signing algorithm?"
     },
     "Post-quantum security": {
-      "type": ["string", "boolean"],
-      "description": "Is the Signing Algorithm still secure if quantum computing achieves substantial computation power?"
+      "allOf": [
+        {
+          "$ref": "#/definitions/Filter"
+        },
+        {
+          "description": "Is the Signing Algorithm still secure if quantum computing achieves substantial computation power?"
+        }
+      ]
     }
   },
   "required": ["$schema", "Signing Algorithm"],

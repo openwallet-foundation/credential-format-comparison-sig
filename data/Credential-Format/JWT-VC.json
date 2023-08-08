@@ -1,9 +1,6 @@
 {
   "$schema": "./schema.json",
-  "Credential Format": "x509",
-  "Standardization (Body, Process)": "ITUT",
-  "Technology Readiness Level": 9,
-  "Encoding Scheme": "ASN.1",
+  "Credential Format": "JWT-VC",
   "Rich Schemas/Semantic ": false,
   "Crypto Agility": true,
   "Selective Disclosure": false,

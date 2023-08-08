@@ -1,16 +1,7 @@
 {
   "$schema": "./schema.json",
   "Revocation Algorithm": "BBF18-cryptographic accumulator based on RSA",
-  "Implementation Support (e.g. Libraries) / Active Community": "tbd",
-  "IPR Policy": "tbd",
-  "Specification": "tbd",
-  "Standardization (Body, Process)": "tbd",
-  "Technology Readiness Level": "tbd",
   "Recognition by government authorities (NIST, BSI, ...)": false,
   "Category": "Accumulator",
-  "Performance": "tbd",
-  "Observability": false,
-  "Traceability": "tbd",
-  "Scalability": "tbd",
-  "Offline Friendliness": "tbd"
+  "Observability": false
 }

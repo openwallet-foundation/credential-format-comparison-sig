@@ -1,7 +1,6 @@
-.container {
-    max-width: 100%;
-    max-height: calc(100vh - 200px);
-    overflow: auto;
+.container {  
+  max-height: calc(100vh - 121px);
+  overflow: auto;
 }
 
 .mat-mdc-table-sticky-border-elem-left {
@@ -12,11 +11,6 @@
   background-color: #ECECEC;
 }
 
-:host {
-  padding: 20px;
-}
-
-.content {
-  max-width: calc(100% - 40px);
-  margin: auto;
+.mat-mdc-paginator {
+  border-top: 1px solid #E0E0E0;
 }

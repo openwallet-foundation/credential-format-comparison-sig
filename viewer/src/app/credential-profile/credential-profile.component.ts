@@ -6,6 +6,7 @@ import { CredentialProfileAddDialogComponent } from '../credential-profile-add-d
 import { AppService } from '../app.service';
 import { Format, Property, Resources } from '../resources';
 import { Filter, FilterComponent } from '../filter/filter.component';
+import { MatPaginator } from '@angular/material/paginator';
 
 class ColumnHeader {
   key!: string;
@@ -31,7 +32,9 @@ export class CredentialProfileComponent implements OnInit, AfterViewInit {
 
   filter: Filter = {};
 
-  constructor(private dialog: MatDialog, private appService: AppService) {}
+  @ViewChild(MatPaginator) paginator!: MatPaginator;
+
+  constructor(private dialog: MatDialog, public appService: AppService) {}
 
   ngOnInit(): void {
     this.dataSource = new MatTableDataSource<any>();
@@ -56,7 +59,9 @@ export class CredentialProfileComponent implements OnInit, AfterViewInit {
         .forEach((value: string) => {
           this.allColumns.push({
             key: `${key} - ${value}`,
-            tooltip: (subValues[value] as Property).description,
+            tooltip:
+              (subValues[value] as Property).description ??
+              subValues[value].allOf[1].description,
           });
           elements.push({
             value: `${key} - ${value}`,
@@ -99,9 +104,8 @@ export class CredentialProfileComponent implements OnInit, AfterViewInit {
         for (const category in this.filter) {
           for (const key in this.filter[category]) {
             if (this.filter[category][key]) {
-              if (value[`${category} - ${key}`] !== true) {
-                return false;
-              }
+              const res = value[`${category} - ${key}`];
+              return typeof res === 'object' ? res.Value : res;
             }
           }
         }
@@ -123,6 +127,7 @@ export class CredentialProfileComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit(): void {
     this.dataSource.sort = this.sort;
+    this.dataSource.paginator = this.paginator;
   }
 
   isSticky(column: ColumnHeader) {
@@ -159,5 +164,12 @@ export class CredentialProfileComponent implements OnInit, AfterViewInit {
         this.filter = value;
         this.addData();
       });
+  }
+
+  elementType(value: any, header: string) {
+    if (typeof value === 'undefined') return 'undefined';
+    if (typeof value === 'boolean') return 'icon';
+    if (typeof value.Value !== 'undefined') return 'icon-tooltip';
+    return this.hasLink(value, header) ? 'link' : 'text';
   }
 }

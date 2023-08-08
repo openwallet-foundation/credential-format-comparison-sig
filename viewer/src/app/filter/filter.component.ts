@@ -1,6 +1,5 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { AppService } from '../app.service';
-import { Resources } from '../resources';
 import { FormControl, FormGroup } from '@angular/forms';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 
@@ -45,8 +44,10 @@ export class FilterComponent implements OnInit {
         elements.push({
           value: `${key} - ${value}`,
           show: value,
-          type: subValues[value].type,
-          tooltip: subValues[value].description,
+          type: subValues[value].type ?? 'boolean',
+          tooltip:
+            subValues[value].description ??
+            subValues[value].allOf[1].description,
         });
         if (this.isCheckbox(elements[elements.length - 1])) {
           group.addControl(value, new FormControl());
@@ -63,10 +64,6 @@ export class FilterComponent implements OnInit {
 
   isCheckbox(element: FilterElement) {
     return element.type === 'boolean' || element.type.includes('boolean');
-  }
-
-  getOptions(element: FilterElement): any {
-    return [];
   }
 
   filter() {

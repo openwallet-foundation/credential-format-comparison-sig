@@ -2,9 +2,7 @@
   "$schema": "./schema.json",
   "Key Management": "did:ion (long form)",
   "Implementation Support (e.g. Libraries) / Active Community": "https://github.com/decentralized-identity/ion",
-  "IPR Policy": "tbd",
-  "Specification": "tbd",
-  "Infrastructure for Key Resolution": "none",
+  "Infrastructure for Key Resolution": false,
   "Key Rotation": false,
   "Key History": false,
   "Party": ["holder", "issuer"]
