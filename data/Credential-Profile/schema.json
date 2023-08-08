@@ -27,6 +27,7 @@
         "Idemix attribute-based credential",
         "JWP",
         "JWT-VC",
+        "JWT",
         "LDP-VC",
         "MDOC",
         "SD-JWT-VC",
