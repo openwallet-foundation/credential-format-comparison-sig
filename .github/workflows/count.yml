@@ -23,6 +23,7 @@ jobs:
 
       - name: Create JSON file
         run: |
+          mkdir values
           echo "{ \"schemaVersion\": 1, \"label\": \"Profiles\", \"message\": \"${{ steps.file_count.outputs.count }}\", \"color\": \"green\" }" > values/count.json
 
       # Deploy to local repo
