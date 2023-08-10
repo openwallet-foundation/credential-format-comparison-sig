@@ -23,20 +23,29 @@ jobs:
 
       - name: Create JSON file
         run: |
-          echo "{ \"schemaVersion\": 1, \"label\": \"Profiles\", \"message\": \"${{ steps.file_count.outputs.count }}\", \"color\": \"green\" }" > count.json
+          echo "{ \"schemaVersion\": 1, \"label\": \"Profiles\", \"message\": \"${{ steps.file_count.outputs.count }}\", \"color\": \"green\" }" > values/count.json
 
-      - name: Configure Git
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+      # Deploy to local repo
+      - name: Deploy
+        uses: s0/git-publish-subdir-action@develop
+        env:
+          REPO: self
+          BRANCH: badges-info
+          FOLDER: values
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Create and switch to badge-info branch
-        run: |
-          git checkout -b badge-info
-          git push origin badge-info
+      # - name: Configure Git
+      #   run: |
+      #     git config --local user.email "action@github.com"
+      #     git config --local user.name "GitHub Action"
 
-      - name: Commit and push to badge-info
-        run: |
-          git add count.json
-          git commit -m "Add file count to JSON"
-          git push origin badge-info
+      # - name: Create and switch to badge-info branch
+      #   run: |
+      #     git checkout -b badge-info
+      #     git push origin badge-info
+
+      # - name: Commit and push to badge-info
+      #   run: |
+      #     git add count.json
+      #     git commit -m "Add file count to JSON"
+      #     git push origin badge-info
