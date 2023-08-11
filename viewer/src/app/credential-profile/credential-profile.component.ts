@@ -3,7 +3,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { CredentialProfileAddDialogComponent } from '../credential-profile-add-dialog/credential-profile-add-dialog.component';
-import { AppService } from '../app.service';
+import { AppService, Resource } from '../app.service';
 import { Format, Property, Resources } from '../resources';
 import { Filter, FilterComponent } from '../filter/filter.component';
 import { MatPaginator } from '@angular/material/paginator';
@@ -59,9 +59,7 @@ export class CredentialProfileComponent implements OnInit, AfterViewInit {
         .forEach((value: string) => {
           this.allColumns.push({
             key: `${key} - ${value}`,
-            tooltip:
-              (subValues[value] as Property).description ??
-              subValues[value].allOf[1].description,
+            tooltip: this.appService.getTooltip(subValues[value]),
           });
           elements.push({
             value: `${key} - ${value}`,
@@ -84,7 +82,9 @@ export class CredentialProfileComponent implements OnInit, AfterViewInit {
     this.dataSource.data = Object.values(this.data.values)
       .map((value: any) => {
         Object.keys(value)
-          .filter((value) => this.appService.extraValues.includes(value))
+          .filter((value) =>
+            this.appService.extraValues.includes(value as Resource)
+          )
           .forEach((key) => {
             const subValues = this.appService.getValues(
               this.appService.getKey(key)

@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://github.com/openwallet-foundation/credential-format-comparison-sig/schemas/Revocation-Algorithm.json",
+  "$id": "https://github.com/openwallet-foundation/credential-format-comparison-sig/tree/main/viewer/viewer/src/schemas/Revocation-Algorithm.json",
   "type": "object",
   "additionalProperties": false,
   "properties": {
@@ -13,24 +13,19 @@
       "description": "Glossary"
     },
     "Implementation Support (e.g. Libraries) / Active Community": {
-      "type": "string",
-      "description": "How complex is the implementation? Which/How many useful software libraries available?"
+      "$ref": "defs.json#/definitions/Implementation-Support"
     },
     "IPR Policy": {
-      "type": "string",
-      "description": "What is the policy regarding intellectual properties associated with this technology?"
+      "$ref": "defs.json#/definitions/IPR-Policy"
     },
     "Specification": {
-      "type": "string",
-      "description": "Where is the revocation mechanism specified?"
+      "$ref": "defs.json#/definitions/Specification"
     },
     "Standardization (Body, Process)": {
-      "type": "string",
-      "description": "Under which Standardization Body and which standards track/status is the revocation algorithm standardized"
+      "$ref": "defs.json#/definitions/Standardization"
     },
     "Technology Readiness Level": {
-      "type": "number",
-      "description": "According to NASA-Scheme (http://www.artemisinnovation.com/images/TRL_White_Paper_2004-Edited.pdf)"
+      "$ref": "defs.json#/definitions/Technology-Readiness-Level"
     },
     "Recognition by government authorities (NIST, BSI, ...)": {
       "allOf": [

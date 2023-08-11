@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://github.com/openwallet-foundation/credential-format-comparison-sig/schemas/Trust-Management.json",
+  "$id": "https://github.com/openwallet-foundation/credential-format-comparison-sig/tree/main/viewer/viewer/src/schemas/Trust-Management.json",
   "type": "object",
   "additionalProperties": false,
   "properties": {
@@ -13,20 +13,16 @@
       "description": "Glossary"
     },
     "Implementation Support (e.g. Libraries) / Active Community": {
-      "type": "string",
-      "description": "How complex is the implementation? Which/How many useful software libraries available?"
+      "$ref": "defs.json#/definitions/Implementation-Support"
     },
     "IPR Policy": {
-      "type": "string",
-      "description": "What is the policy regarding intellectual properties associated with this technology?"
+      "$ref": "defs.json#/definitions/IPR-Policy"
     },
     "Standardization (Body, Process)": {
-      "type": "string",
-      "description": "Under which Standardization Body and which standards track/status is the credential format standardized?"
+      "$ref": "defs.json#/definitions/Standardization"
     },
     "Specification": {
-      "type": "string",
-      "description": "Where is the trust management specified?"
+      "$ref": "defs.json#/definitions/Specification"
     },
     "Description": {
       "type": "string",

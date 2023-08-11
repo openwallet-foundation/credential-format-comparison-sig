@@ -1,5 +1,5 @@
 {
-  "$schema": "../../schemas/Key-Management.json",
+  "$schema": "../../viewer/src/schemas/Key-Management.json",
   "Key Management": "raw public keys (jwk)",
   "Implementation Support (e.g. Libraries) / Active Community": "https://www.rfc-editor.org/rfc/rfc7517",
   "IPR Policy": "https://trustee.ietf.org/documents/trust-legal-provisions/",

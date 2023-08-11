@@ -1,10 +1,10 @@
 {
-  "$schema": "../../schemas/Credential-Format.json",
+  "$schema": "../../viewer/src/schemas/Credential-Format.json",
   "Credential Format": "x509",
   "Standardization (Body, Process)": "ITUT",
   "Technology Readiness Level": 9,
   "Encoding Scheme": "ASN.1",
-  "Rich Schemas/Semantic ": false,
+  "Rich Schemas/Semantic": false,
   "Crypto Agility": true,
   "Selective Disclosure": false,
   "Predicates": false

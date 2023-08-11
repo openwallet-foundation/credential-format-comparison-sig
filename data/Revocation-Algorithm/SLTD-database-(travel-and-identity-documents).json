@@ -1,5 +1,5 @@
 {
-  "$schema": "../../schemas/Revocation-Algorithm.json",
+  "$schema": "../../viewer/src/schemas/Revocation-Algorithm.json",
   "Revocation Algorithm": "SLTD database (travel and identity documents)",
   "Category": "Deny-List"
 }
