@@ -1,5 +1,5 @@
 {
-  "$schema": "./schema.json",
+  "$schema": "../../schemas/Revocation-Algorithm.json",
   "Revocation Algorithm": "VB20 - cryptographic accumulator based on pairings",
   "Recognition by government authorities (NIST, BSI, ...)": false,
   "Category": "Accumulator",

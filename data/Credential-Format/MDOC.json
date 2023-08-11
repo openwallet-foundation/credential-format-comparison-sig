@@ -1,5 +1,5 @@
 {
-  "$schema": "./schema.json",
+  "$schema": "../../schemas/Credential-Format.json",
   "Credential Format": "MDOC",
   "Implementation Support (e.g. Libraries)": "Apple, Idemia, Thales, HID global, GET Group, Google, Panasonic",
   "Specification": "ISO 18013-5",

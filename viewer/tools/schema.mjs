@@ -1,8 +1,8 @@
-import fs from 'fs';
-import { credentialProfileFolder, folder, mergedStructure, structureFile } from './values.mjs';
+import {readFileSync, writeFileSync, lstatSync, readdirSync} from 'fs';
+import { folder, schemaFolder } from './values.mjs';
 
-const schemaPath = `${folder}/${credentialProfileFolder}/schema.json`;
-const file = JSON.parse(fs.readFileSync(schemaPath, 'utf8'));
+const schemaPath = `${schemaFolder}/Credential-Profile.json`;
+const file = JSON.parse(readFileSync(schemaPath, 'utf8'));
 
 Object.keys(file.properties).forEach((key) => {    
     const enums = getEnum(key.startsWith('Key Management') ? 'Key Management' : key);
@@ -10,15 +10,15 @@ Object.keys(file.properties).forEach((key) => {
         file.properties[key].enum = [...enums];        
     }
 });
-fs.writeFileSync(schemaPath, JSON.stringify(file, null, 2));
+writeFileSync(schemaPath, JSON.stringify(file, null, 2));
 
 function getEnum(subFolder) {
 // adds the resources to the schema file of the profile
     try {
-        const info = fs.lstatSync(`${folder}/${subFolder.replace(' ', '-')}`);
+        const info = lstatSync(`${folder}/${subFolder.replace(' ', '-')}`);
         if(info.isDirectory()) {
-            return fs.readdirSync(`${folder}/${subFolder.replace(' ', '-')}`).filter(file => file !== structureFile).map((file) => 
-                JSON.parse(fs.readFileSync(`${folder}/${subFolder.replace(' ', '-')}/${file}`, 'utf8'))[subFolder]
+            return readdirSync(`${folder}/${subFolder.replace(' ', '-')}`).map((file) => 
+                JSON.parse(readFileSync(`${folder}/${subFolder.replace(' ', '-')}/${file}`, 'utf8'))[subFolder]
             );
         }
     } catch (e) {

@@ -1,5 +1,5 @@
 {
-  "$schema": "./schema.json",
+  "$schema": "../../schemas/Revocation-Algorithm.json",
   "Revocation Algorithm": "CRL - certificate revocation list",
   "Recognition by government authorities (NIST, BSI, ...)": true,
   "Category": "Deny-List",

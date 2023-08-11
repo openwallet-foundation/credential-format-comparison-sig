@@ -1,5 +1,5 @@
 {
-  "$schema": "./schema.json",
+  "$schema": "../../schemas/Revocation-Algorithm.json",
   "Revocation Algorithm": "medium-term expiration",
   "Specification": "weeks"
 }

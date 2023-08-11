@@ -1,5 +1,5 @@
 {
-  "$schema": "./schema.json",
+  "$schema": "../../schemas/Credential-Profile.json",
   "Credential Profile is commonly called": "HAIP",
   "Credential Profile Description": "OpenID4VC High Assurance Interoperability Profile with SD-JWT-VC",
   "Credential Format": "SD-JWT-VC",

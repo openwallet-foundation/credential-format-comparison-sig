@@ -1,24 +1,8 @@
 {
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/openwallet-foundation/credential-format-comparison-sig/schemas/Key-Management.json",
   "type": "object",
   "additionalProperties": false,
-  "definitions": {
-    "Filter": {
-      "type": ["object", "boolean"],
-      "additionalProperties": false,
-      "properties": {
-        "Value": {
-          "type": "boolean",
-          "description": "Allows to filter this property"
-        },
-        "Description": {
-          "type": "string",
-          "description": "Give more information about this property"
-        }
-      },
-      "required": ["Value"],
-      "title": "Filter"
-    }
-  },
   "properties": {
     "$schema": {
       "type": "string",
@@ -43,7 +27,7 @@
     "Infrastructure for Key Resolution": {
       "allOf": [
         {
-          "$ref": "#/definitions/Filter"
+          "$ref": "defs.json#/definitions/Filter"
         },
         {
           "description": "Is there any infrastructure required to resolve keys and/or validate identifier to key binding"
@@ -53,7 +37,7 @@
     "Key Rotation": {
       "allOf": [
         {
-          "$ref": "#/definitions/Filter"
+          "$ref": "defs.json#/definitions/Filter"
         },
         {
           "description": "Can the key referred to in a credential be replaced by another key?"
@@ -63,7 +47,7 @@
     "Key History": {
       "allOf": [
         {
-          "$ref": "#/definitions/Filter"
+          "$ref": "defs.json#/definitions/Filter"
         },
         {
           "description": "Is it possible to retain and obtain the history of keys related to a certain identifier?"

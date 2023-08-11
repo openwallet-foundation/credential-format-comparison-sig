@@ -1,5 +1,5 @@
 {
-  "$schema": "./schema.json",
+  "$schema": "../../schemas/Key-Management.json",
   "Key Management": "did:jwk",
   "Party": ["holder", "issuer"]
 }

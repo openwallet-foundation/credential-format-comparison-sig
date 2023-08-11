@@ -1,5 +1,5 @@
 {
-  "$schema": "./schema.json",
+  "$schema": "../../schemas/Credential-Format.json",
   "Credential Format": "JWT",
   "Implementation Support (e.g. Libraries)": "https://jwt.io/libraries",
   "IPR Policy": "https://trustee.ietf.org/documents/trust-legal-provisions/",
