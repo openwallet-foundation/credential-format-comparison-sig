@@ -1,4 +1,4 @@
 {
-  "$schema": "./schema.json",
+  "$schema": "../../viewer/src/schemas/Key-Management.json",
   "Key Management": "pub key in X.509 cert"
 }

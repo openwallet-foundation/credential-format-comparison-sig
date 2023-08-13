@@ -1,5 +1,5 @@
 {
-  "$schema": "./schema.json",
+  "$schema": "../../viewer/src/schemas/Signing-Algorithm.json",
   "Signing Algorithm": "EdDSA",
   "Implementation Support (e.g. Libraries) / Active Community": "many mature implementations",
   "Recognition by government authorities (NIST, BSI, ...)": {

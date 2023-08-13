@@ -1,3 +1,6 @@
+/**
+ * Script to extract data from the Credential Comparison Matrix.xlsx file
+ */
 import fs from 'fs';
 import XLSX from 'xlsx';
 import { structureFile, folder } from './values.mjs';

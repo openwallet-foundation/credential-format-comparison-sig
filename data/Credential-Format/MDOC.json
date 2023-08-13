@@ -1,12 +1,12 @@
 {
-  "$schema": "./schema.json",
+  "$schema": "../../viewer/src/schemas/Credential-Format.json",
   "Credential Format": "MDOC",
-  "Implementation Support (e.g. Libraries)": "Apple, Idemia, Thales, HID global, GET Group, Google, Panasonic",
+  "Implementation Support (e.g. Libraries) / Active Community": "Apple, Idemia, Thales, HID global, GET Group, Google, Panasonic",
   "Specification": "ISO 18013-5",
   "Standardization (Body, Process)": "ISO",
   "Technology Readiness Level": 7,
   "Encoding Scheme": "CBOR",
-  "Rich Schemas/Semantic ": false,
+  "Rich Schemas/Semantic": false,
   "Crypto Agility": true,
   "Selective Disclosure": {
     "Value": true,

@@ -35,7 +35,6 @@ export class FilterComponent implements OnInit {
     this.form = new FormGroup({});
     for (const key of this.appService.extraValues) {
       const group = new FormGroup({});
-      if (key === 'Credential Profile') continue;
       const elements: FilterElement[] = [];
       const subValues = this.appService.getFormat(this.appService.getKey(key))
         .structure.properties;
