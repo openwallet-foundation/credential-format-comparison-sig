@@ -1,7 +1,7 @@
 {
   "$schema": "../../viewer/src/schemas/Credential-Format.json",
   "Credential Format": "MDOC",
-  "Implementation Support (e.g. Libraries) / Active Community": "Apple, Idemia, Thales, HID global, GET Group, Google, Panasonic",
+  "Implementation Support (e.g. Libraries) / Active Community": "Apple, Idemia, Thales, HID global, GET Group, Google, Panasonic, Spruce",
   "Specification": "ISO 18013-5",
   "Standardization (Body, Process)": "ISO",
   "Technology Readiness Level": 7,
@@ -12,5 +12,6 @@
     "Value": true,
     "Description": "salted hashes"
   },
-  "Predicates": false
+  "Predicates": false,
+  "Compatibility with Signing Algorithms": "ECDSA(NIST and Brainpool curves), EdDSA, RSA"
 }
