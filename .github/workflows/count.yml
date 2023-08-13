@@ -5,6 +5,9 @@ on:
     types:
       - opened
       - synchronize
+  push:
+    branches:
+      - main
 
 jobs:
   count_files_and_publish_to_badgeinfo:
@@ -33,19 +36,3 @@ jobs:
           BRANCH: badge-info
           FOLDER: values
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      # - name: Configure Git!
-      #   run: |
-      #     git config --local user.email "action@github.com"
-      #     git config --local user.name "GitHub Action"
-
-      # - name: Create and switch to badge-info branch
-      #   run: |
-      #     git checkout -b badge-info
-      #     git push origin badge-info
-
-      # - name: Commit and push to badge-info
-      #   run: |
-      #     git add count.json
-      #     git commit -m "Add file count to JSON"
-      #     git push origin badge-info
