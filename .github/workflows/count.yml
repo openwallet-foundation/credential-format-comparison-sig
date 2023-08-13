@@ -1,0 +1,51 @@
+name: Count Files and Publish to badge-info
+
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+
+jobs:
+  count_files_and_publish_to_badgeinfo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Count files in data/Credential-Profile folder
+        id: file_count
+        run: |
+          file_count=$(find data/Credential-Profile -type f | wc -l)          
+          echo "profile-count=$file_count" >> $GITHUB_OUTPUT
+
+      - name: Create JSON file
+        run: |
+          mkdir values
+          echo "{ \"schemaVersion\": 1, \"label\": \"Profiles\", \"message\": \"${{ steps.file_count.outputs.profile-count }}\", \"color\": \"green\" }" > values/count.json
+
+      # Deploy to local repo
+      - name: Deploy
+        uses: s0/git-publish-subdir-action@develop
+        env:
+          REPO: self
+          BRANCH: badge-info
+          FOLDER: values
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # - name: Configure Git!
+      #   run: |
+      #     git config --local user.email "action@github.com"
+      #     git config --local user.name "GitHub Action"
+
+      # - name: Create and switch to badge-info branch
+      #   run: |
+      #     git checkout -b badge-info
+      #     git push origin badge-info
+
+      # - name: Commit and push to badge-info
+      #   run: |
+      #     git add count.json
+      #     git commit -m "Add file count to JSON"
+      #     git push origin badge-info
