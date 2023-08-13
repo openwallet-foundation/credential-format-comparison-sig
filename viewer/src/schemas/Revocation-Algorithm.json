@@ -1,24 +1,8 @@
 {
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/openwallet-foundation/credential-format-comparison-sig/tree/main/viewer/viewer/src/schemas/Revocation-Algorithm.json",
   "type": "object",
   "additionalProperties": false,
-  "definitions": {
-    "Filter": {
-      "type": ["object", "boolean"],
-      "additionalProperties": false,
-      "properties": {
-        "Value": {
-          "type": "boolean",
-          "description": "Allows to filter this property"
-        },
-        "Description": {
-          "type": "string",
-          "description": "Give more information about this property"
-        }
-      },
-      "required": ["Value"],
-      "title": "Filter"
-    }
-  },
   "properties": {
     "$schema": {
       "type": "string",
@@ -29,29 +13,24 @@
       "description": "Glossary"
     },
     "Implementation Support (e.g. Libraries) / Active Community": {
-      "type": "string",
-      "description": "How complex is the implementation? Which/How many useful software libraries available?"
+      "$ref": "defs.json#/definitions/Implementation-Support"
     },
     "IPR Policy": {
-      "type": "string",
-      "description": "What is the policy regarding intellectual properties associated with this technology?"
+      "$ref": "defs.json#/definitions/IPR-Policy"
     },
     "Specification": {
-      "type": "string",
-      "description": "Where is the revocation mechanism specified?"
+      "$ref": "defs.json#/definitions/Specification"
     },
     "Standardization (Body, Process)": {
-      "type": "string",
-      "description": "Under which Standardization Body and which standards track/status is the revocation algorithm standardized"
+      "$ref": "defs.json#/definitions/Standardization"
     },
     "Technology Readiness Level": {
-      "type": "number",
-      "description": "According to NASA-Scheme (http://www.artemisinnovation.com/images/TRL_White_Paper_2004-Edited.pdf)"
+      "$ref": "defs.json#/definitions/Technology-Readiness-Level"
     },
     "Recognition by government authorities (NIST, BSI, ...)": {
       "allOf": [
         {
-          "$ref": "#/definitions/Filter"
+          "$ref": "defs.json#/definitions/Filter"
         },
         {
           "description": "Is the revocation algorithm recognized in regulatory frameworks of leading government bodies?"
@@ -69,7 +48,7 @@
     "Observability": {
       "allOf": [
         {
-          "$ref": "#/definitions/Filter"
+          "$ref": "defs.json#/definitions/Filter"
         },
         {
           "description": "Does the Verifier have the possibility to observe the revocation status beyond the presentation?"
@@ -79,7 +58,7 @@
     "Traceability": {
       "allOf": [
         {
-          "$ref": "#/definitions/Filter"
+          "$ref": "defs.json#/definitions/Filter"
         },
         {
           "description": "Does the issuer have possibilities to trace the usage of his issued credentials through the revocation mechanism?"
@@ -89,7 +68,7 @@
     "Scalability": {
       "allOf": [
         {
-          "$ref": "#/definitions/Filter"
+          "$ref": "defs.json#/definitions/Filter"
         },
         {
           "description": "At what scale has the algorithm/technology been demonstrated to work? Are there any known issues?"
@@ -99,7 +78,7 @@
     "Offline Friendliness": {
       "allOf": [
         {
-          "$ref": "#/definitions/Filter"
+          "$ref": "defs.json#/definitions/Filter"
         },
         {
           "description": "Does the revocation mechanism support an authentication if the holder is offline?"

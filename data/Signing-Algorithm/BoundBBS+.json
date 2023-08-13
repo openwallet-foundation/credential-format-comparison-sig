@@ -1,5 +1,5 @@
 {
-  "$schema": "./schema.json",
+  "$schema": "../../viewer/src/schemas/Signing-Algorithm.json",
   "Signing Algorithm": "BoundBBS+",
   "IPR Policy": "barely",
   "Standardization (Body, Process)": "DIF (intention to transfer to IRTF CFRG)",

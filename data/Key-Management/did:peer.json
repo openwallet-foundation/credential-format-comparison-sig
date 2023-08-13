@@ -1,5 +1,5 @@
 {
-  "$schema": "./schema.json",
+  "$schema": "../../viewer/src/schemas/Key-Management.json",
   "Key Management": "did:peer",
   "Implementation Support (e.g. Libraries) / Active Community": "https://identity.foundation/peer-did-method-spec/index.html",
   "Party": ["holder"]

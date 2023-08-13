@@ -1,12 +1,20 @@
 import { Injectable } from '@angular/core';
 import { Format, Resources } from './resources';
 import values from '../structure.json';
+import def from '../schemas/defs.json';
 
+export type Resource =
+  | 'Credential Format'
+  | 'Signing Algorithm'
+  | 'Revocation Algorithm'
+  | 'Key Management (Issuer)'
+  | 'Key Management (Holder)'
+  | 'Trust Management';
 @Injectable({
   providedIn: 'root',
 })
 export class AppService {
-  public extraValues = [
+  public extraValues: Resource[] = [
     'Credential Format',
     'Signing Algorithm',
     'Revocation Algorithm',
@@ -41,5 +49,42 @@ export class AppService {
 
   getValues(key: keyof Resources): any {
     return this.getFormat(key).values;
+  }
+
+  /**
+   * Returns a statistic which resources are used for the profiles.
+   */
+  createStatistic(resource: Resource) {
+    const counter: { [key: string]: number } = {};
+    this.getNames('Credential Profile').forEach((profile: any) => {
+      const subValue = this.getValues('Credential Profile')[profile][resource];
+      if (subValue) {
+        if (!counter[subValue]) {
+          counter[subValue] = 1;
+        }
+        counter[subValue]++;
+      }
+    });
+    return counter;
+  }
+
+  /**
+   * Returns the tooltip based on the reference. Returns empty string in case we found none.
+   * @param value
+   * @returns
+   */
+  getTooltip(value: any) {
+    if (value.description) {
+      return value.description;
+    }
+    if (value.allOf) {
+      return value.allOf[1].description;
+    }
+    if (value.$ref) {
+      const res = JSON.parse(JSON.stringify(def));
+      const id = value.$ref.split('/')[2];
+      return res.definitions[id].description;
+    }
+    return '';
   }
 }
