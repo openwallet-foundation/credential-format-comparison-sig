@@ -18,12 +18,12 @@ jobs:
         id: file_count
         run: |
           file_count=$(find data/Credential-Profile -type f | wc -l)          
-          echo "::set-output name=count::$file_count"
+          echo "profile-count=$file_count" >> $GITHUB_OUTPUT
 
       - name: Create JSON file
         run: |
           mkdir values
-          echo "{ \"schemaVersion\": 1, \"label\": \"Profiles\", \"message\": \"${{ steps.file_count.outputs.count }}\", \"color\": \"green\" }" > values/count.json
+          echo "{ \"schemaVersion\": 1, \"label\": \"Profiles\", \"message\": \"${{ steps.file_count.outputs.profile-count }}\", \"color\": \"green\" }" > values/count.json
 
       # Deploy to local repo
       - name: Deploy
