@@ -12,14 +12,13 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Count files in data/Credential-Profile folder
         id: file_count
         run: |
-          file_count=$(find data/Credential-Profile -type f | wc -l)
-          decreased_count=$((file_count - 1))  # Decrease the count by 1
-          echo "::set-output name=count::$decreased_count"
+          file_count=$(find data/Credential-Profile -type f | wc -l)          
+          echo "::set-output name=count::$file_count"
 
       - name: Create JSON file
         run: |
