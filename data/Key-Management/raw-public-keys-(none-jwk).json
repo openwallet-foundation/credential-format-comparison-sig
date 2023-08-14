@@ -1,8 +1,0 @@
-{
-  "$schema": "./schema.json",
-  "Key Management": "raw public keys (none jwk)",
-  "Infrastructure for Key Resolution": false,
-  "Key Rotation": false,
-  "Key History": false,
-  "Party": ["holder", "issuer"]
-}

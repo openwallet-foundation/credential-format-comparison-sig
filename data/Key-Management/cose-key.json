@@ -1,5 +1,0 @@
-{
-  "$schema": "./schema.json",
-  "Key Management": "cose key",
-  "Implementation Support (e.g. Libraries) / Active Community": "https://www.rfc-editor.org/rfc/rfc9052.html"
-}
