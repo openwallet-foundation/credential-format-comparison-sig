@@ -8,6 +8,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -23,7 +24,7 @@ jobs:
       - name: Count files in data/Credential-Profile folder
         id: file_count
         run: |
-          file_count=$(find data/Credential-Profile -type f | wc -l)          
+          file_count=$(find data/Credential-Profile -type f | wc -l)
           echo "profile-count=$file_count" >> $GITHUB_OUTPUT
 
       - name: Create JSON file
