@@ -27,11 +27,6 @@ jobs:
           file_count=$(find data/Credential-Profile -type f | wc -l)
           echo "profile-count=$file_count" >> $GITHUB_OUTPUT
 
-      - name: Create JSON file
-        run: |
-          mkdir values
-          echo "{ \"schemaVersion\": 1, \"label\": \"Profiles\", \"message\": \"${{ steps.file_count.outputs.profile-count }}\", \"color\": \"green\" }" > values/profiles.json
-
       # Deploy to local repo
       - name: Configure Git
         run: |
@@ -41,7 +36,11 @@ jobs:
       - name: Create and switch to badge-info branch
         run: |
           git checkout -b badge-info
-          git push origin badge-info
+
+      - name: Create JSON file
+        run: |
+          mkdir values
+          echo "{ \"schemaVersion\": 1, \"label\": \"Profiles\", \"message\": \"${{ steps.file_count.outputs.profile-count }}\", \"color\": \"green\" }" > values/profiles.json
 
       - name: Commit and push to badge-info
         run: |
