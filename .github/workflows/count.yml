@@ -44,6 +44,6 @@ jobs:
 
       - name: Commit and push to badge-info
         run: |
-          git add count.json
+          git add values/*
           git commit -m "Add file count to JSON"
           git push origin badge-info
