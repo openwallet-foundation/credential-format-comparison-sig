@@ -1,3 +1,5 @@
+![Credential Profiles](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fopenwallet-foundation%2Fcredential-format-comparison-sig%2Fbadge-info%2Fprofiles.json)
+
 ## Introduction
 
 This SIG is dedicated to maintaining information about available credential formats for the benefit of OWF projects and the wider community. The topic is more complex than one might assume on first sight, since there are more than 14 formats for representing digital credentials and most of those formats can be combined with different signature algorithms, ways to represent cryptographic keys (with alone more than a hundred DID methods), status management methods, trust management methods and so on.
