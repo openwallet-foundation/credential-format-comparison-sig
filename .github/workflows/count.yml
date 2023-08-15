@@ -36,6 +36,7 @@ jobs:
       - name: Create and switch to badge-info branch
         run: |
           git checkout -b badge-info
+          git pull badge-info
 
       - name: Create JSON file
         run: |
