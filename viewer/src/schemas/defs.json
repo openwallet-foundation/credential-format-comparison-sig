@@ -40,7 +40,8 @@
     },
     "Technology-Readiness-Level": {
       "type": "number",
-      "description": "According to NASA-Scheme (http://www.artemisinnovation.com/images/TRL_White_Paper_2004-Edited.pdf)"
+      "description": "According to NASA-Scheme (http://www.artemisinnovation.com/images/TRL_White_Paper_2004-Edited.pdf)",
+      "$comment": "In this case we have a link that can not be called in the web application since descriptions are rendered as a non clickable tooltip"
     }
   }
 }

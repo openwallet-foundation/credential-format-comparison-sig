@@ -9,7 +9,7 @@
     },
     "Key Management": {
       "type": "string",
-      "description": "Glossary"
+      "description": "Unique identifier of the method."
     },
     "Implementation Support (e.g. Libraries) / Active Community": {
       "$ref": "defs.json#/definitions/Implementation-Support"
@@ -26,7 +26,7 @@
           "$ref": "defs.json#/definitions/Filter"
         },
         {
-          "description": "Is there any infrastructure required to resolve keys and/or validate identifier to key binding"
+          "description": "Is there any infrastructure required to resolve keys and/or validate identifier to key binding?"
         }
       ]
     },
@@ -46,7 +46,7 @@
           "$ref": "defs.json#/definitions/Filter"
         },
         {
-          "description": "Is it possible to retain and obtain the history of keys related to a certain identifier?"
+          "description": "Is it possible to retain and obtain the history of keys related to a certain identifier? In case of key rotation it is important for signed credentials to request older keys that are not used for signing anymore."
         }
       ]
     },
@@ -55,7 +55,8 @@
       "items": {
         "enum": ["issuer", "holder"]
       },
-      "description": "What party may uses this technique?"
+      "description": "What party may uses this technique?",
+      "$comment": "We are not looking at verifiers here, since e.g. the identification of the verifier is not part of the credential comparison matrix."
     }
   },
   "required": ["$schema", "Key Management"],
