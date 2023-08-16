@@ -66,7 +66,7 @@ export class TableComponent implements OnInit, AfterViewInit {
     this.allColumns = this.getNames();
     this.columns = this.getNames().map((key) => ({
       header: key,
-      tooltip: (this.data.structure.properties[key] as Property).description,
+      tooltip: this.appService.getTooltip(this.data.structure.properties[key]),
     }));
     this.dataSource.data = Object.keys(this.data.values)
       .filter((key) => key !== 'structure')
