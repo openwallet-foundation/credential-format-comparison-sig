@@ -87,4 +87,15 @@ export class AppService {
     }
     return '';
   }
+
+  getType(value: any) {
+    if (value.type) {
+      return value.type;
+    } else {
+      const ref = value.allOf ? value.allOf[0].$ref : value.$ref;
+      const res = JSON.parse(JSON.stringify(def));
+      const id = ref.split('/')[2];
+      return res.definitions[id].type;
+    }
+  }
 }

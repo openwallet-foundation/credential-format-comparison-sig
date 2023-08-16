@@ -4,7 +4,7 @@ import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { CredentialProfileAddDialogComponent } from '../credential-profile-add-dialog/credential-profile-add-dialog.component';
 import { AppService, Resource } from '../app.service';
-import { Format, Property, Resources } from '../resources';
+import { Format, Resources } from '../resources';
 import { Filter, FilterComponent } from '../filter/filter.component';
 import { MatPaginator } from '@angular/material/paginator';
 
@@ -45,8 +45,9 @@ export class CredentialProfileComponent implements OnInit, AfterViewInit {
       if (value === '$schema') return;
       this.allColumns.push({
         key: value,
-        tooltip: (this.data.structure.properties[value] as Property)
-          .description,
+        tooltip: this.appService.getTooltip(
+          this.data.structure.properties[value]
+        ),
       });
     });
     for (const key of this.appService.extraValues) {
@@ -101,11 +102,14 @@ export class CredentialProfileComponent implements OnInit, AfterViewInit {
       })
       // filter out the columns that do not match with the filter
       .filter((value) => {
+        if (Object.keys(this.filter).length === 0) return true;
         for (const category in this.filter) {
           for (const key in this.filter[category]) {
             if (this.filter[category][key]) {
               const res = value[`${category} - ${key}`];
-              return typeof res === 'object' ? res.Value : res;
+              if (typeof res === 'object' ? res.Value : res === false) {
+                return false;
+              }
             }
           }
         }

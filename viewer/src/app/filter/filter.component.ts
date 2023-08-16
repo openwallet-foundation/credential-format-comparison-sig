@@ -40,16 +40,17 @@ export class FilterComponent implements OnInit {
         .structure.properties;
       Object.keys(subValues).forEach((value: string) => {
         if (value === '$schema') return;
-        elements.push({
-          value: `${key} - ${value}`,
-          show: value,
-          type: subValues[value].type ?? 'boolean',
-          tooltip:
-            subValues[value].description ??
-            subValues[value].allOf[1].description,
-        });
-        if (this.isCheckbox(elements[elements.length - 1])) {
-          group.addControl(value, new FormControl());
+        const type = this.appService.getType(subValues[value]);
+        if (type === 'boolean' || type.includes('boolean')) {
+          elements.push({
+            value: `${key} - ${value}`,
+            show: value,
+            type: subValues[value].type ?? 'boolean',
+            tooltip: this.appService.getTooltip(subValues[value]),
+          });
+          if (this.isCheckbox(elements[elements.length - 1])) {
+            group.addControl(value, new FormControl());
+          }
         }
       });
       this.selectionColumns.push({
