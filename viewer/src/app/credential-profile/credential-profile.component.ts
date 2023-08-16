@@ -107,7 +107,11 @@ export class CredentialProfileComponent implements OnInit, AfterViewInit {
           for (const key in this.filter[category]) {
             if (this.filter[category][key]) {
               const res = value[`${category} - ${key}`];
-              if (typeof res === 'object' ? res.Value : res === false) {
+              if (
+                typeof res === 'object'
+                  ? res.Value
+                  : res === false || typeof res === 'undefined'
+              ) {
                 return false;
               }
             }
