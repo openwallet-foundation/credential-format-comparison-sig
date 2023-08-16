@@ -10,7 +10,7 @@ import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { ActivatedRoute, Router } from '@angular/router';
 import { AppService } from '../app.service';
-import { Format, Property, Resources } from '../resources';
+import { Format, Resources } from '../resources';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatChipInputEvent } from '@angular/material/chips';
 import { MatAutocompleteSelectedEvent } from '@angular/material/autocomplete';
