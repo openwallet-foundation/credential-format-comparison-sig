@@ -1,16 +1,15 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://github.com/openwallet-foundation/credential-format-comparison-sig/tree/main/viewer/viewer/src/schemas/Signing-Algorithm.json",
+  "$id": "https://raw.githubusercontent.com/openwallet-foundation/credential-format-comparison-sig/main/viewer/src/schemas/Signing-Algorithm.json",
   "type": "object",
   "additionalProperties": false,
   "properties": {
     "$schema": {
-      "type": "string",
-      "description": "JSON Schema URI"
+      "$ref": "defs.json#/definitions/Schema"
     },
     "Signing Algorithm": {
       "type": "string",
-      "description": "Glossary"
+      "description": "A unique identifier for the signing algorithm."
     },
     "Implementation Support (e.g. Libraries) / Active Community": {
       "$ref": "defs.json#/definitions/Implementation-Support"
@@ -39,7 +38,8 @@
     },
     "Performance": {
       "type": "string",
-      "description": "How performant is the signing algorithm?"
+      "description": "How performant is the signing algorithm?",
+      "$comment": "difficult to answer, since there is no performance framework to measure against"
     },
     "Hardware support": {
       "allOf": [
@@ -47,7 +47,8 @@
           "$ref": "defs.json#/definitions/Filter"
         },
         {
-          "description": "Is the Signing Algorithm supported by common hardware-backed cryptographic implementations, such as Secure Elements, SecureEnclave, HSM, Strongbox, TEE, TPM"
+          "description": "Is the Signing Algorithm supported by common hardware-backed cryptographic implementations, such as Secure Elements, SecureEnclave, HSM, Strongbox, TEE, TPM",
+          "$comment": "Using different approaches can lead to different results when choosing key lengths or performance measurements"
         }
       ]
     },
@@ -57,7 +58,7 @@
           "$ref": "defs.json#/definitions/Filter"
         },
         {
-          "description": "Is the Signing Algorithm capable of creating a credential scheme, such that two verification processes can not be linked/correlated by colluding Verifiers/Relying Parties"
+          "description": "Is the Signing Algorithm capable of creating a credential scheme, such that two verification processes can not be linked/correlated by colluding Verifiers/Relying Parties?"
         }
       ]
     },
