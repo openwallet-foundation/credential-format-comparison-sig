@@ -1,16 +1,15 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://github.com/openwallet-foundation/credential-format-comparison-sig/tree/main/viewer/viewer/src/schemas/Revocation-Algorithm.json",
+  "$id": "https://raw.githubusercontent.com/openwallet-foundation/credential-format-comparison-sig/main/viewer/src/schemas/Revocation-Algorithm.json",
   "type": "object",
   "additionalProperties": false,
   "properties": {
     "$schema": {
-      "type": "string",
-      "description": "JSON Schema URI"
+      "$ref": "defs.json#/definitions/Schema"
     },
     "Revocation Algorithm": {
       "type": "string",
-      "description": "Glossary"
+      "description": "Unique identifier of the algorithm."
     },
     "Implementation Support (e.g. Libraries) / Active Community": {
       "$ref": "defs.json#/definitions/Implementation-Support"
@@ -39,11 +38,12 @@
     },
     "Category": {
       "type": "string",
-      "description": "Algorithm that behind the implementation of the revocation (Bitlist = each credential has a position in the list. Deny-List: revoked credentials will be added on demand. Accumulator: cryptographic proof the holder presents to show that the credential is not revoked)"
+      "description": "Algorithm that behind the implementation of the revocation (Bitlist = each credential has a position in the list. Deny-List: revoked credentials will be added on demand. Accumulator: cryptographic proof the holder presents to show that the credential is not revoked)."
     },
     "Performance": {
       "type": "string",
-      "description": "How performant is the revocation mechanism (for issuer, holder and verifier)?"
+      "description": "How performant is the revocation mechanism (for issuer, holder and verifier)?",
+      "$comment": "For this case there could be some king of test framework"
     },
     "Observability": {
       "allOf": [
@@ -61,7 +61,8 @@
           "$ref": "defs.json#/definitions/Filter"
         },
         {
-          "description": "Does the issuer have possibilities to trace the usage of his issued credentials through the revocation mechanism?"
+          "description": "Does the issuer have possibilities to trace the usage of his issued credentials through the revocation mechanism?",
+          "$comment": "With a size of one used element the issuer should always be able to trace the usage of his issued credentials"
         }
       ]
     },
