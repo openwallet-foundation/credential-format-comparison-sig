@@ -1,0 +1,14 @@
+{
+  "$schema": "../../viewer/src/schemas/Revocation-Algorithm.json",
+  "Revocation Algorithm": "JWT/CWT status list",
+  "Implementation Support (e.g. Libraries) / Active Community": "phython reference implementation",
+  "Specification": "https://datatracker.ietf.org/doc/draft-terbu-oauth-sd-jwt-vc/",
+  "Standardization (Body, Process)": "IETF Individual",
+  "Recognition by government authorities (NIST, BSI, ...)": false,
+  "Category": "Bitstring",
+  "Observability": true,
+  "Traceability": {
+    "Value": true,
+    "Description": "potentially possible with malicious issuer by providing a revocation list with a single entry"
+  }
+}
