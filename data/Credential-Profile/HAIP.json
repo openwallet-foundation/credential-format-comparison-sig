@@ -4,7 +4,7 @@
   "Credential Profile Description": "OpenID4VC High Assurance Interoperability Profile with SD-JWT-VC",
   "Credential Format": "SD-JWT-VC",
   "Signing Algorithm": "ECDSA",
-  "Revocation Algorithm": "JWT status list",
+  "Revocation Algorithm": "JWT/CWT status list",
   "Key Management (Issuer)": ".well-known/jwt-issuer",
   "Key Management (Holder)": "raw public keys (jwk)",
   "Implementations": "https://trustee.ietf.org/documents/trust-legal-provisions/"
