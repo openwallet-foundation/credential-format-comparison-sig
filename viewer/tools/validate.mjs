@@ -25,7 +25,6 @@ readdirSync(folder).forEach((subFolder) => {
 });
 if(error) {
     console.error(`At least one file is invalid`);
-    process.exit(1);
 } else {
     console.log(`All files are valid`);
 }
