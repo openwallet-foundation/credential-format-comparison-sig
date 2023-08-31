@@ -8,5 +8,5 @@
   "Key Management (Issuer)": "did:indy",
   "Key Management (Holder)": "link secrets",
   "Trust Management": "Verifier knows Issuers",
-  "Implementations": "Hyperledger Indy + Aries, Esatus, iGrant Data Wallet"
+  "Implementations": "Hyperledger Indy + Aries, Esatus, iGrant Data Wallet, British Columbia CANDY profile https://github.com/ICCS-ISAC/Candy"
 }
