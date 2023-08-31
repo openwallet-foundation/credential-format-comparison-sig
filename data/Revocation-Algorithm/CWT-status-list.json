@@ -1,4 +1,0 @@
-{
-  "$schema": "../../viewer/src/schemas/Revocation-Algorithm.json",
-  "Revocation Algorithm": "CWT status list"
-}
