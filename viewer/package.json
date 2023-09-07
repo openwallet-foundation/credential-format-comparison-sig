@@ -13,7 +13,8 @@
     "validate": "node tools/validate.mjs",
     "validate:watch": "nodemon --watch ../data tools/validate.mjs",
     "schema": "node tools/schema.mjs",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "timestamp": "node tools/generate-build-time.mjs"
   },
   "private": true,
   "dependencies": {
@@ -56,6 +57,7 @@
     "karma-jasmine-html-reporter": "~2.1.0",
     "nodemon": "^3.0.1",
     "postcss": "^8.4.24",
+    "replace-in-file": "^7.0.1",
     "typescript": "~5.1.3"
   }
 }
