@@ -1,16 +1,35 @@
-<mat-form-field class="full">
-  <mat-label>{{ label }}</mat-label>
-  <input
-    type="text"
-    aria-label="Number"
-    matInput
-    [formControl]="control"
-    [matAutocomplete]="auto"
-  />
-  <mat-hint>{{ description }}</mat-hint>
-  <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
-    <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
-      {{ option }}
-    </mat-option>
-  </mat-autocomplete>
-</mat-form-field>
+<mat-expansion-panel [expanded]="control.valid">
+  <mat-expansion-panel-header collapsedHeight="100px" expandedHeight="100px">
+    <mat-panel-title>{{ label ?? resource }}</mat-panel-title>
+    <mat-panel-description>
+      <mat-form-field class="full">
+        <!-- <mat-label>{{ label ?? resource }}</mat-label> -->
+        <input
+          type="text"
+          matInput
+          [formControl]="control"
+          [matAutocomplete]="auto"
+        />
+        <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+          <mat-option
+            *ngFor="let option of filteredOptions | async"
+            [value]="option"
+          >
+            {{ option }}
+          </mat-option>
+        </mat-autocomplete>
+        <mat-error *ngIf="control.hasError('notFound')"
+          >Please use one of the options</mat-error
+        >
+      </mat-form-field>
+    </mat-panel-description>
+  </mat-expansion-panel-header>
+  <mat-list>
+    <mat-list-item *ngFor="let field of fields">
+      <div matListItemTitle>{{ field.value }}</div>
+      <div matListItemLine>
+        <span [matTooltip]="field.tooltip">{{ field.key }}</span>
+      </div>
+    </mat-list-item>
+  </mat-list>
+</mat-expansion-panel>

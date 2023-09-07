@@ -18,7 +18,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { FormatPipe } from './format.pipe';
 import { MatListModule } from '@angular/material/list';
 import { FlexLayoutModule } from '@ngbracket/ngx-layout';
-import { CredentialProfileAddDialogComponent } from './credential-profile-add-dialog/credential-profile-add-dialog.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AutoSelectComponent } from './auto-select/auto-select.component';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
@@ -34,6 +33,9 @@ import {
 import { FilterComponent } from './filter/filter.component';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatMenuModule } from '@angular/material/menu';
+import { ProfileConfigComponent } from './profile-config/profile-config.component';
+import { MatCardModule } from '@angular/material/card';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 const appearance: MatFormFieldDefaultOptions = {
   appearance: 'outline',
@@ -44,9 +46,9 @@ const appearance: MatFormFieldDefaultOptions = {
     TableComponent,
     CredentialProfileComponent,
     FormatPipe,
-    CredentialProfileAddDialogComponent,
     AutoSelectComponent,
     FilterComponent,
+    ProfileConfigComponent,
   ],
   imports: [
     BrowserModule,
@@ -73,6 +75,8 @@ const appearance: MatFormFieldDefaultOptions = {
     MatPaginatorModule,
     ClipboardModule,
     MatMenuModule,
+    MatCardModule,
+    MatExpansionModule,
   ],
   providers: [
     FormatPipe,

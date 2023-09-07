@@ -7,6 +7,13 @@
     [routerLinkActiveOptions]="{ exact: true }"
     >Credential Profiles</a
   >
+  <a
+    mat-button
+    [routerLink]="['/config']"
+    routerLinkActive="router-link-active"
+    [routerLinkActiveOptions]="{ exact: true }"
+    >Configurator</a
+  >
   <button mat-button [matMenuTriggerFor]="menu">Resources</button>
   <mat-menu #menu="matMenu">
     <a
