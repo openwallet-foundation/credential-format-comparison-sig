@@ -1,0 +1,24 @@
+<div id="content">
+  <h2>Profile configurator</h2>
+  <p>Select different to create a new profile with its features.</p>
+  <mat-accordion multi="true" displayMode="flat">
+    <app-auto-select [resource]="'Credential Format'"></app-auto-select>
+    <app-auto-select
+      [label]="'Signing Algorithm'"
+      [resource]="'Signing Algorithm'"
+    ></app-auto-select>
+    <app-auto-select [resource]="'Revocation Algorithm'"></app-auto-select>
+    <app-auto-select
+      [label]="'Key Management (Holder)'"
+      [resource]="'Key Management'"
+    ></app-auto-select>
+    <app-auto-select
+      [label]="'Key Management (Issuer)'"
+      [resource]="'Key Management'"
+    ></app-auto-select>
+    <app-auto-select
+      [label]="'Trust Management'"
+      [resource]="'Trust Management'"
+    ></app-auto-select>
+  </mat-accordion>
+</div>

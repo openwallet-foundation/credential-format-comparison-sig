@@ -51,6 +51,11 @@ export class AppService {
     return this.getFormat(key).values;
   }
 
+  getValue(field: any) {
+    if (field.Description) return field.Value;
+    return field;
+  }
+
   /**
    * Returns a statistic which resources are used for the profiles.
    */

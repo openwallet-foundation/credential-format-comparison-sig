@@ -2,7 +2,6 @@ import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
-import { CredentialProfileAddDialogComponent } from '../credential-profile-add-dialog/credential-profile-add-dialog.component';
 import { AppService, Resource } from '../app.service';
 import { Format, Resources } from '../resources';
 import { Filter, FilterComponent } from '../filter/filter.component';
@@ -106,15 +105,15 @@ export class CredentialProfileComponent implements OnInit, AfterViewInit {
         for (const category in this.filter) {
           for (const key in this.filter[category]) {
             if (this.filter[category][key]) {
-              const res = value[`${category} - ${key}`];              
-              if(typeof res === 'object' && res.Value === false) {
+              const res = value[`${category} - ${key}`];
+              if (typeof res === 'object' && res.Value === false) {
                 console.log(value);
               }
               if (
                 typeof res === 'object'
                   ? !res.Value
                   : res === false || typeof res === 'undefined'
-              ) {                
+              ) {
                 return false;
               }
             }
@@ -153,13 +152,6 @@ export class CredentialProfileComponent implements OnInit, AfterViewInit {
 
   getLink(values: string[]) {
     return values.map((value) => this.appService.getKey(value));
-  }
-
-  addProfile() {
-    this.dialog.open(CredentialProfileAddDialogComponent, {
-      disableClose: true,
-      minWidth: '500px',
-    });
   }
 
   openFilter() {
