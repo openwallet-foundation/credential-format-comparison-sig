@@ -6,6 +6,7 @@ import { AppService, Resource } from '../app.service';
 import { Format, Resources } from '../resources';
 import { Filter, FilterComponent } from '../filter/filter.component';
 import { MatPaginator } from '@angular/material/paginator';
+import { environment } from 'src/environments/environment.development';
 
 class ColumnHeader {
   key!: string;
@@ -18,6 +19,7 @@ class ColumnHeader {
   styleUrls: ['./credential-profile.component.scss'],
 })
 export class CredentialProfileComponent implements OnInit, AfterViewInit {
+  updatedAt!: Date;
   data!: Format;
   allColumns: ColumnHeader[] = [];
   displayedColumns: string[] = [];
@@ -36,6 +38,7 @@ export class CredentialProfileComponent implements OnInit, AfterViewInit {
   constructor(private dialog: MatDialog, public appService: AppService) {}
 
   ngOnInit(): void {
+    this.updatedAt = new Date(environment.buildTime);
     this.dataSource = new MatTableDataSource<any>();
     this.data = this.appService.getFormat('Credential Profile');
     this.allColumns = [];
