@@ -1,0 +1,11 @@
+{
+  "$schema": "../../viewer/src/schemas/Credential-Profile.json",
+  "Credential Profile is commonly called": "AnonCreds with did:cheqd",
+  "Credential Profile Description": "AnonCreds with did:cheqd",
+  "Credential Format": "AnonCred",
+  "Signing Algorithm": "CL",
+  "Revocation Algorithm": "Indy Revocation",
+  "Key Management (Issuer)": "did:cheqd",
+  "Key Management (Holder)": "link secrets",
+  "Formal Specification": "https://docs.cheqd.io/identity/advanced/anoncreds"
+}
