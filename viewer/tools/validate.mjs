@@ -16,17 +16,28 @@ readdirSync(folder).forEach((subFolder) => {
         process.exit(1);            
     }
     const ajv = new Ajv({allowUnionTypes: true});
-    const validate = ajv.addSchema(JSON.parse(readFileSync(join(schemaFolder, defFile)))).compile(JSON.parse(infoFile));            
-    readdirSync(`${folder}/${subFolder}`).filter(file => file !== structureFile).forEach((file) => {        
+    const validate = ajv.addSchema(JSON.parse(readFileSync(join(schemaFolder, defFile)))).compile(JSON.parse(infoFile));
+    const uniqueNames = [];     
+    readdirSync(`${folder}/${subFolder}`).filter(file => file !== structureFile).forEach((file) => {
+        // check path compliance     
         if(!pattern.test(file)) {
             console.log(`File "../data/${subFolder}/${file}" does not match the pattern: ${pattern}}`);
             error = true;           
         }
+        // check schema compliance
         const content = JSON.parse(readFileSync(`${folder}/${subFolder}/${file}`));
         if(!validate(content)) {
             console.log(`File "../data/${subFolder}/${file}" is invalid`);
             console.log(JSON.stringify(validate.errors, null ,2));
+            error = true;            
+        }        
+        // check duplicate names
+        const name = subFolder === 'Credential-Profile' ? content['Credential Profile is commonly called'] : content[subFolder.replace('-', ' ')];
+        if(uniqueNames.includes(name)) {
+            console.log(`File "../data/${subFolder}/${file}" has a duplicate name: ${name}`);
             error = true;
+        } else {
+            uniqueNames.push(name);
         }
     });
 });
