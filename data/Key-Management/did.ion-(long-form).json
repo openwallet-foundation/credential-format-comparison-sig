@@ -5,5 +5,8 @@
   "Infrastructure for Key Resolution": false,
   "Key Rotation": false,
   "Key History": false,
-  "Party": ["holder", "issuer"]
+  "Party": [
+    "holder",
+    "issuer"
+  ]
 }

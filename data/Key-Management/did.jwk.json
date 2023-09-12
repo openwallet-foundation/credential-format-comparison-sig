@@ -1,5 +1,8 @@
 {
   "$schema": "../../viewer/src/schemas/Key-Management.json",
   "Key Management": "did:jwk",
-  "Party": ["holder", "issuer"]
+  "Party": [
+    "holder",
+    "issuer"
+  ]
 }

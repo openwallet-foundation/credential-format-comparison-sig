@@ -8,5 +8,8 @@
   },
   "Key Rotation": true,
   "Key History": false,
-  "Party": ["holder", "issuer"]
+  "Party": [
+    "holder",
+    "issuer"
+  ]
 }
