@@ -21,6 +21,8 @@ This SIG is an open group. Anyone in the OpenWallet Foundation community can joi
 
 If you are interested in participating, please join the [OpenWallet Foundation Discord](https://discord.com/invite/yjvGPd5FCU) and participate in the discussion in the [#credential-format-comparison-sig](https://discord.com/channels/1022962884864643214/1113500130419671080) channel.
 
+All recordings of the sessions are available in the [wiki](https://github.com/openwallet-foundation/credential-format-comparison-sig/wiki).
+
 # Gitpod
 
 Open this repository in Gitpod without the requirement to install anything
