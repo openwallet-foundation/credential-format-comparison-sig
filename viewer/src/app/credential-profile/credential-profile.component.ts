@@ -6,7 +6,7 @@ import { AppService, Resource } from '../app.service';
 import { Format, Resources } from '../resources';
 import { Filter, FilterComponent } from '../filter/filter.component';
 import { MatPaginator } from '@angular/material/paginator';
-import { environment } from 'src/environments/environment.development';
+import { environment } from 'src/environments/environment';
 
 class ColumnHeader {
   key!: string;
