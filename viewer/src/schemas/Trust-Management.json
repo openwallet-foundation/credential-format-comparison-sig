@@ -9,7 +9,7 @@
     },
     "Trust Management": {
       "type": "string",
-      "description": "A unique identifier for the trust management approach."
+      "description": "A unique identifier for the trust management approach"
     },
     "Implementation Support (e.g. Libraries) / Active Community": {
       "$ref": "defs.json#/definitions/Implementation-Support"
@@ -25,7 +25,7 @@
     },
     "Description": {
       "type": "string",
-      "description": "Explanation or link to a source how this trust management approach works."
+      "description": "Explanation or link to a source how this trust management approach works"
     }
   },
   "required": ["$schema", "Trust Management"],

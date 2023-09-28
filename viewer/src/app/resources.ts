@@ -4,6 +4,8 @@ export interface Resources {
   'Key Management': Format;
   'Revocation Algorithm': Format;
   'Signing Algorithm': Format;
+  'Issuance Protocol': Format;
+  'Presentation Protocol': Format;
   'Trust Management': Format;
 }
 

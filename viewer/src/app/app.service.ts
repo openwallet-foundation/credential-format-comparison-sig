@@ -9,6 +9,8 @@ export type Resource =
   | 'Revocation Algorithm'
   | 'Key Management (Issuer)'
   | 'Key Management (Holder)'
+  | 'Issuance Protocol'
+  | 'Presentation Protocol'
   | 'Trust Management';
 @Injectable({
   providedIn: 'root',
@@ -20,6 +22,8 @@ export class AppService {
     'Revocation Algorithm',
     'Key Management (Issuer)',
     'Key Management (Holder)',
+    'Issuance Protocol',
+    'Presentation Protocol',
     'Trust Management',
   ];
 
