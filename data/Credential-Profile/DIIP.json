@@ -7,5 +7,7 @@
   "Signing Algorithm": "ECDSA",
   "Revocation Algorithm": "Status List 2021",
   "Key Management (Issuer)": "did:web",
-  "Key Management (Holder)": "did:jwk"
+  "Key Management (Holder)": "did:jwk",
+  "Issuance Protocol": "OpenID4VCI",
+  "Presentation Protocol": "OpenID4VP"
 }

@@ -9,7 +9,7 @@
     },
     "Revocation Algorithm": {
       "type": "string",
-      "description": "Unique identifier of the algorithm."
+      "description": "Unique identifier of the algorithm"
     },
     "Implementation Support (e.g. Libraries) / Active Community": {
       "$ref": "defs.json#/definitions/Implementation-Support"
@@ -38,7 +38,7 @@
     },
     "Category": {
       "type": "string",
-      "description": "Algorithm that behind the implementation of the revocation (Bitlist = each credential has a position in the list. Deny-List: revoked credentials will be added on demand. Accumulator: cryptographic proof the holder presents to show that the credential is not revoked)."
+      "description": "Algorithm that behind the implementation of the revocation (Bitlist = each credential has a position in the list. Deny-List: revoked credentials will be added on demand. Accumulator: cryptographic proof the holder presents to show that the credential is not revoked)"
     },
     "Performance": {
       "type": "string",
