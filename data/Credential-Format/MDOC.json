@@ -1,7 +1,6 @@
 {
   "$schema": "../../schemas/Credential-Format.json",
   "Credential Format": "MDOC",
-  "Implementation Support (e.g. Libraries) / Active Community": "Apple, Idemia, Thales, HID global, GET Group, Google, Panasonic, Spruce",
   "Specification": "ISO 18013-5",
   "Standardization (Body, Process)": "ISO",
   "Encoding Scheme": "CBOR",
