@@ -1,5 +1,5 @@
 {
-  "$schema": "../../viewer/src/schemas/Credential-Format.json",
+  "$schema": "../../schemas/Credential-Format.json",
   "Credential Format": "ICAO DTC",
   "Standardization (Body, Process)": "ICAO",
   "Selective Disclosure": true

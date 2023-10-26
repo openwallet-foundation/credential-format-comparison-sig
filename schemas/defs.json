@@ -24,7 +24,8 @@
     },
     "Implementation-Support": {
       "type": "string",
-      "description": "How complex is the implementation? Which/How many useful software libraries available?"
+      "description": "Links to SDKs or documentation how to implement it.",
+      "$comment": "Objective field, only link to resources. Do not explain like 'easy to implement' since this is subjective."
     },
     "IPR-Policy": {
       "type": "string",
@@ -37,11 +38,6 @@
     "Standardization": {
       "type": "string",
       "description": "Under which Standardization Body and which standards track/status is it standardized?"
-    },
-    "Technology-Readiness-Level": {
-      "type": "number",
-      "description": "According to NASA-Scheme (http://www.artemisinnovation.com/images/TRL_White_Paper_2004-Edited.pdf)",
-      "$comment": "In this case we have a link that can not be called in the web application since descriptions are rendered as a non clickable tooltip"
     }
   }
 }

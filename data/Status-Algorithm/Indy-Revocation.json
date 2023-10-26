@@ -1,6 +1,6 @@
 {
-  "$schema": "../../viewer/src/schemas/Revocation-Algorithm.json",
-  "Revocation Algorithm": "Indy Revocation",
+  "$schema": "../../schemas/Revocation-Algorithm.json",
+  "Status Algorithm": "Indy Revocation",
   "Implementation Support (e.g. Libraries) / Active Community": "Indy SDK",
   "Standardization (Body, Process)": "AnonCreds",
   "Recognition by government authorities (NIST, BSI, ...)": false,

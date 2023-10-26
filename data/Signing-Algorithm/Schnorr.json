@@ -1,11 +1,10 @@
 {
-  "$schema": "../../viewer/src/schemas/Signing-Algorithm.json",
+  "$schema": "../../schemas/Signing-Algorithm.json",
   "Signing Algorithm": "Schnorr",
   "Implementation Support (e.g. Libraries) / Active Community": "many mature implementations",
   "IPR Policy": "patents expired",
   "Specification": "different curves-different specs",
   "Standardization (Body, Process)": "different curves-different standards",
-  "Technology Readiness Level": 9,
   "Recognition by government authorities (NIST, BSI, ...)": {
     "Value": true,
     "Description": "NIST with Curve25519"

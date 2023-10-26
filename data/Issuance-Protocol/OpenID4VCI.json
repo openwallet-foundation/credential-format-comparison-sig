@@ -1,5 +1,5 @@
 {
-  "$schema": "../../viewer/src/schemas/Issuance-Protocol.json",
+  "$schema": "../../schemas/Issuance-Protocol.json",
   "Issuance Protocol": "OpenID4VCI",
   "Specification": "https://openid.net/specs/openid-4-verifiable-credential-issuance-1_0.html"
 }

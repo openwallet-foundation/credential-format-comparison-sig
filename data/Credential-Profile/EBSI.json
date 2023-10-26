@@ -1,10 +1,10 @@
 {
-  "$schema": "../../viewer/src/schemas/Credential-Profile.json",
+  "$schema": "../../schemas/Credential-Profile.json",
   "Credential Profile is commonly called": "EBSI",
   "Credential Profile Description": "[Profile description goes here]",
   "Credential Format": "JWT-VC",
   "Signing Algorithm": "ECDSA",
-  "Revocation Algorithm": "Status List 2021",
+  "Status Algorithm": "Status List 2021",
   "Key Management (Issuer)": "did:ebsi",
   "Key Management (Holder)": "did:key",
   "Trust Management": "EBSI Trust Registries"

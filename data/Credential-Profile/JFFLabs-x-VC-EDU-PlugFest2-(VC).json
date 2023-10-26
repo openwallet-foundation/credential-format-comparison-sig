@@ -1,11 +1,9 @@
 {
-  "$schema": "../../viewer/src/schemas/Credential-Profile.json",
+  "$schema": "../../schemas/Credential-Profile.json",
   "Credential Profile is commonly called": "JFFLabs x VC-EDU PlugFest2 (VC)",
   "Credential Profile Description": "Interoperability profile used in the PlugFest2",
   "Credential Format": "LDP-VC",
   "Signing Algorithm": "EdDSA",
   "Key Management (Issuer)": "did:web",
-  "Key Management (Holder)": "did:key",
-  "IPR Policy": "https://github.com/digitalbazaar/jsonld.js",
-  "Implementations": "https://www.w3.org/Consortium/Patent-Policy-20200915/#sec-Requirements"
+  "Key Management (Holder)": "did:key"
 }

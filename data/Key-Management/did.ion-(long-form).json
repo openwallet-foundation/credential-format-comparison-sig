@@ -1,12 +1,9 @@
 {
-  "$schema": "../../viewer/src/schemas/Key-Management.json",
+  "$schema": "../../schemas/Key-Management.json",
   "Key Management": "did:ion (long form)",
   "Implementation Support (e.g. Libraries) / Active Community": "https://github.com/decentralized-identity/ion",
   "Infrastructure for Key Resolution": false,
   "Key Rotation": false,
   "Key History": false,
-  "Party": [
-    "holder",
-    "issuer"
-  ]
+  "Party": ["holder", "issuer"]
 }

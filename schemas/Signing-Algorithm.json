@@ -23,9 +23,6 @@
     "Standardization (Body, Process)": {
       "$ref": "defs.json#/definitions/Standardization"
     },
-    "Technology Readiness Level": {
-      "$ref": "defs.json#/definitions/Technology-Readiness-Level"
-    },
     "Recognition by government authorities (NIST, BSI, ...)": {
       "allOf": [
         {

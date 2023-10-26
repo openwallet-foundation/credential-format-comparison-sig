@@ -1,14 +1,12 @@
 {
-  "$schema": "../../viewer/src/schemas/Credential-Profile.json",
+  "$schema": "../../schemas/Credential-Profile.json",
   "Credential Profile is commonly called": "NGI Atlantic for OpenID4VCs",
   "Credential Profile Description": "https://ngiatlantic.info\nhttps://ngiatlantic.eu/funded-experiments/next-generation-ssi-standards",
   "Credential Format": "JWT-VC",
   "Signing Algorithm": "ECDSA",
-  "Revocation Algorithm": "short-term expiration",
+  "Status Algorithm": "short-term expiration",
   "Key Management (Issuer)": "did:key",
   "Key Management (Holder)": "did:key",
   "Trust Management": "TRAIN",
-  "Formal Specification": "https://ngiatlantic.info",
-  "IPR Policy": "Apache 2",
-  "Implementations": "CROSSWORD CYBERSECURITY LTD, FRAUNHOFER FHG AND SPRUCE SYSTEMS, INC.\nUtilized in VC-EDU JFF Plugfest 2"
+  "Formal Specification": "https://ngiatlantic.info"
 }

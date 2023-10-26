@@ -7,7 +7,7 @@
     "$schema": {
       "$ref": "defs.json#/definitions/Schema"
     },
-    "Revocation Algorithm": {
+    "Status Algorithm": {
       "type": "string",
       "description": "Unique identifier of the algorithm"
     },
@@ -23,16 +23,13 @@
     "Standardization (Body, Process)": {
       "$ref": "defs.json#/definitions/Standardization"
     },
-    "Technology Readiness Level": {
-      "$ref": "defs.json#/definitions/Technology-Readiness-Level"
-    },
     "Recognition by government authorities (NIST, BSI, ...)": {
       "allOf": [
         {
           "$ref": "defs.json#/definitions/Filter"
         },
         {
-          "description": "Is the revocation algorithm recognized in regulatory frameworks of leading government bodies?"
+          "description": "Is the status algorithm recognized in regulatory frameworks of leading government bodies?"
         }
       ]
     },
@@ -87,6 +84,6 @@
       ]
     }
   },
-  "required": ["$schema", "Revocation Algorithm"],
+  "required": ["$schema", "Status Algorithm"],
   "title": "RevocationAlgorithm"
 }

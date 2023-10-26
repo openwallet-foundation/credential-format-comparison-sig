@@ -1,11 +1,10 @@
 {
-  "$schema": "../../viewer/src/schemas/Credential-Format.json",
+  "$schema": "../../schemas/Credential-Format.json",
   "Credential Format": "VC (1.1)",
   "Implementation Support (e.g. Libraries) / Active Community": "https://jwt.io/libraries",
   "IPR Policy": "https://www.w3.org/Consortium/Patent-Policy-20200915/#sec-Requirements",
   "Specification": "https://www.w3.org/TR/vc-data-model/",
   "Standardization (Body, Process)": "W3C",
-  "Technology Readiness Level": 8,
   "Encoding Scheme": "JSON, JSON-LD",
   "Rich Schemas/Semantic": true,
   "Crypto Agility": true,
