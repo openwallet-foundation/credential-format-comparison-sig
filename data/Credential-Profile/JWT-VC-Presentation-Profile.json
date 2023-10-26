@@ -4,7 +4,7 @@
   "Credential Profile Description": "https://identity.foundation/jwt-vc-presentation-profile/",
   "Credential Format": "JWT-VC",
   "Signing Algorithm": "ECDSA",
-  "Revocation Algorithm": "Status List 2021",
+  "Status Algorithm": "Status List 2021",
   "Key Management (Issuer)": "did:ion (long form)",
   "Key Management (Holder)": "did:ion (long form)"
 }

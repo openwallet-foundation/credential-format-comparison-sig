@@ -1,9 +1,9 @@
 {
   "$schema": "../../schemas/Revocation-Algorithm.json",
-  "Revocation Algorithm": "Status List 2021",
-  "Implementation Support (e.g. Libraries) / Active Community": "https://github.com/transmute-industries/verifiable-data/tree/main/packages/vc-status-rl-2020",
-  "Specification": "https://w3c-ccg.github.io/vc-status-list-2021/",
-  "Standardization (Body, Process)": "W3C",
+  "Status Algorithm": "JWT/CWT status list",
+  "Implementation Support (e.g. Libraries) / Active Community": "https://github.com/vcstuff/draft-looker-oauth-jwt-cwt-status-list",
+  "Specification": "https://datatracker.ietf.org/doc/draft-terbu-oauth-sd-jwt-vc/",
+  "Standardization (Body, Process)": "IETF Individual",
   "Recognition by government authorities (NIST, BSI, ...)": false,
   "Category": "Bitstring",
   "Observability": true,

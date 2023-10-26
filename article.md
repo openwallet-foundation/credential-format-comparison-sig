@@ -39,7 +39,7 @@ In this paper, we aim to describe the rationale behind the credential profile ma
 
 ## Methodology
 
-For the creation of the credential profile matrix, a group of domain experts gathered first at the Internet Identity Workshop in its 34th incarnation (IIWXXIV) in Mountain View in April 2022. They kicked off with listening to experts for different VC types and formats, starting to gather data in a structured way, to ultimately be able to compare them in defined categories. This lead to a definition for a _credential profile_: a configuration of the credential format, signing algorithm, revocation algorithm and key management. These properties are then further drilled down, e.g. looking at technical traits like selective disclosure, crypto agility, or hardware support, and adoption criteria like standardization, technology readiness level, or implementation support.
+For the creation of the credential profile matrix, a group of domain experts gathered first at the Internet Identity Workshop in its 34th incarnation (IIWXXIV) in Mountain View in April 2022. They kicked off with listening to experts for different VC types and formats, starting to gather data in a structured way, to ultimately be able to compare them in defined categories. This lead to a definition for a _credential profile_: a configuration of the credential format, signing algorithm, status algorithm and key management. These properties are then further drilled down, e.g. looking at technical traits like selective disclosure, crypto agility, or hardware support, and adoption criteria like standardization, technology readiness level, or implementation support.
 
 For example, what is typically refered to as AnonCreds resolves to the credential profile "AnonCreds + CL + Indy Revocation + did:indy + link secrets".
 
@@ -69,7 +69,7 @@ The credential format and the signature algorithm are in scope, as the choice in
 
 ## Guide
 
-The [credential profile comparison matrix](https://docs.google.com/spreadsheets/d/1Z4cYfjbbE-rABcfC-xab8miocKLomivYMUFibOh9BVo) is maintained as a living spreadsheat in google sheets. In the following sections we will describe the properties listed in the comparison matrix. Some properties are present in various tables. We will discuss these first. Then we will list the properties specific to the credential format, signature algorithm, revocation algorithm, key management and trust management.
+The [credential profile comparison matrix](https://docs.google.com/spreadsheets/d/1Z4cYfjbbE-rABcfC-xab8miocKLomivYMUFibOh9BVo) is maintained as a living spreadsheat in google sheets. In the following sections we will describe the properties listed in the comparison matrix. Some properties are present in various tables. We will discuss these first. Then we will list the properties specific to the credential format, signature algorithm, status algorithm, key management and trust management.
 
 ### Common Properties
 
@@ -195,7 +195,7 @@ In the comparison matrix, with regard to cryptography, we discuss signatures and
 
 The performance of signature algorithms can impact the user-friendliness of the wallet implementing the credential profile. We express the generation of the signature in terms of seconds.
 
-### Properties of Revocation Algorithm
+### Properties of Status Algorithm
 
 Revocation is when the issuer no longer vouches for the correctness of the information in the credential that was issued to the holder. A reason for revocation could be that the information in the credential is simply not true anymore (holder is not a student anymore) or the information has to be periodically renewed (like a passport).
 
@@ -213,7 +213,7 @@ This property is about whether an issuer can observe a verifier checking that a 
 
 #### Offline Friendliness
 
-In some use cases presentations have to be verified in an offline setting, such as when presenting a mobile driving license to a police officer on the road. The verifier should then also be able to check the revocation status of the credential. This property defines whether a revocation algorithm allows for an offline workflow.
+In some use cases presentations have to be verified in an offline setting, such as when presenting a mobile driving license to a police officer on the road. The verifier should then also be able to check the revocation status of the credential. This property defines whether a status algorithm allows for an offline workflow.
 
 ### Properties of Key Management
 

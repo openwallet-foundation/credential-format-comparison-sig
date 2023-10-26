@@ -7,7 +7,7 @@
     "$schema": {
       "$ref": "defs.json#/definitions/Schema"
     },
-    "Revocation Algorithm": {
+    "Status Algorithm": {
       "type": "string",
       "description": "Unique identifier of the algorithm"
     },
@@ -29,7 +29,7 @@
           "$ref": "defs.json#/definitions/Filter"
         },
         {
-          "description": "Is the revocation algorithm recognized in regulatory frameworks of leading government bodies?"
+          "description": "Is the status algorithm recognized in regulatory frameworks of leading government bodies?"
         }
       ]
     },
@@ -84,6 +84,6 @@
       ]
     }
   },
-  "required": ["$schema", "Revocation Algorithm"],
+  "required": ["$schema", "Status Algorithm"],
   "title": "RevocationAlgorithm"
 }

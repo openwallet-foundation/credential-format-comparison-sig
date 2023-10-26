@@ -4,7 +4,7 @@
   "Credential Profile Description": "[Profile description goes here]",
   "Credential Format": "MDOC",
   "Signing Algorithm": "ECDSA",
-  "Revocation Algorithm": "medium-term expiration",
+  "Status Algorithm": "medium-term expiration",
   "Key Management (Issuer)": "pub key in X.509 cert",
   "Key Management (Holder)": "cose key",
   "Trust Management": "Verified issuer certificate authority list (VICAL)",

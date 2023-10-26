@@ -2,7 +2,7 @@ export interface Resources {
   'Credential Profile': Format;
   'Credential Format': Format;
   'Key Management': Format;
-  'Revocation Algorithm': Format;
+  'Status Algorithm': Format;
   'Signing Algorithm': Format;
   'Issuance Protocol': Format;
   'Presentation Protocol': Format;

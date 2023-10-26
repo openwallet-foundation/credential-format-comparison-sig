@@ -1,4 +1,4 @@
 {
   "$schema": "../../schemas/Revocation-Algorithm.json",
-  "Revocation Algorithm": "Validity Credential"
+  "Status Algorithm": "Non-Revocation Token"
 }

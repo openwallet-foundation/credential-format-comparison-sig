@@ -4,7 +4,7 @@
   "Credential Profile Description": "https://ngiatlantic.info\nhttps://ngiatlantic.eu/funded-experiments/next-generation-ssi-standards",
   "Credential Format": "JWT-VC",
   "Signing Algorithm": "ECDSA",
-  "Revocation Algorithm": "short-term expiration",
+  "Status Algorithm": "short-term expiration",
   "Key Management (Issuer)": "did:key",
   "Key Management (Holder)": "did:key",
   "Trust Management": "TRAIN",

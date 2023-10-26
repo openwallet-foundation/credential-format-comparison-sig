@@ -6,7 +6,7 @@ import strucutre from '../structure.json';
 export type Resource =
   | 'Credential Format'
   | 'Signing Algorithm'
-  | 'Revocation Algorithm'
+  | 'Status Algorithm'
   | 'Key Management (Issuer)'
   | 'Key Management (Holder)'
   | 'Issuance Protocol'
@@ -19,7 +19,7 @@ export class AppService {
   public extraValues: Resource[] = [
     'Credential Format',
     'Signing Algorithm',
-    'Revocation Algorithm',
+    'Status Algorithm',
     'Key Management (Issuer)',
     'Key Management (Holder)',
     'Issuance Protocol',
