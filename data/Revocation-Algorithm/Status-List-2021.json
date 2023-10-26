@@ -1,5 +1,5 @@
 {
-  "$schema": "../../viewer/src/schemas/Revocation-Algorithm.json",
+  "$schema": "../../schemas/Revocation-Algorithm.json",
   "Revocation Algorithm": "Status List 2021",
   "Implementation Support (e.g. Libraries) / Active Community": "https://github.com/transmute-industries/verifiable-data/tree/main/packages/vc-status-rl-2020",
   "Specification": "https://w3c-ccg.github.io/vc-status-list-2021/",

@@ -1,5 +1,5 @@
 {
-  "$schema": "../../viewer/src/schemas/Key-Management.json",
+  "$schema": "../../schemas/Key-Management.json",
   "Key Management": "did:cheqd",
   "Specification": "https://docs.cheqd.io/identity/architecture/adr-list/adr-001-cheqd-did-method",
   "Implementation Support (e.g. Libraries) / Active Community": "https://docs.cheqd.io/identity/sdk/understanding-sdks",

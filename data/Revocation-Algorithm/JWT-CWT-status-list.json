@@ -1,5 +1,5 @@
 {
-  "$schema": "../../viewer/src/schemas/Revocation-Algorithm.json",
+  "$schema": "../../schemas/Revocation-Algorithm.json",
   "Revocation Algorithm": "JWT/CWT status list",
   "Implementation Support (e.g. Libraries) / Active Community": "https://github.com/vcstuff/draft-looker-oauth-jwt-cwt-status-list",
   "Specification": "https://datatracker.ietf.org/doc/draft-terbu-oauth-sd-jwt-vc/",

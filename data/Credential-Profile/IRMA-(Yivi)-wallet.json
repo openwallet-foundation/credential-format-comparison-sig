@@ -1,5 +1,5 @@
 {
-  "$schema": "../../viewer/src/schemas/Credential-Profile.json",
+  "$schema": "../../schemas/Credential-Profile.json",
   "Credential Profile is commonly called": "IRMA (Yivi) wallet",
   "Credential Profile Description": "https://dominoweb.draco.res.ibm.com/reports/rz3730_revised.pdf",
   "Credential Format": "Idemix attribute-based credential",
@@ -7,6 +7,5 @@
   "Revocation Algorithm": "RSA-B - cryptographic accumulator based on RSA",
   "Key Management (Issuer)": "raw public keys (none jwk)",
   "Key Management (Holder)": "link secrets",
-  "Trust Management": "IRMA (Yivi) Schemes",
-  "Implementations": "IRMA (Yivi)"
+  "Trust Management": "IRMA (Yivi) Schemes"
 }

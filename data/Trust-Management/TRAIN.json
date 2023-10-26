@@ -1,5 +1,5 @@
 {
-  "$schema": "../../viewer/src/schemas/Trust-Management.json",
+  "$schema": "../../schemas/Trust-Management.json",
   "Trust Management": "TRAIN",
   "Implementation Support (e.g. Libraries) / Active Community": "https://gitlab.cc-asp.fraunhofer.de/train",
   "IPR Policy": "Apache 2.0",

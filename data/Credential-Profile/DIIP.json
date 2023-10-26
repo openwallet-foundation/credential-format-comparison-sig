@@ -1,5 +1,5 @@
 {
-  "$schema": "../../viewer/src/schemas/Credential-Profile.json",
+  "$schema": "../../schemas/Credential-Profile.json",
   "Credential Profile is commonly called": "Decentralized Identity Interop Profile",
   "Formal Specification": "https://dutchblockchaincoalition.github.io/DDIP/",
   "Credential Profile Description": "Decentralized Identity Interop Profile",

@@ -1,4 +1,4 @@
 {
-  "$schema": "../../viewer/src/schemas/Revocation-Algorithm.json",
+  "$schema": "../../schemas/Revocation-Algorithm.json",
   "Revocation Algorithm": "Non-Revocation Token"
 }

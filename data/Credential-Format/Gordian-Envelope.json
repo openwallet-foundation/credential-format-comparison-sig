@@ -1,11 +1,10 @@
 {
-  "$schema": "../../viewer/src/schemas/Credential-Format.json",
+  "$schema": "../../schemas/Credential-Format.json",
   "Credential Format": "Gordian Envelope",
   "Implementation Support (e.g. Libraries) / Active Community": "command-line MVP https://github.com/BlockchainCommons/envelope-cli-swift, rust libraries on the way.",
   "IPR Policy": "SPDI:BSD-2-Clause-Patent https://spdx.org/licenses/BSD-2-Clause-Patent.html",
   "Specification": "https://github.com/BlockchainCommons/BCSwiftSecureComponents (this will be moved elsewhere soon).",
   "Standardization (Body, Process)": "IETF (for CBOR registration) W3C (for did method and alternative DID document and credentials data format)",
-  "Technology Readiness Level": 3,
   "Encoding Scheme": "CBOR",
   "Rich Schemas/Semantic": false,
   "Crypto Agility": true,

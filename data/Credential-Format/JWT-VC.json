@@ -1,5 +1,5 @@
 {
-  "$schema": "../../viewer/src/schemas/Credential-Format.json",
+  "$schema": "../../schemas/Credential-Format.json",
   "Credential Format": "JWT-VC",
   "Rich Schemas/Semantic": false,
   "Crypto Agility": true,

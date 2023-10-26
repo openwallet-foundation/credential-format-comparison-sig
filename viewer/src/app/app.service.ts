@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Format, Resources } from './resources';
 import values from '../structure.json';
-import def from '../schemas/defs.json';
+import strucutre from '../structure.json';
 
 export type Resource =
   | 'Credential Format'
@@ -90,9 +90,11 @@ export class AppService {
       return value.allOf[1].description;
     }
     if (value.$ref) {
-      const res = JSON.parse(JSON.stringify(def));
+      const res = JSON.parse(JSON.stringify(strucutre.defs));
+      console.log(res);
       const id = value.$ref.split('/')[2];
-      return res.definitions[id].description;
+      console.log(id);
+      return res.definitions[id]?.description;
     }
     return '';
   }
@@ -102,7 +104,7 @@ export class AppService {
       return value.type;
     } else {
       const ref = value.allOf ? value.allOf[0].$ref : value.$ref;
-      const res = JSON.parse(JSON.stringify(def));
+      const res = JSON.parse(JSON.stringify(strucutre.defs));
       const id = ref.split('/')[2];
       return res.definitions[id].type;
     }

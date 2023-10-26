@@ -1,9 +1,8 @@
 {
-  "$schema": "../../viewer/src/schemas/Credential-Format.json",
+  "$schema": "../../schemas/Credential-Format.json",
   "Credential Format": "CWT",
   "Specification": "https://www.rfc-editor.org/rfc/rfc8392.html",
   "Standardization (Body, Process)": "IETF",
-  "Technology Readiness Level": 8,
   "Encoding Scheme": "CBOR",
   "Crypto Agility": true,
   "Selective Disclosure": false,

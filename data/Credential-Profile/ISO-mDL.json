@@ -1,5 +1,5 @@
 {
-  "$schema": "../../viewer/src/schemas/Credential-Profile.json",
+  "$schema": "../../schemas/Credential-Profile.json",
   "Credential Profile is commonly called": "ISO mDL",
   "Credential Profile Description": "[Profile description goes here]",
   "Credential Format": "MDOC",
@@ -8,6 +8,5 @@
   "Key Management (Issuer)": "pub key in X.509 cert",
   "Key Management (Holder)": "cose key",
   "Trust Management": "Verified issuer certificate authority list (VICAL)",
-  "Formal Specification": "ISO 18013-5",
-  "Implementations": "Apple Wallet, UL, IDEMA"
+  "Formal Specification": "ISO 18013-5"
 }
