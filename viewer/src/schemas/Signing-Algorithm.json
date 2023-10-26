@@ -9,7 +9,7 @@
     },
     "Signing Algorithm": {
       "type": "string",
-      "description": "A unique identifier for the signing algorithm."
+      "description": "A unique identifier for the signing algorithm"
     },
     "Implementation Support (e.g. Libraries) / Active Community": {
       "$ref": "defs.json#/definitions/Implementation-Support"
@@ -47,7 +47,7 @@
           "$ref": "defs.json#/definitions/Filter"
         },
         {
-          "description": "Is the Signing Algorithm supported by common hardware-backed cryptographic implementations, such as Secure Elements, SecureEnclave, HSM, Strongbox, TEE, TPM.",
+          "description": "Is the Signing Algorithm supported by common hardware-backed cryptographic implementations, such as Secure Elements, SecureEnclave, HSM, Strongbox, TEE, TPM",
           "$comment": "Using different approaches can lead to different results when choosing key lengths or performance measurements"
         }
       ]
