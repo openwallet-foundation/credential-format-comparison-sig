@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CredentialProfileComponent } from './credential-profile/credential-profile.component';
 import { TableComponent } from './table/table.component';
 import { ProfileConfigComponent } from './profile-config/profile-config.component';
+import { CredentialProfileShowComponent } from './credential-profile-show/credential-profile-show.component';
 
 const routes: Routes = [
   {
@@ -12,6 +13,10 @@ const routes: Routes = [
   {
     path: 'config',
     component: ProfileConfigComponent,
+  },
+  {
+    path: 'profiles/:id',
+    component: CredentialProfileShowComponent,
   },
   {
     path: 'resources/:resource',

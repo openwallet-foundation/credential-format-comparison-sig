@@ -38,6 +38,22 @@
     "Standardization": {
       "type": "string",
       "description": "Under which Standardization Body and which standards track/status is it standardized?"
+    },
+    "LinkElement": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "link": {
+          "type": "string",
+          "format": "uri",
+          "qt-uri-protocols": ["https"]
+        }
+      },
+      "required": ["link", "name"],
+      "title": "LinkElement"
     }
   }
 }
