@@ -39,6 +39,8 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { CommonModule } from '@angular/common';
 import { CredentialProfileShowComponent } from './credential-profile-show/credential-profile-show.component';
+import { MarkdownModule } from 'ngx-markdown';
+import { DefinitionComponent } from './definition/definition.component';
 
 const appearance: MatFormFieldDefaultOptions = {
   appearance: 'outline',
@@ -53,6 +55,7 @@ const appearance: MatFormFieldDefaultOptions = {
     AutoSelectComponent,
     FilterComponent,
     ProfileConfigComponent,
+    DefinitionComponent,
   ],
   imports: [
     CommonModule,
@@ -83,6 +86,7 @@ const appearance: MatFormFieldDefaultOptions = {
     MatMenuModule,
     MatCardModule,
     MatExpansionModule,
+    MarkdownModule.forRoot(),
   ],
   providers: [
     FormatPipe,

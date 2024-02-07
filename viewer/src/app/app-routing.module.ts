@@ -4,6 +4,7 @@ import { CredentialProfileComponent } from './credential-profile/credential-prof
 import { TableComponent } from './table/table.component';
 import { ProfileConfigComponent } from './profile-config/profile-config.component';
 import { CredentialProfileShowComponent } from './credential-profile-show/credential-profile-show.component';
+import { DefinitionComponent } from './definition/definition.component';
 
 const routes: Routes = [
   {
@@ -25,6 +26,18 @@ const routes: Routes = [
   {
     path: 'resources/:resource/:id',
     component: TableComponent,
+  },
+  {
+    path: 'definition',
+    component: DefinitionComponent,
+  },
+  {
+    path: 'definition/:resource',
+    component: DefinitionComponent,
+  },
+  {
+    path: 'definition/:resource/:id',
+    component: DefinitionComponent,
   },
 ];
 

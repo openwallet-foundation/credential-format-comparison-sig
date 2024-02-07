@@ -23,6 +23,13 @@
       >{{ tab }}</a
     >
   </mat-menu>
+  <a
+    mat-button
+    [routerLink]="['/definition']"
+    routerLinkActive="router-link-active"
+    [routerLinkActiveOptions]="{ exact: true }"
+    >Definitions</a
+  >
   <div class="spacer"></div>
   <div class="github">
     <a
