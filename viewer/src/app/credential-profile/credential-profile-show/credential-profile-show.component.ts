@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { AppService } from '../app.service';
+import { AppService } from '../../app.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { IProfile, Resources } from '../resources';
+import { IProfile, Resources } from '../../resources';
 
 @Component({
   selector: 'app-credential-profile-show',

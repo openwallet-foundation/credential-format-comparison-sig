@@ -7,8 +7,8 @@ import {
   Validators,
 } from '@angular/forms';
 import { Observable, map, startWith } from 'rxjs';
-import { AppService } from '../app.service';
-import { Resources } from '../resources';
+import { AppService } from '../../app.service';
+import { Resources } from '../../resources';
 
 export interface Field {
   key: string;

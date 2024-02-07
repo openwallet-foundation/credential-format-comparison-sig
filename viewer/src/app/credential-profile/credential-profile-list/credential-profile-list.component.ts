@@ -2,8 +2,8 @@ import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
-import { AppService, Resource } from '../app.service';
-import { Format, Resources } from '../resources';
+import { AppService, Resource } from '../../app.service';
+import { Format, Resources } from '../../resources';
 import { Filter, FilterComponent } from '../filter/filter.component';
 import { MatPaginator } from '@angular/material/paginator';
 import { environment } from 'src/environments/environment';
@@ -14,11 +14,11 @@ class ColumnHeader {
 }
 
 @Component({
-  selector: 'app-credential-profile',
-  templateUrl: './credential-profile.component.html',
-  styleUrls: ['./credential-profile.component.scss'],
+  selector: 'app-credential-profile-list',
+  templateUrl: './credential-profile-list.component.html',
+  styleUrls: ['./credential-profile-list.component.scss'],
 })
-export class CredentialProfileComponent implements OnInit, AfterViewInit {
+export class CredentialProfileListComponent implements OnInit, AfterViewInit {
   updatedAt!: Date;
   data!: Format;
   allColumns: ColumnHeader[] = [];

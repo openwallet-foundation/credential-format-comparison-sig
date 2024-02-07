@@ -11,7 +11,7 @@ export interface Resources {
 
 export interface IProfile {
   $schema: string;
-  'Credential Profile is commonly called': string;
+  Name: string;
   'Credential Profile Description': string;
   'Credential Format': string;
   'Signing Algorithm': string;
