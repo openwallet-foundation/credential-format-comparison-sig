@@ -1,9 +1,10 @@
 {
   "$schema": "../../schemas/Credential-Format.json",
-  "Credential Format": "ACDC (KERI)",
-  "Specification": "https://datatracker.ietf.org/doc/html/draft-ssmith-acdc-00",
-  "Standardization (Body, Process)": "IETF (intention to go to Blockchain WG)",
+  "Credential Format": "ACDC",
+  "Specification": "https://trustoverip.github.io/tswg-acdc-specification/",
+  "Standardization (Body, Process)": "",
   "Encoding Scheme": "CESR",
+  "Rich Schemas/Semantic": false,
   "Crypto Agility": true,
   "Selective Disclosure": true,
   "Predicates": false

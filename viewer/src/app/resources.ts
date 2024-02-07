@@ -9,6 +9,21 @@ export interface Resources {
   'Trust Management': Format;
 }
 
+export interface IProfile {
+  $schema: string;
+  'Credential Profile is commonly called': string;
+  'Credential Profile Description': string;
+  'Credential Format': string;
+  'Signing Algorithm': string;
+  'Status Algorithm': string;
+  'Key Management (Issuer)': string;
+  'Key Management (Holder)': string;
+  'Issuance Protocol': string;
+  'Presentation Protocol': string;
+  'Trust Management': string;
+  'Formal Specification'?: string;
+}
+
 export interface Format {
   structure: Structure;
   values: { [key: string]: Partial<any> };

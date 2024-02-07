@@ -1,8 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Format, Resources } from './resources';
 import values from '../structure.json';
-import strucutre from '../structure.json';
-
 export type Resource =
   | 'Credential Format'
   | 'Signing Algorithm'
@@ -26,6 +24,10 @@ export class AppService {
     'Presentation Protocol',
     'Trust Management',
   ];
+
+  getProfile(id: string) {
+    return this.getFormat('Credential Profile').values[id];
+  }
 
   getKey(key: string): keyof Resources {
     return key.startsWith('Key Management')
@@ -90,7 +92,7 @@ export class AppService {
       return value.allOf[1].description;
     }
     if (value.$ref) {
-      const res = JSON.parse(JSON.stringify(strucutre.defs));
+      const res = JSON.parse(JSON.stringify(values.defs));
       console.log(res);
       const id = value.$ref.split('/')[2];
       console.log(id);
@@ -104,7 +106,7 @@ export class AppService {
       return value.type;
     } else {
       const ref = value.allOf ? value.allOf[0].$ref : value.$ref;
-      const res = JSON.parse(JSON.stringify(strucutre.defs));
+      const res = JSON.parse(JSON.stringify(values.defs));
       const id = ref.split('/')[2];
       return res.definitions[id].type;
     }

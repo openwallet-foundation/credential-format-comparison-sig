@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.appService.getElements();
     this.tabs = Object.keys(this.appService.getElements()).filter(
-      (key) => key !== 'Credential Profile'
+      (key) => key !== 'Credential Profile' && key !== 'defs'
     );
   }
 }
