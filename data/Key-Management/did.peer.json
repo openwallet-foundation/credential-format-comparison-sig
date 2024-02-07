@@ -1,6 +1,6 @@
 {
   "$schema": "../../schemas/Key-Management.json",
-  "Key Management": "did:peer",
+  "Name": "did:peer",
   "Implementation Support (e.g. Libraries) / Active Community": "https://identity.foundation/peer-did-method-spec/index.html",
   "Party": ["holder"]
 }

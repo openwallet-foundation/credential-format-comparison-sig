@@ -1,6 +1,6 @@
 {
   "$schema": "../../schemas/Credential-Profile.json",
-  "Credential Profile is commonly called": "AnonCreds with cardano blockchain",
+  "Name": "AnonCreds with cardano blockchain",
   "Credential Profile Description": "AnonCreds with cardano blockchain",
   "Credential Format": "AnonCred",
   "Signing Algorithm": "CL",

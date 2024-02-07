@@ -1,6 +1,6 @@
 {
   "$schema": "../../schemas/Credential-Profile.json",
-  "Credential Profile is commonly called": "JWT VC Presentation Profile",
+  "Name": "JWT VC Presentation Profile",
   "Credential Profile Description": "https://identity.foundation/jwt-vc-presentation-profile/",
   "Credential Format": "JWT-VC",
   "Signing Algorithm": "ECDSA",

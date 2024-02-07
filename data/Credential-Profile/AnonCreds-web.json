@@ -1,6 +1,6 @@
 {
   "$schema": "../../schemas/Credential-Profile.json",
-  "Credential Profile is commonly called": "AnonCreds with did:web",
+  "Name": "AnonCreds with did:web",
   "Credential Profile Description": "AnonCreds with did:web",
   "Credential Format": "AnonCred",
   "Signing Algorithm": "CL",

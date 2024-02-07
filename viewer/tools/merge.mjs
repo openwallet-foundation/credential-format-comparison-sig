@@ -20,8 +20,7 @@ fs.readdirSync(schemaFolder).forEach((resource) => {
     fs.readdirSync(join(folder, subFolder)).filter(file => file !== structureFile).forEach((file) => {
         // write the content of the file to the json object
         const content = JSON.parse(fs.readFileSync(join(folder, subFolder, file), 'utf8'));
-        const name = content[subFolder === 'Credential-Profile' ? 'Credential Profile is commonly called' : subFolder.replace(/-/g, ' ')];
-        input[subFolder.replace(/-/g, ' ')].values[name] = content;
+        input[subFolder.replace(/-/g, ' ')].values[content.Name] = content;
     });
 });
 // write the final json object to a file

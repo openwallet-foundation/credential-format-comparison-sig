@@ -1,6 +1,6 @@
 {
   "$schema": "../../schemas/Credential-Format.json",
-  "Credential Format": "JWP",
+  "Name": "JWP",
   "Specification": "https://github.com/json-web-proofs/json-web-proofs",
   "Standardization (Body, Process)": "DIF",
   "Encoding Scheme": "JSON ?",

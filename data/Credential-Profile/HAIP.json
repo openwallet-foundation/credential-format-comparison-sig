@@ -1,6 +1,6 @@
 {
   "$schema": "../../schemas/Credential-Profile.json",
-  "Credential Profile is commonly called": "HAIP",
+  "Name": "HAIP",
   "Credential Profile Description": "OpenID4VC High Assurance Interoperability Profile with SD-JWT-VC",
   "Formal Specification": "https://vcstuff.github.io/oid4vc-haip-sd-jwt-vc/draft-oid4vc-haip-sd-jwt-vc.html#name-authors-addresses",
   "Credential Format": "SD-JWT-VC",

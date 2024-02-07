@@ -7,7 +7,7 @@
     "$schema": {
       "$ref": "defs.json#/definitions/Schema"
     },
-    "Trust Management": {
+    "Name": {
       "type": "string",
       "description": "A unique identifier for the trust management approach"
     },
@@ -28,6 +28,6 @@
       "description": "Explanation or link to a source how this trust management approach works"
     }
   },
-  "required": ["$schema", "Trust Management"],
+  "required": ["$schema", "Name"],
   "title": "TrustManagement"
 }

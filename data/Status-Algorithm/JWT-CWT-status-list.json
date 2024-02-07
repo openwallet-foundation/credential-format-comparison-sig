@@ -1,6 +1,6 @@
 {
-  "$schema": "../../schemas/Revocation-Algorithm.json",
-  "Status Algorithm": "JWT/CWT status list",
+  "$schema": "../../schemas/Status-Algorithm.json",
+  "Name": "JWT/CWT status list",
   "Implementation Support (e.g. Libraries) / Active Community": "https://github.com/vcstuff/draft-looker-oauth-jwt-cwt-status-list",
   "Specification": "https://datatracker.ietf.org/doc/draft-terbu-oauth-sd-jwt-vc/",
   "Standardization (Body, Process)": "IETF Individual",

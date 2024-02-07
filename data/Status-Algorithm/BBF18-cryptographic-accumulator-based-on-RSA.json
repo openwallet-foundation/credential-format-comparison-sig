@@ -1,6 +1,6 @@
 {
-  "$schema": "../../schemas/Revocation-Algorithm.json",
-  "Status Algorithm": "BBF18-cryptographic accumulator based on RSA",
+  "$schema": "../../schemas/Status-Algorithm.json",
+  "Name": "BBF18-cryptographic accumulator based on RSA",
   "Recognition by government authorities (NIST, BSI, ...)": false,
   "Category": "Accumulator",
   "Observability": false

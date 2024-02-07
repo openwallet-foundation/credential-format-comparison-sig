@@ -1,6 +1,6 @@
 {
   "$schema": "../../schemas/Credential-Profile.json",
-  "Credential Profile is commonly called": "JFFLabs x VC-EDU PlugFest2 (LDP)",
+  "Name": "JFFLabs x VC-EDU PlugFest2 (LDP)",
   "Credential Profile Description": "Interoperability profile used in the PlugFest2",
   "Credential Format": "JWT-VC",
   "Signing Algorithm": "EdDSA",

@@ -93,9 +93,7 @@ export class AppService {
     }
     if (value.$ref) {
       const res = JSON.parse(JSON.stringify(values.defs));
-      console.log(res);
       const id = value.$ref.split('/')[2];
-      console.log(id);
       return res.definitions[id]?.description;
     }
     return '';

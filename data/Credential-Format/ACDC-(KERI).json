@@ -1,6 +1,6 @@
 {
   "$schema": "../../schemas/Credential-Format.json",
-  "Credential Format": "ACDC",
+  "Name": "ACDC",
   "Specification": "https://trustoverip.github.io/tswg-acdc-specification/",
   "Standardization (Body, Process)": "",
   "Encoding Scheme": "CESR",

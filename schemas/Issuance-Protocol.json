@@ -7,7 +7,7 @@
     "$schema": {
       "$ref": "defs.json#/definitions/Schema"
     },
-    "Issuance Protocol": {
+    "Name": {
       "type": "string",
       "description": "Unique identifier of the issuance protocol"
     },
@@ -15,6 +15,6 @@
       "$ref": "defs.json#/definitions/Specification"
     }
   },
-  "required": ["$schema", "Issuance Protocol"],
+  "required": ["$schema", "Name"],
   "title": "IssuanceProtocol"
 }

@@ -1,6 +1,6 @@
 {
   "$schema": "../../schemas/Key-Management.json",
-  "Key Management": "jwks_uri",
+  "Name": "jwks_uri",
   "Infrastructure for Key Resolution": {
     "Value": true,
     "Description": "web server"

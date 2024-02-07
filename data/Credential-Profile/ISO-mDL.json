@@ -1,6 +1,6 @@
 {
   "$schema": "../../schemas/Credential-Profile.json",
-  "Credential Profile is commonly called": "ISO mDL",
+  "Name": "ISO mDL",
   "Credential Profile Description": "[Profile description goes here]",
   "Credential Format": "MDOC",
   "Signing Algorithm": "ECDSA",

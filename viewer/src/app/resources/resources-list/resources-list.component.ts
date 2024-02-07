@@ -8,9 +8,9 @@ import {
 } from '@angular/core';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
-import { ActivatedRoute, Router } from '@angular/router';
-import { AppService } from '../app.service';
-import { Format, Resources } from '../resources';
+import { ActivatedRoute } from '@angular/router';
+import { AppService } from '../../app.service';
+import { Format, Resources } from '../../resources';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatChipInputEvent } from '@angular/material/chips';
 import { MatAutocompleteSelectedEvent } from '@angular/material/autocomplete';
@@ -25,22 +25,18 @@ export interface ColumnHeader {
 type Res = keyof Resources;
 
 @Component({
-  selector: 'app-table',
-  templateUrl: './table.component.html',
-  styleUrls: ['./table.component.scss'],
+  selector: 'app-resources-list',
+  templateUrl: './resources-list.component.html',
+  styleUrls: ['./resources-list.component.scss'],
 })
-export class TableComponent implements OnInit, AfterViewInit {
+export class ResourcesListComponent implements OnInit, AfterViewInit {
   @Input() data!: Format;
   @ViewChild(MatPaginator) paginator!: MatPaginator;
 
   @ViewChild(MatSort) sort!: MatSort;
   selectedRowIndex = 2;
 
-  constructor(
-    private route: ActivatedRoute,
-    private appService: AppService,
-    private router: Router
-  ) {
+  constructor(private route: ActivatedRoute, private appService: AppService) {
     const resource: Res = this.route.snapshot.paramMap.get('resource') as Res;
     if (resource) {
       this.data = this.appService.getFormat(resource);
@@ -106,7 +102,7 @@ export class TableComponent implements OnInit, AfterViewInit {
       if (rectRow && table && rectTable) {
         table.scrollTo({
           left: 0,
-          top: rectRow?.y - rectTable?.y,
+          top: rectRow?.y - rectTable?.y - 120,
           behavior: 'smooth',
         });
       }
@@ -115,9 +111,8 @@ export class TableComponent implements OnInit, AfterViewInit {
 
   isSelected(row: any) {
     const id = this.route.snapshot.paramMap.get('id');
-    const resource = this.route.snapshot.paramMap.get('resource');
-    if (!id || !resource) return false;
-    return row[resource] === id;
+    if (!id) return false;
+    return row.Name === id;
   }
 
   selected(event: MatAutocompleteSelectedEvent): void {

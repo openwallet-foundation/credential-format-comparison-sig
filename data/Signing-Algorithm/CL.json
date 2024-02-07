@@ -1,6 +1,6 @@
 {
   "$schema": "../../schemas/Signing-Algorithm.json",
-  "Signing Algorithm": "CL",
+  "Name": "CL",
   "Implementation Support (e.g. Libraries) / Active Community": "Hyperledger Ursa, https://github.com/privacybydesign/gabi ",
   "Specification": "CL-Signatures of there own do not have a formal specification, that is included in Anoncreds",
   "Standardization (Body, Process)": "none",
