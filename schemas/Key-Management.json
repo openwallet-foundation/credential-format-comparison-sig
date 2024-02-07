@@ -7,7 +7,7 @@
     "$schema": {
       "$ref": "defs.json#/definitions/Schema"
     },
-    "Key Management": {
+    "Name": {
       "type": "string",
       "description": "Unique identifier of the method"
     },
@@ -59,6 +59,6 @@
       "$comment": "We are not looking at verifiers here, since e.g. the identification of the verifier is not part of the credential comparison matrix"
     }
   },
-  "required": ["$schema", "Key Management"],
+  "required": ["$schema", "Name"],
   "title": "KeyManagement"
 }

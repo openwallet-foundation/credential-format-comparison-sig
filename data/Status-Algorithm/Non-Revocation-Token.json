@@ -1,4 +1,4 @@
 {
-  "$schema": "../../schemas/Revocation-Algorithm.json",
-  "Status Algorithm": "Non-Revocation Token"
+  "$schema": "../../schemas/Status-Algorithm.json",
+  "Name": "Non-Revocation Token"
 }

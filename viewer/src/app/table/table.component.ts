@@ -45,6 +45,7 @@ export class TableComponent implements OnInit, AfterViewInit {
     if (resource) {
       this.data = this.appService.getFormat(resource);
     }
+    console.log(this.data);
     this.route.params.subscribe((params) => {
       this.data = this.appService.getFormat(params['resource'] as Res);
       this.ngOnInit();

@@ -1,6 +1,6 @@
 {
   "$schema": "../../schemas/Credential-Profile.json",
-  "Credential Profile is commonly called": "SD-JWT VCs (w/ X.509 for Issuers)",
+  "Name": "SD-JWT VCs (w/ X.509 for Issuers)",
   "Credential Profile Description": "[Profile description goes here]",
   "Credential Format": "SD-JWT-VC",
   "Signing Algorithm": "ECDSA",

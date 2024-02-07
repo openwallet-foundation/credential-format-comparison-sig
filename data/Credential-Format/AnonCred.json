@@ -1,6 +1,6 @@
 {
   "$schema": "../../schemas/Credential-Format.json",
-  "Credential Format": "AnonCred",
+  "Name": "AnonCred",
   "Implementation Support (e.g. Libraries) / Active Community": "https://github.com/hyperledger/anoncreds-rs",
   "Specification": "https://hyperledger.github.io/anoncreds-spec/",
   "Standardization (Body, Process)": "Community Spec (draft)",

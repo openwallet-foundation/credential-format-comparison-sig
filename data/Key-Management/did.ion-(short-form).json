@@ -1,6 +1,6 @@
 {
   "$schema": "../../schemas/Key-Management.json",
-  "Key Management": "did:ion (short form)",
+  "Name": "did:ion (short form)",
   "Infrastructure for Key Resolution": true,
   "Key Rotation": true,
   "Key History": true,

@@ -1,6 +1,6 @@
 {
   "$schema": "../../schemas/Signing-Algorithm.json",
-  "Signing Algorithm": "ECDSA",
+  "Name": "ECDSA",
   "Implementation Support (e.g. Libraries) / Active Community": "many mature implementations",
   "Specification": "X9.62-2005",
   "Standardization (Body, Process)": "ANSI",

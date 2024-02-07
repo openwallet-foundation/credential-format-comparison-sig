@@ -1,6 +1,6 @@
 {
   "$schema": "../../schemas/Credential-Profile.json",
-  "Credential Profile is commonly called": "x.509",
+  "Name": "x.509",
   "Credential Profile Description": "[Profile description goes here]",
   "Credential Format": "x509",
   "Signing Algorithm": "ECDSA",

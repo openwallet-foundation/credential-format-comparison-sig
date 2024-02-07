@@ -1,6 +1,6 @@
 {
   "$schema": "../../schemas/Credential-Format.json",
-  "Credential Format": "x509",
+  "Name": "x509",
   "Standardization (Body, Process)": "ITUT",
   "Encoding Scheme": "ASN.1",
   "Rich Schemas/Semantic": false,

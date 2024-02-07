@@ -1,6 +1,6 @@
 {
   "$schema": "../../schemas/Credential-Profile.json",
-  "Credential Profile is commonly called": "EBSI",
+  "Name": "EBSI",
   "Credential Profile Description": "[Profile description goes here]",
   "Credential Format": "JWT-VC",
   "Signing Algorithm": "ECDSA",

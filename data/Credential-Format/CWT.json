@@ -1,6 +1,6 @@
 {
   "$schema": "../../schemas/Credential-Format.json",
-  "Credential Format": "CWT",
+  "Name": "CWT",
   "Specification": "https://www.rfc-editor.org/rfc/rfc8392.html",
   "Standardization (Body, Process)": "IETF",
   "Encoding Scheme": "CBOR",

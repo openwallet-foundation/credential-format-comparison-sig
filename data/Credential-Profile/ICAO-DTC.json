@@ -1,6 +1,6 @@
 {
   "$schema": "../../schemas/Credential-Profile.json",
-  "Credential Profile is commonly called": "ICAO DTC",
+  "Name": "ICAO DTC",
   "Credential Profile Description": "[Profile description goes here]",
   "Credential Format": "ICAO DTC",
   "Signing Algorithm": "ECDSA",

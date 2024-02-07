@@ -1,4 +1,4 @@
 {
   "$schema": "../../schemas/Issuance-Protocol.json",
-  "Issuance Protocol": "ACDC"
+  "Name": "ACDC"
 }

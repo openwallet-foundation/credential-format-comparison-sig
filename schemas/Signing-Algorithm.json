@@ -7,7 +7,7 @@
     "$schema": {
       "$ref": "defs.json#/definitions/Schema"
     },
-    "Signing Algorithm": {
+    "Name": {
       "type": "string",
       "description": "A unique identifier for the signing algorithm"
     },
@@ -74,6 +74,6 @@
       ]
     }
   },
-  "required": ["$schema", "Signing Algorithm"],
+  "required": ["$schema", "Name"],
   "title": "SigningAlgorithm"
 }

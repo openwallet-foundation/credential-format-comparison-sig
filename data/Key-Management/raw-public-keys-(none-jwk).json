@@ -1,6 +1,6 @@
 {
   "$schema": "../../schemas/Key-Management.json",
-  "Key Management": "raw public keys (none jwk)",
+  "Name": "raw public keys (none jwk)",
   "Infrastructure for Key Resolution": false,
   "Key Rotation": false,
   "Key History": false,
