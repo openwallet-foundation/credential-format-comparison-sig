@@ -24,4 +24,4 @@ fs.readdirSync(schemaFolder).forEach((resource) => {
     });
 });
 // write the final json object to a file
-fs.writeFileSync(mergedStructure, JSON.stringify(input, null, 2));
+fs.writeFileSync(mergedStructure, JSON.stringify(input));
