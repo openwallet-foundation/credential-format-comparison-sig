@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync } from 'fs';
+import { readFileSync, writeFileSync, readdirSync } from 'fs';
 import { schemaFolder, folder, mergedStructure, structureFile, defFile, githubPath } from './values.mjs';
 import { join } from 'path';
 // merges the json files to one json file
