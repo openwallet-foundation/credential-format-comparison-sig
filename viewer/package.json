@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "prestart": "npm run merge",
+    "prestart": "npm run merge && npm run schema",
     "start": "ng serve",
     "prebuild": "npm run merge && npm run timestamp",
     "build": "ng build",
