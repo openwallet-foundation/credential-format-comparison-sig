@@ -11,8 +11,13 @@ fs.readdirSync(schemaFolder).forEach((resource) => {
     }
     // create a new json object for each subfolder
     const subFolder = resource.slice(0, -5);
+
+    let content = fs.readFileSync(join(schemaFolder, resource), 'utf8');
+    content = content.replaceAll('"$ref": "defs.json', `"$ref": "${githubPath}/schemas/defs.json`);
+    const structure = JSON.parse(content);
+
     input[subFolder.replace(/-/g, ' ')] = {
-        structure: JSON.parse(fs.readFileSync(join(schemaFolder, resource), 'utf8')),
+        structure,
         values: {}
     };
     // write the content of the file to the json object
@@ -20,6 +25,7 @@ fs.readdirSync(schemaFolder).forEach((resource) => {
         // write the content of the file to the json object
         const content = JSON.parse(fs.readFileSync(join(folder, subFolder, file), 'utf8'));
         content['$schema'] = content['$schema'].replace('../..', githubPath);
+
         input[subFolder.replace(/-/g, ' ')].values[content.Name] = content;
     });
 });
