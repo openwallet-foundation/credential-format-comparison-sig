@@ -10,7 +10,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "merge": "node tools/merge.mjs",
-    "validate": "node tools/validate.mjs",
+    "validate": "npm run schema && node tools/validate.mjs",
     "validate:watch": "nodemon --watch ../data tools/validate.mjs",
     "schema": "node tools/schema.mjs",
     "lint": "ng lint",
