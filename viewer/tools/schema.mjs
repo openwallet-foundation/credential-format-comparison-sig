@@ -11,7 +11,7 @@ if(!existsSync(generatedFolder)) {
 }
 const schema = {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "defs.json",
+  "$id": "fields.json",
   type: "object",
   definitions: {}
 }
