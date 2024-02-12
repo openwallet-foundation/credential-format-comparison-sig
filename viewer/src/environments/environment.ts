@@ -1,3 +1,3 @@
 export const environment = {
-  buildTime: '2024-01-23T10:58:02.535Z',
+  buildTime: '2024-02-11T15:33:07.572Z',
 };

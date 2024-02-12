@@ -11,5 +11,5 @@
   "Selective Disclosure": true,
   "Predicates": false,
   "Compatibility with Signing Algorithms": "ECDSA, EdDSA, RSA",
-  "Compatibility with Key Management Methods (Issuer)": "x509, did methods"
+  "Compatibility with Key Management Methods (Issuer)": ["x509", "did methods"]
 }

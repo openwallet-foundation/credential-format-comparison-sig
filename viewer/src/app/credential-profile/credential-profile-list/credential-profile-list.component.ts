@@ -144,7 +144,7 @@ export class CredentialProfileListComponent implements OnInit, AfterViewInit {
   }
 
   isSticky(column: ColumnHeader) {
-    return column.key === 'Credential Profile is commonly called';
+    return column.key === 'Name';
   }
 
   hasLink(value: string, header: string) {
