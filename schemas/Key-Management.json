@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://raw.githubusercontent.com/openwallet-foundation/credential-format-comparison-sig/main/schemas/Key-Management.json",
+  "$id": "Key-Management.json",
   "type": "object",
   "additionalProperties": false,
   "properties": {

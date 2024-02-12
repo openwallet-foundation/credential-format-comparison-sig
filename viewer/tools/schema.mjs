@@ -9,20 +9,27 @@ const generatedFolder = "src/assets/schemas";
 if(!existsSync(generatedFolder)) {
   mkdirSync(generatedFolder);
 }
-Object.keys(file.properties).forEach((key) => {
-    const enums = getEnum(key.startsWith('Key Management') ? 'Key Management' : key);
-    if(enums) {
-      const enumSchema = {
-        "$id": `${githubPath}/main/viewer/${generatedFolder}/${key.replace(' ', '-')}.json`,
-        "$schema": "http://json-schema.org/draft-07/schema#",
-        description: `The used ${key}`,
-        type: "string",
-        enum: enums
-      }
-      //TODO: maybe it's better to publish them on a separate path in git. This would allow others to pull the repo to get access to the values instead of querying the server. However placing it in the asset folder, it allows locally to use the data.
-      writeFileSync(join(generatedFolder, `${key.replace(' ', '-')}.json`), JSON.stringify(enumSchema, null, 4));
+const schema = {
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "defs.json",
+  type: "object",
+  definitions: {}
+}
+
+const resources = Object.keys(file.properties);
+resources.push('Credential Profile');
+resources.forEach((key) => {
+  key = key.startsWith('Key Management') ? 'Key Management' : key;
+  const enums = getEnum(key);
+  if(enums) {
+    schema.definitions[key.replace(' ', '-')] = {
+      description: `The used ${key}`,
+      type: "string",
+      enum: enums
     }
+  }
 });
+writeFileSync(join(generatedFolder, 'fields.json'), JSON.stringify(schema, null, 2), 'utf8');
 
 function getEnum(subFolder) {
 // adds the resources to the schema file of the profile

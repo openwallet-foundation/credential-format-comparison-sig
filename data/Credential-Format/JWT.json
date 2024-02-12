@@ -11,5 +11,13 @@
   "Selective Disclosure": false,
   "Predicates": false,
   "Compatibility with Signing Algorithms": "ECDSA, EdDSA, RSA",
-  "Compatibility with Key Management Methods (Issuer)": "did:key, did:web. did:ebsi, did:iota, did:jwk, did:cheqd, did:velocity"
+  "Compatibility with Key Management Methods (Issuer)": [
+    "did:key",
+    "did:web",
+    "did:ebsi",
+    "did:iota",
+    "did:jwk",
+    "did:cheqd",
+    "did:velocity"
+  ]
 }
