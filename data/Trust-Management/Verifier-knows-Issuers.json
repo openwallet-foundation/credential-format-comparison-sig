@@ -1,7 +1,7 @@
 {
   "$schema": "../../schemas/Trust-Management.json",
   "Name": "Verifier knows Issuers",
-  "Implementation Support (e.g. Libraries) / Active Community": "Manual / bespoke",
+  "Implementation Support": "Manual / bespoke",
   "IPR Policy": "None",
   "Standardization (Body, Process)": "None",
   "Specification": "None",

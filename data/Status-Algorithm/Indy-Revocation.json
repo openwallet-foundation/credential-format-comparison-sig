@@ -1,7 +1,7 @@
 {
   "$schema": "../../schemas/Status-Algorithm.json",
   "Name": "Indy Revocation",
-  "Implementation Support (e.g. Libraries) / Active Community": "Indy SDK",
+  "Implementation Support": "Indy SDK",
   "Standardization (Body, Process)": "AnonCreds",
   "Recognition by government authorities (NIST, BSI, ...)": false,
   "Category": "Accumulator",

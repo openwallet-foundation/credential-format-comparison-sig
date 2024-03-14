@@ -139,7 +139,7 @@ TODO: it is difficult to define when hardware support is available: if one HSM i
 required: false
 type: boolean (but in many cases the people need more information which devices, like iphone, etc. It's a very subjective field)
 
-### Unlinkability/Uncorrelatability/Blind signatures possible
+### Unlinkability-Uncorrelatability-Blind signatures possible
 
 Unlinkability is the property that an attacker cannot distinguish whether two or more items within a system (comprising these and possibly other items) are related or not. Within an identity ecosystem this applies for example if one verifier can link two credentials of a holder or two selective disclosures of the same credential or whether two colluding verifiers can link two separate presentations of the same credential. This excludes the fact that linkability can also happen by the revealed attributes themselves or that unlinkability can be achieved by the infrastructure, e.g. just-in-time issuance.
 

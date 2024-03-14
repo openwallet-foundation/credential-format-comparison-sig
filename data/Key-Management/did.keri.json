@@ -1,7 +1,7 @@
 {
   "$schema": "../../schemas/Key-Management.json",
   "Name": "did:keri",
-  "Implementation Support (e.g. Libraries) / Active Community": "https://weboftrust.github.io/did-keri/",
+  "Implementation Support": "https://weboftrust.github.io/did-keri/",
   "Infrastructure for Key Resolution": {
     "Value": true,
     "Description": "witness network"
