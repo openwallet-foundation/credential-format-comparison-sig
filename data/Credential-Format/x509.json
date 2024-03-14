@@ -3,7 +3,7 @@
   "Name": "x509",
   "Standardization (Body, Process)": "ITUT",
   "Encoding Scheme": "ASN.1",
-  "Rich Schemas/Semantic": false,
+  "Rich Schemas-Semantic": false,
   "Crypto Agility": true,
   "Selective Disclosure": false,
   "Predicates": false

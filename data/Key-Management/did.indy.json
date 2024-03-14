@@ -1,7 +1,7 @@
 {
   "$schema": "../../schemas/Key-Management.json",
   "Name": "did:indy",
-  "Implementation Support (e.g. Libraries) / Active Community": "https://hyperledger.github.io/indy-did-method/",
+  "Implementation Support": "https://hyperledger.github.io/indy-did-method/",
   "Infrastructure for Key Resolution": {
     "Value": true,
     "Description": "dlt"

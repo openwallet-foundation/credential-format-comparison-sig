@@ -1,7 +1,7 @@
 {
   "$schema": "../../schemas/Key-Management.json",
   "Name": "did:ebsi",
-  "Implementation Support (e.g. Libraries) / Active Community": "https://ec.europa.eu/digital-building-blocks/wikis/display/EBSIDOC/EBSI+DID+Method",
+  "Implementation Support": "https://ec.europa.eu/digital-building-blocks/wikis/display/EBSIDOC/EBSI+DID+Method",
   "Infrastructure for Key Resolution": {
     "Value": true,
     "Description": "dlt"

@@ -4,7 +4,7 @@
   "Specification": "ISO 18013-5",
   "Standardization (Body, Process)": "ISO",
   "Encoding Scheme": "CBOR",
-  "Rich Schemas/Semantic": false,
+  "Rich Schemas-Semantic": false,
   "Crypto Agility": true,
   "Selective Disclosure": {
     "Value": true,

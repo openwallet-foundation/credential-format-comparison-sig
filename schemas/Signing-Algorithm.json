@@ -11,7 +11,7 @@
       "type": "string",
       "description": "A unique identifier for the signing algorithm"
     },
-    "Implementation Support (e.g. Libraries) / Active Community": {
+    "Implementation Support": {
       "$ref": "defs.json#/definitions/Implementation-Support"
     },
     "IPR Policy": {
@@ -49,7 +49,7 @@
         }
       ]
     },
-    "Unlinkability/Uncorrelatability/Blind signatures possible": {
+    "Unlinkability-Uncorrelatability-Blind signatures possible": {
       "allOf": [
         {
           "$ref": "defs.json#/definitions/Filter"

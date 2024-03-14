@@ -11,7 +11,7 @@
       "type": "string",
       "description": "A unique identifier for the trust management approach"
     },
-    "Implementation Support (e.g. Libraries) / Active Community": {
+    "Implementation Support": {
       "$ref": "defs.json#/definitions/Implementation-Support"
     },
     "IPR Policy": {

@@ -1,7 +1,7 @@
 {
   "$schema": "../../schemas/Status-Algorithm.json",
   "Name": "JWT/CWT status list",
-  "Implementation Support (e.g. Libraries) / Active Community": "https://github.com/vcstuff/draft-looker-oauth-jwt-cwt-status-list",
+  "Implementation Support": "https://github.com/vcstuff/draft-looker-oauth-jwt-cwt-status-list",
   "Specification": "https://datatracker.ietf.org/doc/draft-terbu-oauth-sd-jwt-vc/",
   "Standardization (Body, Process)": "IETF Individual",
   "Recognition by government authorities (NIST, BSI, ...)": false,

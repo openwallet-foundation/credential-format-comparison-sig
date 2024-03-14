@@ -8,6 +8,6 @@
     "Description": "not acknowledged"
   },
   "Hardware support": false,
-  "Unlinkability/Uncorrelatability/Blind signatures possible": true,
+  "Unlinkability-Uncorrelatability-Blind signatures possible": true,
   "Post-quantum security": false
 }

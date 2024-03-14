@@ -106,7 +106,7 @@ export class AppService {
     } else {
       const ref = value.allOf ? value.allOf[0].$ref : value.$ref;
       const res = JSON.parse(JSON.stringify(values.defs));
-      const id = ref.split('/')[2];
+      const id = ref.split('/').pop();
       return res.definitions[id].type;
     }
   }

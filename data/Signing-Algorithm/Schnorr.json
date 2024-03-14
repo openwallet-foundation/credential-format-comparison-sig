@@ -1,7 +1,7 @@
 {
   "$schema": "../../schemas/Signing-Algorithm.json",
   "Name": "Schnorr",
-  "Implementation Support (e.g. Libraries) / Active Community": "many mature implementations",
+  "Implementation Support": "many mature implementations",
   "IPR Policy": "patents expired",
   "Specification": "different curves-different specs",
   "Standardization (Body, Process)": "different curves-different standards",
@@ -11,6 +11,6 @@
   },
   "Performance": "high",
   "Hardware support": false,
-  "Unlinkability/Uncorrelatability/Blind signatures possible": false,
+  "Unlinkability-Uncorrelatability-Blind signatures possible": false,
   "Post-quantum security": false
 }

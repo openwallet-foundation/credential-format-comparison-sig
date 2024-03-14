@@ -1,12 +1,12 @@
 {
   "$schema": "../../schemas/Credential-Format.json",
   "Name": "SD-JWT",
-  "Implementation Support (e.g. Libraries) / Active Community": "https://github.com/oauthstuff/draft-selective-disclosure-jwt#implementations",
+  "Implementation Support": "https://github.com/oauthstuff/draft-selective-disclosure-jwt#implementations",
   "IPR Policy": "https://trustee.ietf.org/documents/trust-legal-provisions/",
   "Specification": "https://datatracker.ietf.org/doc/draft-ietf-oauth-selective-disclosure-jwt/",
   "Standardization (Body, Process)": "IETF (OAuth WG)",
   "Encoding Scheme": "JSON, JSON-LD",
-  "Rich Schemas/Semantic": false,
+  "Rich Schemas-Semantic": false,
   "Crypto Agility": true,
   "Selective Disclosure": {
     "Value": true,
