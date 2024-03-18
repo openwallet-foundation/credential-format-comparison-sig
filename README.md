@@ -19,6 +19,8 @@ The pre defined [Google sheet](./viewer/tools/Credential%20Comparison%20Matrix.x
 
 This SIG is an open group. Anyone in the OpenWallet Foundation community can join and participate. There is no formal sign up process. Just show up and participate.
 
+We are meeting every two weeks on Wednesday, click [here](https://zoom-lfx.platform.linuxfoundation.org/meeting/93634454850?password=060d1576-f263-433d-b755-f4a3d05ce0a7) to get a calendar invitation.
+
 If you are interested in participating, please join the [OpenWallet Foundation Discord](https://discord.com/invite/yjvGPd5FCU) and participate in the discussion in the [#credential-format-comparison-sig](https://discord.com/channels/1022962884864643214/1113500130419671080) channel.
 
 All recordings of the sessions are available in the [wiki](https://github.com/openwallet-foundation/credential-format-comparison-sig/wiki).
