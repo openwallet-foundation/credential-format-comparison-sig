@@ -1,0 +1,43 @@
+@use '@angular/material' as mat;
+@import '@angular/cdk/overlay-prebuilt.css';
+@include mat.core();
+
+$light-theme: mat.define-theme((
+  color: (
+    theme-type: light,
+    primary: mat.$azure-palette,
+  ),
+  typography: (
+    brand-family: '"Roboto", sans-serif',
+    bold-weight: 900
+  ),
+  density: (
+    scale: -1
+  )
+));
+
+$dark-theme: mat.define-theme((
+  color: (
+    theme-type: dark,
+    primary: mat.$orange-palette,
+  ),
+));
+
+@mixin background($theme) {
+  .mat-toolbar {
+    @if mat.get-theme-type($theme) == dark {
+      background: mat.get-theme-color($theme, primary, 10);
+    } @else {
+      background: mat.get-theme-color($theme, primary, 90);
+    }
+  }
+}
+
+html {
+  @include mat.all-component-themes($light-theme);
+  @include background($light-theme);
+  .dark-theme {
+    @include mat.all-component-colors($dark-theme);
+    @include background($dark-theme);
+  }
+}

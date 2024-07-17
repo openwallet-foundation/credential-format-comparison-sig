@@ -42,11 +42,11 @@ importers:
         specifier: ^17.0.1
         version: 17.0.1(@angular/cdk@18.1.1(@angular/common@18.1.0(@angular/core@18.1.0(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1))(@angular/core@18.1.0(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1))(@angular/common@18.1.0(@angular/core@18.1.0(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1))(@angular/core@18.1.0(rxjs@7.8.1)(zone.js@0.14.7))(@angular/platform-browser@18.1.0(@angular/animations@18.1.0(@angular/core@18.1.0(rxjs@7.8.1)(zone.js@0.14.7)))(@angular/common@18.1.0(@angular/core@18.1.0(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1))(@angular/core@18.1.0(rxjs@7.8.1)(zone.js@0.14.7)))(rxjs@7.8.1)
       marked:
-        specifier: ^9.1.6
-        version: 9.1.6
+        specifier: 12.0.2
+        version: 12.0.2
       ngx-markdown:
-        specifier: ^17.1.1
-        version: 17.2.1(@angular/common@18.1.0(@angular/core@18.1.0(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1))(@angular/core@18.1.0(rxjs@7.8.1)(zone.js@0.14.7))(@angular/platform-browser@18.1.0(@angular/animations@18.1.0(@angular/core@18.1.0(rxjs@7.8.1)(zone.js@0.14.7)))(@angular/common@18.1.0(@angular/core@18.1.0(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1))(@angular/core@18.1.0(rxjs@7.8.1)(zone.js@0.14.7)))(marked@9.1.6)(rxjs@7.8.1)(zone.js@0.14.7)
+        specifier: ^18.0.0
+        version: 18.0.0(@angular/common@18.1.0(@angular/core@18.1.0(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1))(@angular/core@18.1.0(rxjs@7.8.1)(zone.js@0.14.7))(@angular/platform-browser@18.1.0(@angular/animations@18.1.0(@angular/core@18.1.0(rxjs@7.8.1)(zone.js@0.14.7)))(@angular/common@18.1.0(@angular/core@18.1.0(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1))(@angular/core@18.1.0(rxjs@7.8.1)(zone.js@0.14.7)))(marked@12.0.2)(rxjs@7.8.1)(zone.js@0.14.7)
       rxjs:
         specifier: ~7.8.0
         version: 7.8.1
@@ -127,8 +127,8 @@ importers:
         specifier: ^8.4.24
         version: 8.4.39
       replace-in-file:
-        specifier: ^7.0.1
-        version: 7.2.0
+        specifier: ^8.1.0
+        version: 8.1.0
       typescript:
         specifier: ~5.5.3
         version: 5.5.3
@@ -2317,6 +2317,10 @@ packages:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
     engines: {node: '>=10'}
 
+  chalk@5.3.0:
+    resolution: {integrity: sha512-dLitG79d+GV1Nb/VYcCDFivJeK1hiukt9QjRNVOsUtTy1rR1YJsmpGGTZ3qJos+uw7WmWF4wUwBd9jxjocFC2w==}
+    engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
+
   character-entities@2.0.2:
     resolution: {integrity: sha512-shx7oQ0Awen/BRIdkjkvz54PnEEI/EjwXDSIZp86/KKdbafHh1Df/RYGBhn4hbe2+uKC9FnT5UCEdyPz3ai9hQ==}
 
@@ -3199,11 +3203,6 @@ packages:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
     deprecated: Glob versions prior to v9 are no longer supported
 
-  glob@8.1.0:
-    resolution: {integrity: sha512-r8hpEjiQEYlF2QU0df3dS+nxxSIreXQS1qRhMJM0Q5NDdR386C7jb7Hwwod8Fgiuex+k0GFjgft18yvxm5XoCQ==}
-    engines: {node: '>=12'}
-    deprecated: Glob versions prior to v9 are no longer supported
-
   globals@11.12.0:
     resolution: {integrity: sha512-WOBp/EEGUiIsJSp7wcv/y6MO+lV9UoncWqxuFfm8eBwzWNgyfBd6Gz+IeKQ9jCmyhoH99g15M3T+QaVHFjizVA==}
     engines: {node: '>=4'}
@@ -3791,9 +3790,9 @@ packages:
     resolution: {integrity: sha512-cKTUFc/rbKUd/9meOvgrpJ2WrNzymt6jfRDdwg5UCnVzv9dTpEj9JS5m3wtziXVCjluIXyL8pcaukYqezIzZQA==}
     engines: {node: ^16.14.0 || >=18.0.0}
 
-  marked@9.1.6:
-    resolution: {integrity: sha512-jcByLnIFkd5gSXZmjNvS1TlmRhCXZjIzHYlaGkPlLIekG55JDR2Z4va9tZwCiP+/RDERiNhMOFu01xd6O5ct1Q==}
-    engines: {node: '>= 16'}
+  marked@12.0.2:
+    resolution: {integrity: sha512-qXUm7e/YKFoqFPYPa3Ukg9xlI5cyAtGmyEIzMfW//m6kXwCy2Ps9DYf5ioijFKQ8qyuscrHoY04iJGctu2Kg0Q==}
+    engines: {node: '>= 18'}
     hasBin: true
 
   mdast-util-from-markdown@1.3.1:
@@ -4044,12 +4043,12 @@ packages:
   neo-async@2.6.2:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
 
-  ngx-markdown@17.2.1:
-    resolution: {integrity: sha512-TKzxP2R2uTGpVFx0OZDFC/BpNJYUabG2z59/9/PXrTP3R7xTNFuvGQZSNitAQFD7nI3Uko87Ra3GJrbaHdjeBA==}
+  ngx-markdown@18.0.0:
+    resolution: {integrity: sha512-sFR9dIOKobdhNKZTlCrX3RmpoAhZ7k3T9h7oWJP676Oe9BsoxuAYZKJmFDT20vrY6xmFD3WtLJDZR7rNRLf6Uw==}
     peerDependencies:
-      '@angular/common': ^17.0.0
-      '@angular/core': ^17.0.0
-      '@angular/platform-browser': ^17.0.0
+      '@angular/common': ^18.0.0
+      '@angular/core': ^18.0.0
+      '@angular/platform-browser': ^18.0.0
       marked: '>= 9.0.0 < 13.0.0'
       rxjs: ^6.5.3 || ^7.4.0
       zone.js: ~0.14.0
@@ -4498,9 +4497,9 @@ packages:
     resolution: {integrity: sha512-dQUtn90WanSNl+7mQKcXAgZxvUe7Z0SqXlgzv0za4LwiUhyzBC58yQO3liFoUgu8GiJVInAhJjkj1N0EtQ5nkQ==}
     hasBin: true
 
-  replace-in-file@7.2.0:
-    resolution: {integrity: sha512-CiLXVop3o8/h2Kd1PwKPPimmS9wUV0Ki6Fl8+1ITD35nB3Gl/PrW5IONpTE0AXk0z4v8WYcpEpdeZqMXvSnWpg==}
-    engines: {node: '>=10'}
+  replace-in-file@8.1.0:
+    resolution: {integrity: sha512-ySYfKDH6uFVC4Wt6DcZ2UX0UMCqE7xhWGVqje/15WFVwHxnel1gdZjV8nOW9Nms6h/yQE2MWyeIToeqFLZkp4w==}
+    engines: {node: '>=18'}
     hasBin: true
 
   require-directory@2.1.1:
@@ -8348,6 +8347,8 @@ snapshots:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
 
+  chalk@5.3.0: {}
+
   character-entities@2.0.2:
     optional: true
 
@@ -9380,14 +9381,6 @@ snapshots:
       once: 1.4.0
       path-is-absolute: 1.0.1
 
-  glob@8.1.0:
-    dependencies:
-      fs.realpath: 1.0.0
-      inflight: 1.0.6
-      inherits: 2.0.4
-      minimatch: 5.1.6
-      once: 1.4.0
-
   globals@11.12.0: {}
 
   globals@13.24.0:
@@ -10022,7 +10015,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  marked@9.1.6: {}
+  marked@12.0.2: {}
 
   mdast-util-from-markdown@1.3.1:
     dependencies:
@@ -10380,12 +10373,12 @@ snapshots:
 
   neo-async@2.6.2: {}
 
-  ngx-markdown@17.2.1(@angular/common@18.1.0(@angular/core@18.1.0(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1))(@angular/core@18.1.0(rxjs@7.8.1)(zone.js@0.14.7))(@angular/platform-browser@18.1.0(@angular/animations@18.1.0(@angular/core@18.1.0(rxjs@7.8.1)(zone.js@0.14.7)))(@angular/common@18.1.0(@angular/core@18.1.0(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1))(@angular/core@18.1.0(rxjs@7.8.1)(zone.js@0.14.7)))(marked@9.1.6)(rxjs@7.8.1)(zone.js@0.14.7):
+  ngx-markdown@18.0.0(@angular/common@18.1.0(@angular/core@18.1.0(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1))(@angular/core@18.1.0(rxjs@7.8.1)(zone.js@0.14.7))(@angular/platform-browser@18.1.0(@angular/animations@18.1.0(@angular/core@18.1.0(rxjs@7.8.1)(zone.js@0.14.7)))(@angular/common@18.1.0(@angular/core@18.1.0(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1))(@angular/core@18.1.0(rxjs@7.8.1)(zone.js@0.14.7)))(marked@12.0.2)(rxjs@7.8.1)(zone.js@0.14.7):
     dependencies:
       '@angular/common': 18.1.0(@angular/core@18.1.0(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1)
       '@angular/core': 18.1.0(rxjs@7.8.1)(zone.js@0.14.7)
       '@angular/platform-browser': 18.1.0(@angular/animations@18.1.0(@angular/core@18.1.0(rxjs@7.8.1)(zone.js@0.14.7)))(@angular/common@18.1.0(@angular/core@18.1.0(rxjs@7.8.1)(zone.js@0.14.7))(rxjs@7.8.1))(@angular/core@18.1.0(rxjs@7.8.1)(zone.js@0.14.7))
-      marked: 9.1.6
+      marked: 12.0.2
       rxjs: 7.8.1
       tslib: 2.6.3
       zone.js: 0.14.7
@@ -10920,10 +10913,10 @@ snapshots:
     dependencies:
       jsesc: 0.5.0
 
-  replace-in-file@7.2.0:
+  replace-in-file@8.1.0:
     dependencies:
-      chalk: 4.1.2
-      glob: 8.1.0
+      chalk: 5.3.0
+      glob: 10.4.5
       yargs: 17.7.2
 
   require-directory@2.1.1: {}
