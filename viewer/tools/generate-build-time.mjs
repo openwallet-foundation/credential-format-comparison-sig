@@ -1,4 +1,4 @@
-import replace from 'replace-in-file';
+import {replaceInFile} from 'replace-in-file';
 
 const buildTime = new Date().toISOString();
 
@@ -9,7 +9,7 @@ const options = {
 }
 
 try {
-    replace(options).then(results => console.log('Replacement results:', results));
+    replaceInFile(options).then(results => console.log('Replacement results:', results));
   }
   catch (error) {
     console.error('Error occurred:', error);
