@@ -1,0 +1,13 @@
+{
+  "$schema": "../../schemas/Key-Management.json",
+  "Name": "did:webs",
+  "Specification": "https://trustoverip.github.io/tswg-did-method-webs-specification/index.html",
+  "Implementation Support": "https://github.com/hyperledger-labs/did-webs-resolver",
+  "Key Rotation": true,
+  "Key History": true,
+  "Infrastructure for Key Resolution": {
+    "Value": true,
+    "Description": "dlt, web server"
+  },
+  "Party": ["holder", "issuer"]
+}
