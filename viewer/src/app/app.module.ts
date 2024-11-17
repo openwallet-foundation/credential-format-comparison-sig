@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
-import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
+import {
+  provideHttpClient,
+  withInterceptorsFromDi,
+} from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -42,55 +45,63 @@ import { CredentialProfileShowComponent } from './credential-profile/credential-
 import { MarkdownModule } from 'ngx-markdown';
 import { DefinitionComponent } from './definition/definition.component';
 import { ResourcesShowComponent } from './resources/resources-show/resources-show.component';
+import { MovedComponent } from './moved/moved.component';
 
 const appearance: MatFormFieldDefaultOptions = {
   appearance: 'outline',
 };
-@NgModule({ declarations: [
-        AppComponent,
-        ResourcesListComponent,
-        CredentialProfileListComponent,
-        CredentialProfileShowComponent,
-        FormatPipe,
-        AutoSelectComponent,
-        FilterComponent,
-        ProfileConfigComponent,
-        DefinitionComponent,
-        ResourcesShowComponent,
-    ],
-    bootstrap: [AppComponent], imports: [CommonModule,
-        BrowserModule,
-        BrowserAnimationsModule,
-        ReactiveFormsModule,
-        MatInputModule,
-        FlexLayoutModule,
-        AppRoutingModule,
-        MatToolbarModule,
-        MatTableModule,
-        MatSnackBarModule,
-        MatTooltipModule,
-        MatSelectModule,
-        MatDialogModule,
-        MatIconModule,
-        MatButtonModule,
-        MatTabsModule,
-        MatSortModule,
-        MatListModule,
-        MatCheckboxModule,
-        MatChipsModule,
-        MatFormFieldModule,
-        MatAutocompleteModule,
-        MatPaginatorModule,
-        ClipboardModule,
-        MatMenuModule,
-        MatCardModule,
-        MatExpansionModule,
-        MarkdownModule.forRoot()], providers: [
-        FormatPipe,
-        {
-            provide: MAT_FORM_FIELD_DEFAULT_OPTIONS,
-            useValue: appearance,
-        },
-        provideHttpClient(withInterceptorsFromDi()),
-    ] })
+@NgModule({
+  declarations: [
+    AppComponent,
+    ResourcesListComponent,
+    CredentialProfileListComponent,
+    CredentialProfileShowComponent,
+    FormatPipe,
+    AutoSelectComponent,
+    FilterComponent,
+    ProfileConfigComponent,
+    DefinitionComponent,
+    ResourcesShowComponent,
+    MovedComponent,
+  ],
+  bootstrap: [AppComponent],
+  imports: [
+    CommonModule,
+    BrowserModule,
+    BrowserAnimationsModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    FlexLayoutModule,
+    AppRoutingModule,
+    MatToolbarModule,
+    MatTableModule,
+    MatSnackBarModule,
+    MatTooltipModule,
+    MatSelectModule,
+    MatDialogModule,
+    MatIconModule,
+    MatButtonModule,
+    MatTabsModule,
+    MatSortModule,
+    MatListModule,
+    MatCheckboxModule,
+    MatChipsModule,
+    MatFormFieldModule,
+    MatAutocompleteModule,
+    MatPaginatorModule,
+    ClipboardModule,
+    MatMenuModule,
+    MatCardModule,
+    MatExpansionModule,
+    MarkdownModule.forRoot(),
+  ],
+  providers: [
+    FormatPipe,
+    {
+      provide: MAT_FORM_FIELD_DEFAULT_OPTIONS,
+      useValue: appearance,
+    },
+    provideHttpClient(withInterceptorsFromDi()),
+  ],
+})
 export class AppModule {}
